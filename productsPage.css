@@ -1,0 +1,163 @@
+*{
+    font-family:  Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    background-color: #FFFFFF;
+}
+#parent_div{
+    max-width: 1600px;
+    margin: auto;
+}
+.topDiv{
+    background-color: #FFFFFF;
+    max-width: 1600px;
+    max-height: 38.666px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#top_product_cont_div{
+    display: flex;
+    padding: 10px;
+}
+
+#globalDiv{
+    margin:  auto;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 252px 1348px;
+    width: 100%;
+}
+#filter_head{
+    border-right:1px solid #FFFFFF;
+    border-bottom:1px solid #EDEBEF;
+    padding: 15px;
+}
+
+#globalDiv .checkbox{
+    border-right: 1px solid #EDEBEF;
+    border-bottom: 1px solid #E9E9ED;
+    padding:15px;
+    font-size: 14px;
+    
+}
+.checkbox span{
+    padding: 3px;
+    color: gray;
+    font-size: 11px;
+}
+#top_product_cont_div{
+ display: flex;
+ gap: 20px;
+ border-bottom: 1px solid #E9E9ED ;
+}
+#top_product_cont_div>div>select{
+    border: none;
+    padding:5px;
+}
+.size{
+    flex-basis: 763px;
+}
+ #dropBox{
+border: 0.5px solid #CFD8DC; 
+
+}
+
+/* products container */
+#products_cont{
+    display: grid;
+    grid-template-columns: 210px 210px 210px 210px 210px ;
+    grid-gap: 60px;
+    padding:15px;
+ max-width: 100%;
+    
+}
+#products_cont>div{
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    max-width: 1348px;
+}
+
+#products_cont>div:hover {
+   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+#products_cont>div>div>img{
+    width:100%;
+}
+#products_cont>div>div>p{
+    margin: 0.5px;
+    padding: 0.5px;
+    position: relative;
+}
+#products_cont>div>div>span{
+    padding:5px 1px;
+    margin:5px 1px;
+
+}
+
+span{
+ font-size:14px;
+}
+
+/* products container div after hover */
+
+#products_cont .box{
+    position: absolute;
+    background: #FFFFFF;
+    /* transform: scaleY(0);
+    transition: transform 5s; */
+}
+
+
+
+/* checkboxes */
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+  .container> input{
+      margin:5px 10px 0px 0px;
+  }
+.color{
+    width: 12px;  border-radius: 50%;  height: 12px; display: inline-flex; margin:0px 3px;
+    border:0.5px solid gray;
+}
+
+
+/* dropdown sorting LtoH HtoL */
+.dropdown{
+    display: inline-block;
+    position: relative;
+  
+}
+.dropdown button{
+    border: 1px solid #D4D5D9;
+    padding: 6px;
+    width: 255px;
+    text-align: left;
+  
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    font-size:14px;
+    overflow:initial;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a{
+    display: block;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+}
+.dropdown-content a:hover{
+    color: black;
+    background-color: #E9E9ED;
+}
