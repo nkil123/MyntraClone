@@ -800,4 +800,32 @@ productData.forEach((para) => {
 
 })
 
+ 
 
+
+// Filter for Discount
+let tenArr = [];
+let arr20=[]
+let arr30=[]
+let arr40=[]
+let arr50=[]
+let arr60=[]
+let arr70=[]
+let arr80=[]
+let arr90=[]
+
+productData.forEach((para) => {
+      
+    let  tenBox = document.getElementById('ten')
+    tenBox.addEventListener('change', tenCheck)
+      function tenCheck(){
+       
+          if( tenBox.value <= 90 && tenBox.value == para.discount ){
+              tenArr.push(para)
+              show_products(tenArr)
+
+          }
+
+      }
+
+})
