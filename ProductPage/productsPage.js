@@ -998,3 +998,54 @@ productData.forEach((para) => {
     }
 
 })
+
+
+productData.forEach((para) => {
+      
+  let  thirdBox = document.getElementById('third')
+  thirdBox.addEventListener('change', thirdCheck)
+    function thirdCheck(){
+    
+        if(  thirdBox.value >= 510  &&  thirdBox.value <= 755 && para.price >= 510 && para.price <=755){
+            
+            thirdArr.push(para)
+            show_products(thirdArr)
+
+        }
+
+    }
+
+})
+
+productData.forEach((para) => {
+      
+  let  fourthBox = document.getElementById('fourth')
+  fourthBox.addEventListener('change', fourthCheck)
+    function fourthCheck(){
+    
+        if(  fourthBox.value >= 755  &&  fourthBox.value <= 1000 && para.price >= 755 && para.price <=1000){
+            
+            fourthArr.push(para)
+            show_products(fourthArr)
+
+        }
+
+    }
+
+})
+productData.forEach((para) => {
+      
+  let  fourthBox = document.getElementById('fourth')
+  fourthBox.addEventListener('change', fourthCheck)
+    function fourthCheck(){
+    
+        if(  fourthBox.value >= 755  &&  fourthBox.value <= 1000 && para.price >= 755 && para.price <=1000){
+            
+            fourthArr.push(para)
+            show_products(fourthArr)
+
+        }
+
+    }
+
+})
