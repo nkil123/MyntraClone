@@ -1,6 +1,6 @@
 import {navbar} from '/comps/navbar/navbar.js';
 
-import {foot} from '/comps/footer/footer.js';
+// import {foot} from '/comps/footer/footer.js';
 
 let nav = document.getElementById ('navbar');
 nav.innerHTML = navbar ();
@@ -84,16 +84,16 @@ opt5.onmouseleave = function () {
   toshow5.style.visibility = 'hidden';
 };
 
-let opt6 = document.getElementById ('profileI');
-let toshow6 = document.getElementById ('dprofile');
+// let opt6 = document.getElementById ('profileI');
+// let toshow6 = document.getElementById ('dprofile');
 
-opt6.onmouseover = function () {
-  toshow6.style.visibility = 'visible';
-};
-opt6.onmouseleave = function () {
-  opt6.style.borderBottom = null;
-  toshow6.style.visibility = 'hidden';
-};
+// opt6.onmouseover = function () {
+//   toshow6.style.visibility = 'visible';
+// };
+// opt6.onmouseleave = function () {
+//   opt6.style.borderBottom = null;
+//   toshow6.style.visibility = 'hidden';
+// };
 
 let productData = [
   {
