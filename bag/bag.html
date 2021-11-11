@@ -111,14 +111,19 @@
                 <span class="btns"
                   ><button><strong>REMOVE</strong></button></span
                 ><span class="btns move"
-                  ><button><strong>MOVE TO WISHLIST</strong></button></span
+                  ><button onclick="tranWish()">
+                    <strong>MOVE TO WISHLIST</strong>
+                  </button></span
                 >
               </div>
             </div>
           </div>
           <div class="addMore">
-            <img src="/Images/wish.jpg" class="wish" />&nbsp Add More From
-            Wishlist
+            <img src="/Images/wish.jpg" class="wish" /><a
+              href="/wishlist/wishlist.html"
+            >
+              Add More From Wishlist
+            </a>
           </div>
         </div>
 
@@ -150,7 +155,7 @@
                     class="coupon-img"
                   />&nbsp&nbsp&nbsp&nbsp Apply Coupons</span
                 >
-                <span class="apply-btn">APPLY</span>
+                <button class="apply-btn">APPLY</button>
               </div>
               <hr class="hr2" />
             </div>
@@ -169,7 +174,7 @@
               </div>
               <div class="totalMRP">
                 <div>Coupon Discount</div>
-                <div class="applyCoupon">Apply Coupon</div>
+                <button class="applyCoupon">Apply Coupon</button>
               </div>
               <div class="totalMRP">
                 <div>
@@ -192,7 +197,7 @@
               <img src="/Images/noConvFee.jpg" class="noConvFee" />
             </div>
 
-            <div class="place-btn">PLACE ORDER</div>
+            <button class="place-btn">PLACE ORDER</button>
           </div>
         </div>
       </div>

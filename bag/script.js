@@ -141,15 +141,16 @@ function display (datas) {
 
     let span4 = document.createElement ('span');
 
-    span4.innerHTML = `${element.price + '   '}`;
+    span4.innerHTML = `${'Rs.' + element.price + '   '}`;
 
     let strike = document.createElement ('strike');
 
-    strike.innerHTML = `${element.price + '  '}`;
+    strike.innerHTML = `${'Rs.' + element.price + '  '}`;
 
     let span5 = document.createElement ('span');
 
     span5.innerHTML = '(20% OFF )';
+    span5.style.color = 'red';
 
     spanm.append (span4, strike, span5);
 
