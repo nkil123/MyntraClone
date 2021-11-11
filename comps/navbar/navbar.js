@@ -2,7 +2,7 @@ function navbar () {
   return `<div id="header">
     <!-- <header> -->
 
-    <div class="logo">
+    <div class="logo" id="logo">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS357fHYAnvyZIqrnolaRs3MlCQO7PyKngEag&usqp=CAU"
             alt="" />
     </div>
@@ -608,15 +608,39 @@ function navbar () {
     </div>
 
     <div class="right">
-        <div class="talign">
+        <div class="talign" id="profileI">
             <span class="material-icons">person</span><br />
             <span>Profile</span>
+            <div id="dprofile">
+                <ul>
+                  <li><strong>User</strong></li>
+                  <li>Mobile No.</li>
+                </ul>
+                <ul>
+                  <li>Orders</li>
+                  <li>Wishlist</li>
+                  <li>Gift Cards</li>
+                  <li>Contact Us</li>
+                  <li>Myntra InsiderNew</li>
+                </ul>
+
+                <ul>
+                  <li>Myntra Credit</li>
+                  <li>Coupons</li>
+                  <li>Saved Cards</li>
+                  <li>Saved Addresses</li>
+                </ul>
+                <ul>
+                  <li>Edit Profile</li>
+                  <li>Logout</li>
+                </ul>
+          </div>
         </div>
-        <div class="talign">
+        <div class="talign" id="wishlistI">
             <span class="material-icons">favorite_border</span><br />
             <span>Wishlist</span>
         </div>
-        <div class="talign">
+        <div class="talign" id="bagI">
             <span class="material-icons">shopping_bag</span><br />
             <span>Bag</span>
         </div>

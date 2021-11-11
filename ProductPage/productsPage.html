@@ -1,190 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products Page</title>
-    <link rel="stylesheet" href="productsPage.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="productsPage.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
     <div id="parent_div">
+      <div class="topDiv">Home</div>
+      <div class="topDiv">Online Store & no of items</div>
 
+      <div id="globalDiv">
+        <div id="filters">
+          <div class="" style="font-size: 16px" id="filter_head">
+            <strong>FILTERS</strong>
+          </div>
+          <div class="box">
+            <label class="container"
+              ><input id="men" type="checkbox" value="men" />Men</label
+            >
 
-        <div class="topDiv">Home</div>
-        <div class="topDiv">Online Store & no of items</div>
-      
-        <div id="globalDiv">
-            <div id="filters">
-                <div class="box" style="font-size: 16px;" id="filter_head"><strong>FILTERS</strong></div>
-                <div class="box">
-    
-                   
-                       <label  class="container"><input id="men"  type="checkbox" value='men'>Men</label>
-    
-                       <label  class="container"><input id="women"  type="checkbox" value='women'>Women</label>
-    
-                       <label  class="container"><input id="boys" type="checkbox" value='men'>Boys</label>
-    
-                     <label  class="container"><input id="girls"   type="checkbox" value='women'>Girls</label>
-                   
-    
-                </div>
-    
-                <div class="box">
-                    <p><strong>CATEGORIES</strong></p>
+            <label class="container"
+              ><input id="women" type="checkbox" value="women" />Women</label
+            >
 
-                    <label  class="container"><input type="checkbox" value='tshirt' id="tshirt">Tshirts <span>(533)</span></label>
+            <label class="container"
+              ><input id="boys" type="checkbox" value="boys" />Boys</label
+            >
 
-                    <label  class="container"><input  id= "tops" type="checkbox" value='tops'>Tops <span>(412)</span></label>
+            <label class="container"
+              ><input id="girls" type="checkbox" value="girls" />Girls</label
+            >
+          </div>
 
-                    <label  class="container"><input id="kurta" type="checkbox" value='kurta'>Kurtas <span>(265)</span></label>
+          <div class="box">
+            <p><strong>CATEGORIES</strong></p>
 
-                    <label  class="container"><input id= "earring" type="checkbox" value='earring'>Earrings <span>(784)</span></label>
+            <label class="container"
+              ><input type="checkbox" value="tshirt" id="tshirt" />Tshirts
+              <span>(533)</span></label
+            >
 
-                    <label  class="container"><input id= "shirt" type="checkbox" value='shirt'>Shirts <span>(2432)</span></label>
+            <label class="container"
+              ><input id="tops" type="checkbox" value="tops" />Tops
+              <span>(412)</span></label
+            >
 
-                    <label  class="container"><input id= "dresses" type="checkbox" value='dresses'>Jeans <span>(914)</span></label>
+            <label class="container"
+              ><input id="kurta" type="checkbox" value="kurta" />Kurtas
+              <span>(265)</span></label
+            >
 
-                    <label  class="container"><input id= "shoes" type="checkbox" value='shoes'>Shoes <span>(563)</span></label>
+            <label class="container"
+              ><input id="earring" type="checkbox" value="earring" />Earrings
+              <span>(784)</span></label
+            >
 
-                    <label  class="container"><input id= "short" type="checkbox" value='short'>Shorts <span>(1254)</span></label>
-                </div>
-    
-    
-    
-                <div class="box" >
-                    <p><strong>BRAND</strong></p>
+            <label class="container"
+              ><input id="shirt" type="checkbox" value="shirt" />Shirts
+              <span>(2432)</span></label
+            >
 
-                    <label  class="container"><input id="roadster" type="checkbox" value='Roadster'>Roadster <span>(2432)</span> </label>
+            <label class="container"
+              ><input id="dresses" type="checkbox" value="dresses" />Dresses
+              <span>(914)</span></label
+            >
 
-                    <label  class="container"><input id="dressberry" type="checkbox" value='Dressberry'>Dressberry <span>(2121)</span></label>
+            <label class="container"
+              ><input id="shoes" type="checkbox" value="shoes" />Shoes
+              <span>(563)</span></label
+            >
 
-                    <label  class="container"><input id="clovia" type="checkbox" value='Clovia'>Clovia <span>(2013)</span></label>
+            <label class="container"
+              ><input id="short" type="checkbox" value="short" />Shorts
+              <span>(1254)</span></label
+            >
+          </div>
 
-                    <label  class="container"><input id="here&now" type="checkbox" value='HERE&NOW'>HERE&NOW <span>(1556)</span></label>
+          <div class="box">
+            <p><strong>BRAND</strong></p>
 
-                    <label  class="container"><input id="harbour" type="checkbox" value='Mast & Harbour'>Mast & Harbour<span>(1427)</span></label>
+            <label class="container"
+              ><input id="roadster" type="checkbox" value="Roadster" />Roadster
+              <span>(2432)</span>
+            </label>
 
-                    <label  class="container"><input id="celfie" type="checkbox" value='Celfie Design'>Celfie Design <span>(1427)</span></label>
+            <label class="container"
+              ><input
+                id="dressberry"
+                type="checkbox"
+                value="Dressberry"
+              />Dressberry <span>(2121)</span></label
+            >
 
-                    <label  class="container"><input type="checkbox"  id="kalini" value='KALINI'>KALINI <span>(1436)</span></label>
-    
-                </div>
-    
-    
-                <div class="box">
-    
-                    <p><strong>PRICE</strong></p>
-    
-                    <label  class="container"><input id="first" type="checkbox" value='265'>Rs. 20 to Rs. 265 <span >(6786)</span> </label>
+            <label class="container"
+              ><input id="clovia" type="checkbox" value="Clovia" />Clovia
+              <span>(2013)</span></label
+            >
 
-                    <label  class="container"><input id="second" type="checkbox" value='510'>Rs. 265 to Rs. 510 <span>(1536)</span></label>
+            <label class="container"
+              ><input id="here&now" type="checkbox" value="HERE&NOW" />HERE&NOW
+              <span>(1556)</span></label
+            >
 
-                    <label  class="container"><input id="third" type="checkbox" value='755'>Rs. 510 to Rs. 755 <span>(4565)</span></label>
+            <label class="container"
+              ><input id="harbour" type="checkbox" value="Mast & Harbour" />Mast
+              & Harbour<span>(1427)</span></label
+            >
 
-                    <label  class="container"><input id="fourth" type="checkbox" value='1000'>Rs. 755 to Rs. 1000 <span>(14564)</span></label>
+            <label class="container"
+              ><input id="celfie" type="checkbox" value="Celfie Design" />Celfie
+              Design <span>(1427)</span></label
+            >
 
-                    <label  class="container"><input id="fifth" type="checkbox" value='10000'>Rs. 1000 to Rs. 10,000 <span>(14564)</span></label>
-                   
-                </div>
-    
-                <div class="box">
-                    <p><strong>COLOR</strong></p>
-    
-    
-                    <label  class="container"><input id="black" type="checkbox" value='black'><div class="color" style="background-color:black"></div> Black <span>(4326)</span></label>
-    
-                    <label  class="container"><input  id="blue" type="checkbox" value='blue'><div class="color" style="background-color:blue"></div> Blue <span>(16274)</span></label>
-    
-                    <label  class="container"><input id="white"  type="checkbox" value='white'><div class="color" style="background-color:white"></div> White <span>(10001)</span></label>
-    
-                    <label  class="container"><input  id='pink' type="checkbox" value='pink'><div class="color" style="background-color:pink"></div> Pink <span>(3165)</span></label>
-    
-                    <label  class="container"><input id="navyBlue" type="checkbox" value='navyBlue'><div class="color"
-                        style="background-color:navy" ></div> Navy Blue <span>(3060)</span></label>
-    
-                    <label  class="container"><input id="red"  type="checkbox" value='red'><div class="color" style="background-color:red"></div> Red <span>(4651)</span></label>
+            <label class="container"
+              ><input type="checkbox" id="kalini" value="KALINI" />KALINI
+              <span>(1436)</span></label
+            >
+          </div>
 
-                    <label  class="container"><input id="green" type="checkbox" value='green'><div class="color"style="background-color:green" ></div> Green <span>(4156)</span></label>
-                </div>
+          <div class="box">
+            <p><strong>PRICE</strong></p>
 
+            <label class="container"
+              ><input id="first" type="checkbox" value="265" />Rs. 20 to Rs. 265
+              <span>(6786)</span>
+            </label>
 
-                <div class="box">
-                    <p><strong>DISCOUNT RANGE</strong></p>
+            <label class="container"
+              ><input id="second" type="checkbox" value="510" />Rs. 265 to Rs.
+              510 <span>(1536)</span></label
+            >
 
-                    <label  class="container"><input id="ten" type="checkbox" value="10">10% and above</label> 
+            <label class="container"
+              ><input id="third" type="checkbox" value="755" />Rs. 510 to Rs.
+              755 <span>(4565)</span></label
+            >
 
-                    <label  class="container"><input id='twenty' type="checkbox" value=20>20% and above</label>
+            <label class="container"
+              ><input id="fourth" type="checkbox" value="1000" />Rs. 755 to Rs.
+              1000 <span>(14564)</span></label
+            >
 
-                    <label  class="container"><input id="thirty" type="checkbox" value='30'>30% and above</label>
+            <label class="container"
+              ><input id="fifth" type="checkbox" value="10000" />Rs. 1000 to Rs.
+              10,000 <span>(14564)</span></label
+            >
+          </div>
 
-                    <label  class="container"><input id="fourty" type="checkbox" value='40'>40% and above</label>
+          <div class="box">
+            <p><strong>COLOR</strong></p>
 
-                    <label  class="container"><input id="fifty" type="checkbox" value='50'>50% and above</label>
+            <label class="container"
+              ><input id="black" type="checkbox" value="black" />
+              <div class="color" style="background-color: black"></div>
+              Black <span>(4326)</span></label
+            >
 
-                    <label  class="container"><input id="sixty"  type="checkbox" value='60'>60% and above</label>
+            <label class="container"
+              ><input id="blue" type="checkbox" value="blue" />
+              <div class="color" style="background-color: blue"></div>
+              Blue <span>(16274)</span></label
+            >
 
-                    <label  class="container"><input id="seventy" type="checkbox" value='70'>70% and above</label>
+            <label class="container"
+              ><input id="white" type="checkbox" value="white" />
+              <div class="color" style="background-color: white"></div>
+              White <span>(10001)</span></label
+            >
 
-                    <label  class="container"><input id="eighty" type="checkbox" value='80'>80% and above</label>
+            <label class="container"
+              ><input id="pink" type="checkbox" value="pink" />
+              <div class="color" style="background-color: pink"></div>
+              Pink <span>(3165)</span></label
+            >
 
-                    <label  class="container"><input id="ninety" type="checkbox" value='90'>90% and above</label>
+            <label class="container"
+              ><input id="navyBlue" type="checkbox" value="navyBlue" />
+              <div class="color" style="background-color: navy"></div>
+              Navy Blue <span>(3060)</span></label
+            >
 
-     
-                </div>
-    
-            </div>
-            <div >
-    
-                <div id="top_product_cont_div"> 
-                    <div>
-                        <select name="" id="bundles">
-                            <option value="bundles">Bundles</option>
-                        </select>
-                    </div>
-    
-               <div>
-                <select name="" id="contryOfOrigin">
-                    <option value="">Country Of Origin</option>
-                    <option value="india">India</option>
-                    <option value="all countries">All countries</option>
-                </select>
-               </div>
-    
-                    <div class="size">
-                        <select name="" >
-                            <option value="">Size</option>
-                            <option value="small">Small</option>
-                            <option value="midium">Medium</option>
-                            <option value="larg">Larg</option>
-        
-                        </select>
-                    </div>
-                <div class="dropdown" >
-                    <button>Sort by : <strong>Recommended</strong></button>
-                    <div class="dropdown-content">
-                        <a onclick="whatsnew()">What's New</a>
-                        <a onclick=popularity()>Popularity</a>
-                        <a onclick="betterDiscount()">Better Discount</a>
-                        <a  onclick=sortHightoLow()>Price High to Low</a>
-                        <a onclick=sortLowtoHigh()>Price Low to High</a>
-                        <a onclick=costomerRating()>Customer Rating</a>
-                    </div>
-                </div>
-               
-            
-            </div>
-    
-                <div id="products_cont">
+            <label class="container"
+              ><input id="red" type="checkbox" value="red" />
+              <div class="color" style="background-color: red"></div>
+              Red <span>(4651)</span></label
+            >
 
-                </div>
-            </div>
-          
+            <label class="container"
+              ><input id="green" type="checkbox" value="green" />
+              <div class="color" style="background-color: green"></div>
+              Green <span>(4156)</span></label
+            >
+          </div>
+
+          <div class="box">
+            <p><strong>DISCOUNT RANGE</strong></p>
+
+            <label class="container"
+              ><input id="ten" type="checkbox" value="10" />10% and above</label
+            >
+
+            <label class="container"
+              ><input id="twenty" type="checkbox" value="20" />20% and
+              above</label
+            >
+
+            <label class="container"
+              ><input id="thirty" type="checkbox" value="30" />30% and
+              above</label
+            >
+
+            <label class="container"
+              ><input id="fourty" type="checkbox" value="40" />40% and
+              above</label
+            >
+
+            <label class="container"
+              ><input id="fifty" type="checkbox" value="50" />50% and
+              above</label
+            >
+
+            <label class="container"
+              ><input id="sixty" type="checkbox" value="60" />60% and
+              above</label
+            >
+
+            <label class="container"
+              ><input id="seventy" type="checkbox" value="70" />70% and
+              above</label
+            >
+
+            <label class="container"
+              ><input id="eighty" type="checkbox" value="80" />80% and
+              above</label
+            >
+
+            <label class="container"
+              ><input id="ninety" type="checkbox" value="90" />90% and
+              above</label
+            >
+          </div>
         </div>
+        <div>
+          <div id="top_product_cont_div">
+            <div>
+              <select name="" id="bundles">
+                <option value="bundles">Bundles</option>
+              </select>
+            </div>
 
+            <div>
+              <select name="" id="contryOfOrigin">
+                <option value="">Country Of Origin</option>
+                <option value="india">India</option>
+                <option value="all countries">All countries</option>
+              </select>
+            </div>
+
+            <div class="size">
+              <select name="">
+                <option value="">Size</option>
+                <option value="small">Small</option>
+                <option value="midium">Medium</option>
+                <option value="larg">Larg</option>
+              </select>
+            </div>
+            <div class="dropdown">
+              <button>Sort by : <strong>Recommended</strong></button>
+              <div class="dropdown-content">
+                <a id="whatsnew">What's New</a>
+                <a id="popularity">Popularity</a>
+                <a id="betterDiscount">Better Discount</a>
+                <a id="sortHightoLow">Price High to Low</a>
+                <a id="sortLowtoHigh">Price Low to High</a>
+                <a id="costomerRating">Customer Rating</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="products_cont"></div>
+        </div>
+      </div>
+      <!-- <footer id="footer"></footer> -->
     </div>
-   
-</body>
+  </body>
 </html>
-<script src="productsPage.js"></script>
+<script src="productsPage.js" type="module"></script>
