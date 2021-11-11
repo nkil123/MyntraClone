@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <a href="https://icons8.com/icon/88000/down-button"></a>
+</head>
+
+<style>
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div1{
+        height: 79px;
+        width: 1903px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div1main{
+        height: 78px;
+        width: 1750.75px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        width: 60px;
+    }
+
+    .div1b{
+        display: flex;
+        flex-direction: row;
+        letter-spacing: 3px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .bagGreen{
+        color: green;
+        text-decoration: underline;
+    }
+
+    .greenTick{
+        height: 28px;
+        width: 26px;
+    }
+
+    .div1c{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .div2{
+        height: 1000px;
+        width: 1903px;
+        border-top: 1px solid lightgray;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .div2a{
+        height: 749px;
+        width: 614px;
+        border-right: solid 1px lightgray;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 15px 0 0;
+    }
+
+    .div2a1{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        justify-content: space-between;
+        padding: 14px;
+        margin: 10px 0 0 0;
+    }
+
+    .offersList{
+        border: solid 1px lightgray;
+        border-radius: 5px;
+        margin: 10px 0 10px 0;
+    }
+
+    .offers{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    li{
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .discounts{
+        width: 30px;
+    }
+
+    .div2a3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div2b{
+        height: 602px;
+        width: 336px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div2b1{
+        height: 264px;
+        width: 320px;
+        padding: 24px 0 0 16px;
+    }
+
+    .div2b2{
+        height: 234px;
+        width: 320px;
+        padding: 20px 0 0 16px;
+    }
+
+    .div2b1-donate{
+        height: 17px;
+        width: 320px;
+        font-size: 12px;
+        margin: 0 0 24px 0;
+    }
+
+    .div2b1-help{
+        font-size: 14px;
+        font-weight: 700;
+        height: 20px;
+        width: 320px;
+    }
+
+    .div2b1-amount{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 15px 0 15px 0;
+    }
+
+    .r10, .r50, .r100, .rOther {
+        font-size: 14px;
+        font-weight: 600;
+        border: solid 1px lightgray;
+        border-radius: 40px;
+        padding: 10px;
+        height: 15px;
+    }
+
+    .knowMore{
+        color: #ff3f6c;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .knowMore1{
+        color: #ff3f6c;
+        font-weight: 600;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        padding: 0 0 10px 30px;
+    }
+
+    .coupons1{
+        font-size: 12px;
+        margin: 15px 0 15px 0;
+    }
+
+    .coupons2{
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .coupon-img{
+        width: 25px;
+    }
+
+    .apply-cpn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apply-btn{
+        height: 27px;
+        width: 68px;
+        border: 1px solid #ff3f6c;
+        font-size: 12px;
+        font-weight: 600;
+        color: #ff3f6c;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .priceDetails{
+        margin: 5px 0 10px 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(124, 120, 120);
+    }
+
+    .totalMRP{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .applyCoupon{
+        color: #ff3f6c;
+        font-weight: 400;
+    }
+
+    .finalTotal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: 700;
+    }
+
+    .noConvFee{
+        width: 320px;
+        margin: 0 0 0 16px;
+    }
+
+    .green{
+        color: green;
+    }
+
+    .bold{
+        font-weight: 700;
+    }
+
+    .bg-gr{
+        background-color: lightgreen;
+    }
+
+    .place-btn{
+        display: flex;
+        height: 40px;
+        width: 320px;
+        border-radius: 2px;
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 15px;
+        background: #ff3f6c;
+        /* padding: 10px 10px; */
+        letter-spacing: 1px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0 16px;
+    }
+
+    .address{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .del-to{
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .del-add{
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .chng-add{
+        height: 35px;
+        width: 135.016px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px #ff3f6c;
+        color: #ff3f6c;
+        background-color: #ffffff;
+        font-weight: 600;
+        border-radius: 6px;
+        font-size: 12px;
+    }
+
+    .hr{
+        margin-top: 20px;
+        border: 1px solid lightgray;
+    }
+
+    .hr2{
+        margin-top: 15px;
+        border: 1px solid lightgray;
+    }
+
+    #showDiv{
+        display: none;
+    }
+
+    .green-txt {
+        color: rgb(8, 199, 8);
+    }
+
+    .itemSelected{
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 5px 20px 5px;
+    }
+
+    .remove{
+        font-size: 12px;
+        line-height: 16px;
+        border-right: solid 2px gray;
+        margin-left: 200px;
+        padding-right: 25px;
+    }
+
+    .move{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .product{
+        display: flex;
+        flex-direction: row;
+        border: solid 1px lightgray;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .product1{
+        padding: 2px 10px 2px 2px;
+    }
+
+    .product2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .p1{
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .p2{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .p3{
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .addMore{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: solid 1px lightgray;
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 15px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    input[type=checkbox]:checked{
+        text-decoration: #ff3f6c;
+        color: #ff3f6c;
+        background-color: #ff3f6c;
+    }
+
+    .red-txt{
+        color: #ff3f6c;
+    }
+
+    .tick{
+        width: 12px;
+    }
+
+    .wish{
+        width: 15px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="div1">
+            <div class="div1main">
+                <div class="div1a">
+                    <img class="logo" src="Images/myntraLogo.jpg">
+                </div>
+    
+                <div class="div1b">
+                    <a><p class="bagGreen">BAG</p></a><p>&nbsp&nbsp--------&nbsp&nbsp</p><a><p>ADDRESS</p></a><p>&nbsp&nbsp--------&nbsp&nbsp</p><a><p>PAYMENT</p></a>
+                </div>
+    
+                <div class="div1c">
+                    <img class="greenTick" src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png">
+                    <p>100% SECURE</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="div2">
+            <div class="div2a">
+                <div class="div2a1">
+                    <div class="address">
+                        <div class="del-to">
+                            Deliver to: <span class="bold">John Doe, PIN</span>
+                        </div>
+                        <div class="del-add">
+                            B-805, Future Towers, Amnora Park Town, Hadapsar, Pune.
+                        </div>
+                    </div>
+
+                    <div class="chng-add">
+                        CHANGE ADDRESS
+                    </div>
+                </div>
+
+                <div class="div2a2">
+                    <div class="offersList">
+                        <ul>
+                            <span class="bold offers"><img src="Images/discounts.jpg" class="discounts">&nbsp&nbsp Available Offers</span>
+                            <li>10% Instant Discount with HSBC Credit cards up to Rs 1,000 on min spend of Rs 3,500. TCA</li><span id="dots">...</span>
+                            <span id="showDiv">
+                                <li>5% Unlimited Cashback on Flipkart Axis Bank Credit Card. TCA</li>
+                                <li>10% Cashback up to Rs 750 on Dhani OneFreedom Card on a min spend of Rs 1,200. TCA</li>
+                                <li>Upto Rs 500 Cashback on Mobikwik wallet transaction of min Rs 999. Use Code MBK500 on Mobikwik. TCA</li>
+                                <li>5% Cashback upto Rs 200 on a minimum spend of Rs 1,500 with PayZapp. TCA</li>
+                                <li>Flat Rs 200 Cashback on first Airtel Payments Bank transaction on Myntra on a min spend of Rs 2000. TCA</li>
+                            </span>
+                        </ul>
+                        <div class="knowMore1" onclick="showFunction()" id="myBtn">Show More <img src="https://img.icons8.com/material-outlined/18/000000/circled-chevron-down.png"/></div>
+                    </div>
+                </div>
+
+                <div class="div2a3">
+                    <div class="itemSelected">
+                        <input type="checkbox" checked>2/2 ITEMS SELECTED <span class="remove">REMOVE</span><span class="move">MOVE TO WISHLIST</span>
+                    </div>
+
+                    <div class="product">
+                        <div class="product1">
+                            <img src="https://assets.myntassets.com/f_webp,w_111,h_148,dpr_1,q_95,c_limit,fl_progressive/h_148,q_95,w_111/v1/assets/images/11744404/2020/6/16/ba3e2c78-6f96-4e32-a693-2cc39182d2781592297707439-Urbano-Fashion-Mens-Black-Yellow-Grey-Round-Neck-Full-Sleeve-1.jpg">
+                        </div>
+                        <div class="product2">
+                            <span class="p1">Urbano Fashion</span>
+                            <span class="p2">Men Black & Grey Colourblocked Round Neck T-shirt</span>
+                            <span class="p3">Sold by: Imperial Online Services Pvt. Ltd</span>
+                            <span class="size-qt">
+                                <button>Size: L</button>
+                                <button>Qty: 1</button>
+                            </span>   
+                            <span>Rs.899 &nbsp&nbsp&nbsp&nbsp<strike>Rs.1299</strike>&nbsp&nbsp&nbsp<span class="red-txt">20% OFF</span></span>
+                            <span><img src="Images/tick.jpg" class="tick">  Delivery by 20th Nov 2021</span>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product1">
+                            <img src="https://assets.myntassets.com/f_webp,w_111,h_148,dpr_1,q_95,c_limit,fl_progressive/h_148,q_95,w_111/v1/assets/images/11744404/2020/6/16/ba3e2c78-6f96-4e32-a693-2cc39182d2781592297707439-Urbano-Fashion-Mens-Black-Yellow-Grey-Round-Neck-Full-Sleeve-1.jpg">
+                        </div>
+                        <div class="product2">
+                            <span class="p1">Urbano Fashion</span>
+                            <span class="p2">Men Black & Grey Colourblocked Round Neck T-shirt</span>
+                            <span class="p3">Sold by: Imperial Online Services Pvt. Ltd</span>
+                            <span class="size-qt">
+                                <button>Size: L</button>
+                                <button>Qty: 1</button>
+                            </span>   
+                            <span>Rs.899 &nbsp&nbsp&nbsp&nbsp<strike>Rs.1299</strike>&nbsp&nbsp&nbsp<span class="red-txt">20% OFF</span></span>
+                            <span><img src="Images/tick.jpg" class="tick">  Delivery by 20th Nov 2021</span>
+                        </div>
+                    </div>
+
+                    <div class="addMore">
+                        <img src="Images/wish.jpg" class="wish">&nbsp Add More From Wishlist
+                    </div>
+                </div>
+            </div>
+
+            <div class="div2b">
+                <div class="div2b1">
+                    <div class="div2b1-donate">
+                        DONATE FOR COVID-19 RELIEF
+                    </div>
+
+                    <div class="div2b1-help">
+                        <input type="checkbox" id="help-india" name="help-india">
+                        <label for="help-india">Help India fight COVID-19</label>
+                    </div>
+
+                    <div class="div2b1-amount">
+                        <div class="r10">
+                            Rs 10
+                        </div>
+                        <div class="r50">
+                            Rs 50
+                        </div>
+                        <div class="r100">
+                            Rs 100
+                        </div>
+                        <div class="rOther">
+                            Other
+                        </div>
+                    </div>
+
+                    <div class="knowMore">
+                        Know More
+                    </div>
+                    <hr class="hr">
+
+                    <div class="coupons">
+                        <div class="coupons1">
+                            COUPONS
+                        </div>
+                        <div class="coupons2">
+                            <span class="apply-cpn"><img src="Images/Coupon.jpg" class="coupon-img">&nbsp&nbsp&nbsp&nbsp Apply Coupons</span>
+                            <span class="apply-btn">APPLY</span>
+                        </div>
+                        <hr class="hr2">
+                    </div>
+
+                </div>
+
+                <div class="div2b2">
+                    <div class="priceDetails">
+                        PRICE DETAILS(2 Items)
+                    </div>
+                    <div class="totalAmt">
+                        <div class="totalMRP">
+                            <div>Total MRP</div>
+                            <div>0000</div>
+                        </div>
+                        <div class="totalMRP">
+                            <div>Discount On MRP</div>
+                            <div class="green-txt">-0000</div>
+                        </div>
+                        <div class="totalMRP">
+                            <div>Coupon Discount</div>
+                            <div class="applyCoupon">Apply Coupon</div>
+                        </div>
+                        <div class="totalMRP">
+                            <div>Convinience Fee<span class="knowMore">&nbsp&nbsp&nbsp Know More</span></div>
+                            <div class="green-txt">FREE</div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="finalTotal">
+                        <div>Total Amount</div>
+                        <div>0000</div>
+                    </div>
+                </div>
+
+                <div class="div2b3">
+                    <div class="noConFee">
+                        <img src="Images/noConvFee.jpg" class="noConvFee">
+                    </div>
+
+                    <div class="place-btn">
+                        PLACE ORDER
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+    function showFunction() {
+        let dots = document.getElementById("dots");
+        let moreText = document.getElementById("showDiv");
+        let btnText = document.getElementById("myBtn");
+
+        if(dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Show More";
+            moreText.style.display = "none";
+        }
+        else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Show Less";
+            moreText.style.display = "inline";
+        }
+    }
+</script>
