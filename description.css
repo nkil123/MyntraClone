@@ -1,9 +1,7 @@
  
       #Myn_pro {
         display:grid;
-         grid-template-columns: 50% 49%;
-        grid-gap: 1%;
-        height: 100%; 
+         grid-template-columns: 50% 50%;
         padding: 5%;
       } 
    
@@ -22,9 +20,9 @@
       font-family:Whitney-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,  Helvetica,Arial, sans-serif;
   }
    .imge{
-      height:494.953px;
-      width:369.219px;
-  
+      width:98%;
+      height: 98%;
+      margin: 0%;
   } 
    .imge:hover{
         transform: scale(1.025); 
@@ -65,7 +63,7 @@
           grid-template-rows: 50% 50%;
           grid-template-columns: 50% 50%;
           grid-gap: 0;
-          height: 90%;
+          height: 70%;
           width: 95%;
       }
       .div_33{
