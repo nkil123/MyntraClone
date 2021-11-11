@@ -2,13 +2,14 @@
 let productData = [
     {
         id:11,
+        categories: "shirt",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Blue Regular Fit Printed Casual Shirt",
         price: "699",
         gender:'men',
         description: 'Green and White printed casual shirt, has a spread collar, short sleeves, button placket, curved hem, and 1 patch pocket',
         brand: "Roadster",
-        color: "blue",
+        color: "navyBlue",
         discount: 40,
         off_price: 1049,
         images:{
@@ -22,6 +23,7 @@ let productData = [
     },
     {
         id:12,
+        categories:"shirt",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Blue Slim Fit Solid Casual Shirt",
         price: "579",
@@ -42,10 +44,11 @@ let productData = [
     },
     {
         id:13,
+        categories:"kurta",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Grey & Blue Self Design Kurta with Churidar & Nehru Jacket",
         price: "2199",
-        gender:'men',
+        gender:'women',
         description: '',
         brand: "Clovia",
         color: "white",
@@ -64,6 +67,7 @@ let productData = [
     },
     {
         id:14,
+        categories:"tshirt",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men White & Navy Blue Pure Cotton Striped Polo Collar T-shirt",
         price: "359",
@@ -85,6 +89,7 @@ let productData = [
     },
     {
         id:15,
+        categories:"short",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Navy Blue Solid Slim Fit Chino Shorts",
         price: "686",
@@ -106,6 +111,7 @@ let productData = [
     },
     {
         id:16,
+        categories:"shirt",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Pink Slim Fit White Vertical Stripes Formal Shirt",
         price: "2980",
@@ -127,12 +133,13 @@ let productData = [
     },
     {
         id:17,
+        categories:"kurta",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Red & Green Striped Pure Cotton Kurta",
         price: "854",
         gender:'men',
         description: '',
-        brand: "KALANI",
+        brand: "KALINI",
         color: "red",
         discount: 55,
         off_price: 1899,
@@ -148,6 +155,7 @@ let productData = [
     },
     {
         id:18,
+        categories:"shoes",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Tan Mouse High Cushioning Running Shoes",
         price: "749",
@@ -169,6 +177,7 @@ let productData = [
     },
     {
         id:19,
+        categories:"shoes",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Unisex Black Precision V Basketball Shoes",
         price: "4599",
@@ -190,6 +199,7 @@ let productData = [
     },
     {
         id:20,
+        categories:"tshirt",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Light Blue Logo Printed Slim Fit Casual T-shirt",
         price: "3299",
@@ -217,7 +227,7 @@ let productData = [
 
 
 var products_cont = document.getElementById('products_cont')
-var products_box = document.getElementById('products_box')
+
 
 function  show_products(products){
 
@@ -278,9 +288,6 @@ function  show_products(products){
 show_products(productData)
 
 
-
-
-
 function sortLowtoHigh(){
 
 let arr = productData.sort((a,b)=>{
@@ -335,3 +342,460 @@ function popularity(){
     console.log(arr)
     show_products(arr)
 }
+
+//checkboxes sorting for gender
+
+let menArr=[]
+let womenArr=[]
+let boysArr=[]
+let girlsArr=[]
+
+
+productData.forEach((para) => {
+     
+    let menBox = document.getElementById('men')
+    menBox.addEventListener('change',menCheck)
+
+    function menCheck(){
+        console.log(menBox.value)
+        if(menBox.value == para.gender && menBox.value == "men"){
+            menArr.push(para)
+            show_products(menArr)
+        }
+    }
+
+})
+
+productData.forEach((para) => {
+    
+    let womenBox = document.getElementById('women')
+    womenBox.addEventListener('change',womenCheck)
+
+    function womenCheck(){
+        
+        console.log(womenBox.value)
+        if(womenBox.value == para.gender && womenBox.value == "women"){
+            womenArr.push(para)
+            show_products(womenArr)
+        }
+    }
+
+})
+productData.forEach((para) => {
+
+    let boysBox = document.getElementById('boys')
+    boysBox.addEventListener('change',boysCheck)
+
+    function boysCheck(){
+        
+        console.log(boysBox.value)
+        if(boysBox.value == para.gender && boysBox.value == "boys"){
+            boysArr.push(para)
+            show_products(boysArr)
+        }
+    }
+
+})
+productData.forEach((para) => {
+
+    let girlsBox = document.getElementById('girls')
+    girlsBox.addEventListener('change',girlsCheck)
+
+    function girlsCheck(){
+        
+        console.log(girlsBox.value)
+        if(girlsBox.value == para.gender && girlsBox.value == "girls"){
+            girlsArr.push(para)
+            show_products(girlsArr)
+        }
+    }
+
+})
+
+
+
+// checkboxe sorting for categories
+let shirtArr=[]
+let tshirtArr=[]
+let topsArr=[]
+let kurtaArr=[]
+let earringArr=[]
+let dressesArr=[]
+let shoesArr=[]
+let shortArr=[]
+
+productData.forEach((para) => {
+      
+      let tshirtBox = document.getElementById('tshirt')
+      tshirtBox.addEventListener('change',tshirtCheck)
+        function tshirtCheck(){
+         
+            if(tshirtBox.value == "tshirt" && tshirtBox.value== para.categories ){
+                tshirtArr.push(para)
+                show_products(tshirtArr)
+
+            }
+
+        }
+
+})
+
+productData.forEach((para) => {
+      
+      let topsBox = document.getElementById('tops')
+      topsBox.addEventListener('change',topsCheck)
+        function topsCheck(){
+         
+            if(topsBox.value == "tops" && topsBox.value== para.categories ){
+                topsArr.push(para)
+                show_products(topsArr)
+
+            }
+
+        }
+
+})
+
+productData.forEach((para) => {
+      
+    let kurtaBox = document.getElementById('kurta')
+    kurtaBox.addEventListener('change',kurtaCheck)
+      function kurtaCheck(){
+       
+          if(kurtaBox.value == "kurta" && kurtaBox.value== para.categories ){
+              kurtaArr.push(para)
+              show_products(kurtaArr)
+
+          }
+
+      }
+
+})
+
+
+productData.forEach((para) => {
+      
+    let earringBox = document.getElementById('earring')
+    earringBox.addEventListener('change',earringCheck)
+      function earringCheck(){
+       
+          if(earringBox.value == "earring" && earringBox.value== para.categories ){
+              earringArr.push(para)
+              show_products(earringArr)
+
+          }
+
+      }
+
+})
+
+
+productData.forEach((para) => {
+      
+    let shirtBox = document.getElementById('shirt')
+    shirtBox.addEventListener('change',shirtCheck)
+      function shirtCheck(){
+       
+          if(shirtBox.value == "shirt" && shirtBox.value== para.categories ){
+              shirtArr.push(para)
+              show_products(shirtArr)
+
+          }
+
+      }
+
+})
+
+
+productData.forEach((para) => {
+      
+      let dressesBox = document.getElementById('dresses')
+      dressesBox.addEventListener('change',dressesCheck)
+        function dressesCheck(){
+         
+            if(dressesBox.value == "dresses" && dressesBox.value== para.categories ){
+                dressesArr.push(para)
+                show_products(dressesArr)
+
+            }
+
+        }
+
+})
+
+
+productData.forEach((para) => {
+
+    let shoesBox = document.getElementById('shoes')
+    shoesBox.addEventListener('change',shoesCheck)
+      function shoesCheck(){
+
+          if(shoesBox.value == "shoes" && shoesBox.value== para.categories ){
+              shoesArr.push(para)
+              show_products(shoesArr)
+          }
+
+      }
+
+})
+
+productData.forEach((para) => {
+      
+    let shortBox = document.getElementById('short')
+    shortBox.addEventListener('change',shortCheck)
+      function shortCheck(){
+       
+          if(shortBox.value == "short" && shortBox.value== para.categories ){
+              shortArr.push(para)
+              show_products(shortArr)
+
+          }
+
+      }
+
+})
+
+
+// Checkbox sorting by Brands 
+
+let roadsterArr=[]
+let dressberryArr=[]
+let cloviaArr=[]
+let harbourArr=[]
+let celfieArr=[]
+let kaliniArr=[]
+
+
+productData.forEach((para) => {
+      
+    let roadsterBox = document.getElementById('roadster')
+    roadsterBox.addEventListener('change',roadsterCheck)
+      function roadsterCheck(){
+       
+          if(roadsterBox.value == "Roadster" && roadsterBox.value == para.brand ){
+              roadsterArr.push(para)
+              show_products(roadsterArr)
+
+          }
+
+      }
+
+})
+
+
+productData.forEach((para) => {
+      
+    let dressberryBox = document.getElementById('dressberry')
+    dressberryBox.addEventListener('change',dressberryCheck)
+      function dressberryCheck(){
+       
+          if(dressberryBox.value == "Dressberry" && dressberryBox.value == para.brand ){
+              dressberryArr.push(para)
+              show_products(dressberryArr)
+
+          }
+
+      }
+
+})
+productData.forEach((para) => {
+      
+    let cloviaBox = document.getElementById('clovia')
+    cloviaBox.addEventListener('change',cloviaCheck)
+      function cloviaCheck(){
+       
+          if(cloviaBox.value == "Clovia" && cloviaBox.value == para.brand ){
+              cloviaArr.push(para)
+              show_products(cloviaArr)
+
+          }
+
+      }
+
+})
+productData.forEach((para) => {
+      
+    let herenowBox = document.getElementById('here&now')
+    herenowBox.addEventListener('change',herenowCheck)
+      function herenowCheck(){
+       
+          if(herenowBox.value == "HERE&NOW" && herenowBox.value == para.brand ){
+              herenowArr.push(para)
+              show_products(herenowArr)
+
+          }
+
+      }
+
+})
+
+productData.forEach((para) => {
+      
+    let harbourBox = document.getElementById('harbour')
+    harbourBox.addEventListener('change',harbourCheck)
+      function harbourCheck(){
+       
+          if(harbourBox.value == "Mast & Harbour" && harbourBox.value == para.brand ){
+              harbourArr.push(para)
+              show_products(harbourArr)
+
+          }
+
+      }
+
+})
+
+
+productData.forEach((para) => {
+      
+    let celfieBox = document.getElementById('celfie')
+    celfieBox.addEventListener('change',celfieCheck)
+      function celfieCheck(){
+       
+          if(celfieBox.value == "Celfie Design" && celfieBox.value == para.brand ){
+              celfieArr.push(para)
+              show_products(celfieArr)
+
+          }
+
+      }
+
+})
+
+productData.forEach((para) => {
+      
+    let kaliniBox = document.getElementById('kalini')
+    kaliniBox.addEventListener('change',kaliniCheck)
+      function kaliniCheck(){
+       
+          if(kaliniBox.value == "KALINI" && kaliniBox.value == para.brand ){
+              kaliniArr.push(para)
+              show_products(kaliniArr)
+
+          }
+
+      }
+
+})
+
+
+// Color filters
+let blackArr = []
+let blueArr = []
+let whiteArr = []
+let pinkArr = []
+let navyBlueArr = []
+let redArr = []
+let greenArr = []
+
+
+productData.forEach((para) => {
+      
+    let blackBox = document.getElementById('black')
+    blackBox.addEventListener('change',blackCheck)
+      function blackCheck(){
+       
+          if(blackBox.value == "black" && blackBox.value == para.color ){
+              blackArr.push(para)
+              show_products(blackArr)
+
+          }
+
+      }
+
+})
+
+productData.forEach((para) => {
+      
+    let  blueBox = document.getElementById('blue')
+     blueBox.addEventListener('change', blueCheck)
+      function blueCheck(){
+       
+          if( blueBox.value == "blue" &&  blueBox.value == para.color ){
+               blueArr.push(para)
+              show_products(blueArr)
+
+          }
+
+      }
+
+})
+
+productData.forEach((para) => {
+      
+    let  whiteBox = document.getElementById('white')
+    whiteBox.addEventListener('change', whiteCheck)
+      function whiteCheck(){
+       
+          if( whiteBox.value == "white" && whiteBox.value == para.color ){
+              whiteArr.push(para)
+              show_products(whiteArr)
+
+          }
+
+      }
+
+})
+productData.forEach((para) => {
+      
+    let  pinkBox = document.getElementById('pink')
+    pinkBox.addEventListener('change', pinkCheck)
+      function pinkCheck(){
+       
+          if( pinkBox.value == "pink" && pinkBox.value == para.color ){
+              pinkArr.push(para)
+              show_products(pinkArr)
+
+          }
+
+      }
+
+})
+
+
+productData.forEach((para) => {
+      
+    let  navyBlueBox = document.getElementById('navyBlue')
+    navyBlueBox.addEventListener('change', navyBlueCheck)
+      function navyBlueCheck(){
+       
+          if( navyBlueBox.value == "navyBlue" && navyBlueBox.value == para.color ){
+              navyBlueArr.push(para)
+              show_products(navyBlueArr)
+
+          }
+
+      }
+    })
+
+productData.forEach((para) => {
+      
+    let  redBox = document.getElementById('red')
+    redBox.addEventListener('change', redCheck)
+      function redCheck(){
+       
+          if( redBox.value == "red" && redBox.value == para.color ){
+              redArr.push(para)
+              show_products(redArr)
+
+          }
+
+      }
+
+})
+
+productData.forEach((para) => {
+      
+    let  greenBox = document.getElementById('green')
+    greenBox.addEventListener('change', greenCheck)
+      function greenCheck(){
+       
+          if( greenBox.value == "green" && greenBox.value == para.color ){
+              greenArr.push(para)
+              show_products(greenArr)
+
+          }
+
+      }
+
+})

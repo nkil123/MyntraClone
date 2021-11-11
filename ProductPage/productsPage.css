@@ -10,14 +10,10 @@
     background-color: #FFFFFF;
     max-width: 1600px;
     max-height: 38.666px;
-    padding: 10px;
+    padding: 10px 0px;
     font-size: 16px;
 }
 
-#top_product_cont_div{
-    display: flex;
-    padding: 10px;
-}
 
 #globalDiv{
     margin:  auto;
@@ -26,24 +22,14 @@
     grid-template-columns: 252px 1348px;
     width: 100%;
 }
-#filter_head{
-    border-right:1px solid #FFFFFF;
-    border-bottom:1px solid #EDEBEF;
-    padding: 15px;
+
+
+/* Just above products container div */
+#top_product_cont_div{
+    display: flex;
+    padding: 10px;
 }
 
-#globalDiv .checkbox{
-    border-right: 1px solid #EDEBEF;
-    border-bottom: 1px solid #E9E9ED;
-    padding:15px;
-    font-size: 14px;
-    
-}
-.checkbox span{
-    padding: 3px;
-    color: gray;
-    font-size: 11px;
-}
 #top_product_cont_div{
  display: flex;
  gap: 20px;
@@ -100,18 +86,17 @@ span{
  font-size:14px;
 }
 
-/* products container div after hover */
-
-#products_cont .box{
-    position: absolute;
-    background: #FFFFFF;
-    /* transform: scaleY(0);
-    transition: transform 5s; */
-}
 
 
 
 /* checkboxes */
+
+#filter_head{
+    border-right:1px solid #FFFFFF;
+    border-bottom:1px solid #EDEBEF;
+    padding: 15px 0px;
+}
+
 .container {
     display: block;
     position: relative;
@@ -125,12 +110,25 @@ span{
     border:0.5px solid gray;
 }
 
+.checkbox span{
+    padding: 3px;
+    color: gray;
+    font-size: 11px;
+}
+
+#globalDiv .checkbox{
+    border-right: 1px solid #EDEBEF;
+    border-bottom: 1px solid #E9E9ED;
+    padding:15px;
+    font-size: 14px;
+    
+}
 
 /* dropdown sorting LtoH HtoL */
 .dropdown{
     display: inline-block;
     position: relative;
-  
+   cursor: pointer;
 }
 .dropdown button{
     border: 1px solid #D4D5D9;
