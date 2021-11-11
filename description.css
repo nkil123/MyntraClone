@@ -1,19 +1,20 @@
  
       #Myn_pro {
         display:grid;
-         grid-template-columns: 50% 50%;
+         grid-template-columns: 60% 40%;
         padding: 5%;
+        vertical-align: top;
       } 
    
   #brand_1{
       height:24px;
       width:513.047px;
-      padding:0 0 0 0 ;
+      /* padding:0 0 0 0 ; */
       font-size:24px;
       font-weight: 500;
       line-height:24px;
       word-spacing: 0px;
-      margin-bottom: -20px;
+      /* margin-bottom: -20px; */
       background-color: #FFFFFF;
       color:#282C3F;
       text-decoration: none solid rgb(40,44,63);
@@ -40,7 +41,7 @@
           color: #535665;
           height: 42px;
           width:513.047px;
-          padding: 5px 20px 14px 0;
+          /* padding: 5px 20px 14px 0; */
           
     
       }
@@ -65,6 +66,7 @@
           grid-gap: 0;
           height: 70%;
           width: 95%;
+          /* margin-top: 5%; */
       }
       .div_33{
           display:flex;
