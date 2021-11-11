@@ -5,7 +5,7 @@ let productData = [
         categories: "shirt",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Blue Regular Fit Printed Casual Shirt",
-        price: "699",
+        price:699,
         gender:'men',
         description: 'Green and White printed casual shirt, has a spread collar, short sleeves, button placket, curved hem, and 1 patch pocket',
         brand: "Roadster",
@@ -26,7 +26,7 @@ let productData = [
         categories:"shirt",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Blue Slim Fit Solid Casual Shirt",
-        price: "579",
+        price: 579,
         gender:'men',
         description: 'Blue solid casual shirt, has a spread collar, button placket, 1 pocket, long sleeves, curved hem',
         brand: "HERE&NOW",
@@ -47,7 +47,7 @@ let productData = [
         categories:"kurta",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Grey & Blue Self Design Kurta with Churidar & Nehru Jacket",
-        price: "2199",
+        price: 2199,
         gender:'women',
         description: '',
         brand: "Clovia",
@@ -70,7 +70,7 @@ let productData = [
         categories:"tshirt",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men White & Navy Blue Pure Cotton Striped Polo Collar T-shirt",
-        price: "359",
+        price: 359,
         gender:'men',
         description: 'White and navy blue Tshirt for men',
         brand: "Mast & Harbour",
@@ -92,7 +92,7 @@ let productData = [
         categories:"short",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Navy Blue Solid Slim Fit Chino Shorts",
-        price: "686",
+        price: 686,
         gender:'men',
         description: '',
         brand: "Dressberry",
@@ -114,12 +114,12 @@ let productData = [
         categories:"shirt",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Pink Slim Fit White Vertical Stripes Formal Shirt",
-        price: "2980",
+        price: 2980,
         gender:'men',
         description: 'Pink white vertical stripes opaque formal  shirt ,has a spread collar, button placket, patch pocket, long sleeve  straight hem.',
         brand: "Celfie Design",
         color: "pink",
-        discount: 11,
+        discount: 90,
         off_price: 3349,
         images:{
            
@@ -136,7 +136,7 @@ let productData = [
         categories:"kurta",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Red & Green Striped Pure Cotton Kurta",
-        price: "854",
+        price: 854,
         gender:'men',
         description: '',
         brand: "KALINI",
@@ -158,7 +158,7 @@ let productData = [
         categories:"shoes",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Tan Mouse High Cushioning Running Shoes",
-        price: "749",
+        price: 749,
         gender:'men',
         description: 'Textured and patterned outsole',
         brand: "Roadster",
@@ -180,12 +180,12 @@ let productData = [
         categories:"shoes",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Unisex Black Precision V Basketball Shoes",
-        price: "4599",
+        price: 4599,
         gender:'men',
         description: '',
         brand: "Roadster",
         color: "black",
-        discount: 25,
+        discount: 75,
         off_price: 4999,
         images:{
             image1: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15384986/2021/10/27/73fc1074-0a84-4845-b452-9a6a080be4cb1635336510062-Nike-Precision-5-Basketball-Shoes-5381635336509646-1.jpg",
@@ -202,12 +202,12 @@ let productData = [
         categories:"tshirt",
         size:'Sizes : 39, 40, 42, 44...',
         title: "Men Light Blue Logo Printed Slim Fit Casual T-shirt",
-        price: "3299",
+        price: 3299,
         gender:'men',
         description: 'Blue T-shirt for men',
         brand: "Roadster",
         color: "blue",
-        discount: 10,
+        discount: 80,
         off_price: 3399,
         images:{
             image1: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14590966/2021/9/29/3ae9949f-002c-4329-9590-7182c6ebd1421632910116761-Calvin-Klein-Jeans-Men-Tshirts-4161632910116207-1.jpg",
@@ -805,14 +805,14 @@ productData.forEach((para) => {
 
 // Filter for Discount
 let tenArr = [];
-let arr20=[]
-let arr30=[]
-let arr40=[]
-let arr50=[]
-let arr60=[]
-let arr70=[]
-let arr80=[]
-let arr90=[]
+let twentyArr=[]
+let thirtyArr = [];
+let fourtyArr=[]
+let fiftyArr=[]
+let sixtyArr=[]
+let seventyArr=[]
+let eightyArr=[]
+let ninetyArr=[]
 
 productData.forEach((para) => {
       
@@ -820,12 +820,181 @@ productData.forEach((para) => {
     tenBox.addEventListener('change', tenCheck)
       function tenCheck(){
        
-          if( tenBox.value <= 90 && tenBox.value == para.discount ){
+          if( tenBox.value <= 90 && tenBox.value <= para.discount ){
               tenArr.push(para)
               show_products(tenArr)
 
           }
 
       }
+
+})
+
+
+productData.forEach((para) => {
+      
+    let  twentyBox = document.getElementById('twenty')
+    twentyBox.addEventListener('change', twentyCheck)
+      function twentyCheck(){
+      
+          if( twentyBox.value <= 90 && twentyBox.value <= para.discount ){
+              twentyArr.push(para)
+              show_products(twentyArr)
+
+          }
+
+      }
+
+})
+
+productData.forEach((para) => {
+      
+    let  thirtyBox = document.getElementById('thirty')
+    thirtyBox.addEventListener('change', thirtyCheck)
+      function thirtyCheck(){
+      
+          if( thirtyBox.value <= 90 && thirtyBox.value <= para.discount ){
+              thirtyArr.push(para)
+              show_products(thirtyArr)
+
+          }
+
+      }
+
+})
+
+productData.forEach((para) => {
+      
+    let  fourtyBox = document.getElementById('fourty')
+    fourtyBox.addEventListener('change', fourtyCheck)
+      function fourtyCheck(){
+      
+          if( fourtyBox.value <= 90 && fourtyBox.value <= para.discount ){
+              fourtyArr.push(para)
+              show_products(fourtyArr)
+
+          }
+
+      }
+
+})
+productData.forEach((para) => {
+      
+    let  fiftyBox = document.getElementById('fifty')
+    fiftyBox.addEventListener('change', fiftyCheck)
+      function fiftyCheck(){
+      
+          if( fiftyBox.value <= 90 && fiftyBox.value <= para.discount ){
+              fiftyArr.push(para)
+              show_products(fiftyArr)
+
+          }
+
+      }
+
+})
+productData.forEach((para) => {
+      
+    let  sixtyBox = document.getElementById('sixty')
+    sixtyBox.addEventListener('change', sixtyCheck)
+      function sixtyCheck(){
+      
+          if( sixtyBox.value <= 90 && sixtyBox.value <= para.discount ){
+              sixtyArr.push(para)
+              show_products(sixtyArr)
+
+          }
+
+      }
+
+})
+productData.forEach((para) => {
+      
+    let  seventyBox = document.getElementById('seventy')
+    seventyBox.addEventListener('change', seventyCheck)
+      function seventyCheck(){
+      
+          if( seventyBox.value <= 90 && seventyBox.value <= para.discount ){
+              seventyArr.push(para)
+              show_products(seventyArr)
+
+          }
+
+      }
+
+})
+productData.forEach((para) => {
+      
+    let  eightyBox = document.getElementById('eighty')
+    eightyBox.addEventListener('change', eightyCheck)
+      function eightyCheck(){
+      
+          if( eightyBox.value <= 90 && eightyBox.value <= para.discount ){
+              eightyArr.push(para)
+              show_products(eightyArr)
+
+          }
+
+      }
+
+})
+productData.forEach((para) => {
+      
+    let  ninetyBox = document.getElementById('ninety')
+    ninetyBox.addEventListener('change', ninetyCheck)
+      function ninetyCheck(){
+      
+          if( ninetyBox.value <= 90 && ninetyBox.value <= para.discount ){
+              ninetyArr.push(para)
+              show_products(ninetyArr)
+
+          }
+
+      }
+
+})
+
+
+// Filter by Price
+
+let firstArr = []
+let secondArr = []
+let thirdArr = []
+let fourthArr = []
+
+productData.forEach((para) => {
+      
+  let  firstBox = document.getElementById('first')
+  firstBox.addEventListener('change', firstCheck)
+    function firstCheck(){
+    
+        if(  firstBox.value >= 20  &&  firstBox.value <= 265 && para.price >= 
+          
+          20 && para.price <=265){
+            console.log(firstBox.value)
+            firstArr.push(para)
+            show_products(firstArr)
+
+        }
+
+    }
+
+})
+
+
+productData.forEach((para) => {
+      
+  let  secondBox = document.getElementById('second')
+  secondBox.addEventListener('change', secondCheck)
+    function secondCheck(){
+    
+        if(  secondBox.value >= 265  &&  secondBox.value <= 510 && para.price >= 265 && para.price <=510){
+            
+            secondArr.push(para)
+            show_products(secondArr)
+
+        }
+
+    }
 
 })
