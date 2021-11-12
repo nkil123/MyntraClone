@@ -212,8 +212,8 @@ span {
   margin: auto;
   background-color: #ffffff;
   display: grid;
-  grid-template-columns: 17% 83%;
-  padding: 20px;
+  grid-template-columns: 15% 85%;
+  padding: 10px;
   width: 100%;
 
   /* border: 1px solid blue; */
@@ -235,6 +235,7 @@ span {
 
 #globalDiv > div{
   padding: 10px;
+  font-size: 14px;
 }
 /* Just above products container div */
 #top_product_cont_div {
