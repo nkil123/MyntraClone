@@ -183,21 +183,20 @@ span {
 /* ========================================================== */
 
 #parent_div {
-<<<<<<< Updated upstream
+
   justify-content: center;
   margin: auto;
   /* border: 1px solid red; */
-=======
-<<<<<<< HEAD
+
+
  max-width: 1600px;
   justify-content: center;
   margin: auto;
-=======
+
   justify-content: center;
   margin: auto;
   /* border: 1px solid red; */
->>>>>>> 9ab61e3fe9588b0cec406ec326e79bd0cf8d2ab5
->>>>>>> Stashed changes
+
 }
 .topDiv {
   position: relative;
@@ -216,24 +215,22 @@ span {
   grid-template-columns: 17% 83%;
   padding: 20px;
   width: 100%;
-<<<<<<< Updated upstream
+
   /* border: 1px solid blue; */
-=======
-<<<<<<< HEAD
+
 }
 .box{
   padding: 10px 0px;
   border-bottom: 1px solid #e9e9ed;
   border-right: 1px solid #e9e9ed;
   
-=======
+
   /* border: 1px solid blue; */
->>>>>>> 9ab61e3fe9588b0cec406ec326e79bd0cf8d2ab5
+
 }
 
 .box p {
-  
->>>>>>> Stashed changes
+ padding: 10px 0px;
 }
 
 #globalDiv > div{
@@ -263,25 +260,24 @@ span {
 
 /* products container */
 #products_cont {
-<<<<<<< Updated upstream
+
   /* border: 0.5px solid red; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-=======
-<<<<<<< HEAD
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-=======
+
   /* border: 0.5px solid red; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
->>>>>>> Stashed changes
+
 
   /* padding: 15px; */
->>>>>>> 9ab61e3fe9588b0cec406ec326e79bd0cf8d2ab5
+
   max-width: 100%;
 }
 #products_cont > div {
