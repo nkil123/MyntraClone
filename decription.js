@@ -144,6 +144,7 @@ function MyntraDecricption () {
   console.log ('data:', data);
 
   let div = document.createElement ('div');
+  div.setAttribute("class","dx");
   let div_1 = document.createElement ('div');
   let div_2 = document.createElement ('div');
   let div_3 = document.createElement ('div');
@@ -219,6 +220,7 @@ function MyntraDecricption () {
 
   rate_product.textContent = data.rating.rate;
   rate_product1.innerHTML = '<ion-icon name="star"></ion-icon>';
+  rate_product1.setAttribute("class","star");
   // rate_product.setAttribute("id","rate_pro");
   // rate_product1.setAttribute("id","prod_1");
 
@@ -341,6 +343,7 @@ function MyntraDecricption () {
     'Easy 7 days return & exchange available';
 
   let best_offer_both = document.createElement ('div');
+  best_offer_both.style.marginTop='10px';
   best_offer_both.style.display = 'flex';
   let best_offer_z = document.createElement ('p');
   let best_offer = document.createElement ('p');
@@ -398,55 +401,70 @@ function MyntraDecricption () {
   spe.style.fontWeight = '700';
 
   let sizes = document.createElement ('div');
-  sizes.setAttribute ('id', 'sizes');
+  sizes.setAttribute ('class', 'sizes');
+  let size_1 = document.createElement ('div');
+  size_1.setAttribute ('class', 'size_box');
+  let size_2 = document.createElement ('div');
+  size_2.setAttribute ('class', 'size_box');
+  let size_3 = document.createElement ('div');
+  size_3.setAttribute ('class', 'size_box');
+  let size_4 = document.createElement ('div');
+  size_4.setAttribute ('class', 'size_box');
   let size1 = document.createElement ('div');
-  size1.setAttribute ('id', 'size_box');
+  size1.setAttribute("class","sizebox");
   size1.textContent = 'S';
   let size2 = document.createElement ('div');
-  size2.setAttribute ('id', 'size_box');
+  size1.setAttribute("class","sizebox");
   size2.textContent = 'M';
   let size3 = document.createElement ('div');
-  size3.setAttribute ('id', 'size_box');
+  size1.setAttribute("class","sizebox");
   size3.textContent = 'L';
   let size4 = document.createElement ('div');
-  size4.setAttribute ('id', 'size_box');
+  size1.setAttribute("class","sizebox");
+  size2.setAttribute("class","sizebox");
+  size3.setAttribute("class","sizebox");
+  size4.setAttribute("class","sizebox");
   size4.textContent = 'XL';
-  size1.addEventListener ('click', colorchange1);
-  size2.addEventListener ('click', colorchange2);
-  size3.addEventListener ('click', colorchange3);
-  size4.addEventListener ('click', colorchange4);
+  size_1.append(size1);
+  size_2.append(size2);
+  size_3.append(size3);
+  size_4.append(size4);
+  size_1.addEventListener ('click', colorchange1);
+  size_2.addEventListener ('click', colorchange2);
+  size_3.addEventListener ('click', colorchange3);
+  size_4.addEventListener ('click', colorchange4);
   function colorchange1 () {
-    size4.removeEventListener ('click', colorchange4);
-    size2.removeEventListener ('click', colorchange2);
-    size3.removeEventListener ('click', colorchange3);
-    size1.style.borderColor = 'red';
-    size1.style.color = 'red';
+    size_4.removeEventListener ('click', colorchange4);
+    size_2.removeEventListener ('click', colorchange2);
+    size_3.removeEventListener ('click', colorchange3);
+    size_1.style.borderColor = 'red';
+    size_1.style.color = 'red';
   }
   function colorchange2 () {
-    size1.removeEventListener ('click', colorchange1);
-    size4.removeEventListener ('click', colorchange4);
-    size3.removeEventListener ('click', colorchange3);
-    size2.style.borderColor = 'red';
-    size2.style.color = 'red';
+    size_1.removeEventListener ('click', colorchange1);
+    size_4.removeEventListener ('click', colorchange4);
+    size_3.removeEventListener ('click', colorchange3);
+    size_2.style.borderColor = 'red';
+    size_2.style.color = 'red';
   }
   function colorchange3 () {
-    size1.removeEventListener ('click', colorchange1);
-    size2.removeEventListener ('click', colorchange2);
-    size4.removeEventListener ('click', colorchange4);
-    size3.style.borderColor = 'red';
-    size3.style.color = 'red';
+    size_1.removeEventListener ('click', colorchange1);
+    size_2.removeEventListener ('click', colorchange2);
+    size_4.removeEventListener ('click', colorchange4);
+    size_3.style.borderColor = 'red';
+    size_3.style.color = 'red';
   }
   function colorchange4 () {
-    size1.removeEventListener ('click', colorchange1);
-    size2.removeEventListener ('click', colorchange2);
-    size3.removeEventListener ('click', colorchange3);
-    size4.style.borderColor = 'red';
-    size4.style.color = 'red';
+    size_1.removeEventListener ('click', colorchange1);
+    size_2.removeEventListener ('click', colorchange2);
+    size_3.removeEventListener ('click', colorchange3);
+    size_4.style.borderColor = 'red';
+    size_4.style.color = 'red';
   }
   // let size5=document.createElement("div");
   // size5.setAttribute("id","size_box");
   // size5.textContent="XXL";
-  sizes.append (size1, size2, size3, size4);
+  sizes.append (size_1, size_2, size_3, size_4);
 
   div_1.append (img_1, img_2, img_3, img_4);
   div_2.append (rate_product, rate_product1, count_product);
@@ -531,5 +549,6 @@ function hide_pin () {
     max_quali.style.display = 'block';
     b2_1.style.color = 'gray';
     disclaimer.style.display = 'block';
+    alert("! Please enter a valid pincode");
   }
 }

@@ -364,7 +364,7 @@ function navbar () {
 </div>
 <div class="names" id="opt4">
         <a href="">
-        <p>HOME & LIVIVNG</p>
+        <p>HOME & LIVING</p>
         <div class="ddown" id="HOMEL">
   <div>
     <ul>
@@ -604,7 +604,7 @@ function navbar () {
 
     <div class="search">
         <a href="#"><span class="material-icons">search</span></a>
-        <input type="text" placeholder="search" />
+        <input type="text" placeholder="Search for products, brands & more" />
     </div>
 
     <div class="right">
