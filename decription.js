@@ -536,6 +536,12 @@ function addtoWishlist (data) {
   prodcuts_wish.push (data);
   localStorage.setItem ('wishlist', JSON.stringify (prodcuts_wish));
   console.log ('products_wish:', prodcuts_wish);
+  let wishme=document.getElementById("wishlist");
+  wishme.innerHTML =
+  '<ion-icon name="heart-outline"></ion-icon>' + ' ' + 'WISHLISTED';
+  wishme.setAttribute("id","wishmelist");
+  // wishme.style.backgroundColor="hsl(347, 100%, 66%)";
+  // wishme.style.color="white";
 }
 
 function hide_pin () {
