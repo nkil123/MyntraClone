@@ -365,7 +365,7 @@ let productData = [
          description: 'Navy Blue and Beige solid pullover sweater, has a round neck, long sleeves, and ribbed hem',
          brand: "Dressberry",
          color: "blue",
-         discount: 60,
+         discount: 70,
          off_price:2399 ,
          images:{
              image1: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12258968/2020/11/2/fce2dfb7-4a8b-44ea-a8fa-57d3a4161ef31604297764803-all-about-you-Women-Sweaters-6661604297763170-1.jpg",
@@ -428,7 +428,7 @@ let productData = [
          description: 'Mustard yellow and green solid kurta with trousers,Mustard yellow straight calf length kurta with embroidery detail, has a keyhole neck, three-quarter sleeves, straight hem, side slits,Green Solid trousers, has partially elasticated waistband, slip-on closure',
          brand: "Clovia ",
          color: "yellow",
-         discount: 60,
+         discount: 80,
          off_price:2999,
          images:{
              image1: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11457130/2020/2/27/c91ccc8e-0a50-4497-a6f1-0b34d3db13ed1582794835211-varanga-mustard-silk-zari-and-thread-embroidered-straight-ku-1.jpg",
@@ -488,8 +488,8 @@ let productData = [
          description: 'Engineered with heat gear technology',
          brand: "Celfie Design",
          color: "red",
-         discount: 40,
-         off_price: 4999,
+         discount: 90,
+         off_price: 5999,
          images:{
              image1: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10796206/2021/6/11/32141767-702d-4707-a690-8cbccf6695fb1623387738978TopsUNDERARMOURWomenTopsUNDERARMOURWomen1.jpg",
              image2: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10796206/2021/6/11/b6be3d24-f551-4509-86d0-3178d10491c31623387739147TopsUNDERARMOURWomenTopsUNDERARMOURWomen2.jpg',
@@ -497,6 +497,7 @@ let productData = [
              image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10796206/2021/6/11/6e5cfbd2-062d-4485-9b6f-63c0d94c1ad11623387739436TopsUNDERARMOURWomenTopsUNDERARMOURWomen4.jpg'
          },
          rating:3.6,
+        
        
  },
  
@@ -521,16 +522,7 @@ let productData = [
         
  }
  
- 
- 
- 
- 
- 
- 
- 
-        
- 
- 
+
     
 ];
 
@@ -576,8 +568,8 @@ function show_products (products) {
     wishbtn.onclick = function () {
       wishicon.style.background = 'red';
       wishname.innerHTML = 'WISHLISTED';
-      wishbtn.style.background = 'grey';
-      wishname.style.background = 'grey';
+      wishbtn.style.background = '#565759';
+      wishname.style.background = '#565759';
 
       addtoWishlist (product);
     };
