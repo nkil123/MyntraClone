@@ -11,7 +11,7 @@
 
 .div1 {
   height: 79px;
-  width: 1903px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
 
 .div1main {
   height: 78px;
-  width: 1750.75px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -56,11 +56,13 @@
 
 .div2 {
   height: 1000px;
-  width: 1903px;
+  width: 100%;
   border-top: 1px solid lightgray;
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  /* background-color: red; */
 }
 
 .div2a {
@@ -70,6 +72,7 @@
   display: flex;
   flex-direction: column;
   padding: 15px 15px 0 0;
+  /* margin: auto; */
 }
 
 .div2a1 {

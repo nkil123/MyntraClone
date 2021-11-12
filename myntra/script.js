@@ -109,7 +109,7 @@ wishlist.onclick = function () {
 
 let logo = document.getElementById ('logo');
 logo.onclick = function () {
-  window.location.href = '/myntra.html';
+  window.location.href = 'myntra.html';
 };
 
 let bag = document.getElementById ('bagI');
@@ -118,29 +118,28 @@ bag.onclick = function () {
   window.location.href = '/bag.html';
 };
 
-
-let take = document.getElementById('take')
+let take = document.getElementById ('take');
 
 take.onclick = function () {
-  window.location.href ='/ProductPage/productsPage.html'
-}
-let take2 = document.getElementById('take2')
+  window.location.href = '/ProductPage/productsPage.html';
+};
+let take2 = document.getElementById ('take2');
 
 take2.onclick = function () {
-  window.location.href ='/ProductPage/productsPage.html'
-}
-let take3 = document.getElementById('take3')
+  window.location.href = '/ProductPage/productsPage.html';
+};
+let take3 = document.getElementById ('take3');
 
 take3.onclick = function () {
-  window.location.href ='/ProductPage/productsPage.html'
-}
-let take4 = document.getElementById('take4')
+  window.location.href = '/ProductPage/productsPage.html';
+};
+let take4 = document.getElementById ('take4');
 
 take4.onclick = function () {
-  window.location.href ='/ProductPage/productsPage.html'
-}
-let take5 = document.getElementById('take5')
+  window.location.href = '/ProductPage/productsPage.html';
+};
+let take5 = document.getElementById ('take5');
 
 take5.onclick = function () {
-  window.location.href ='/ProductPage/productsPage.html'
-}
+  window.location.href = '/ProductPage/productsPage.html';
+};
