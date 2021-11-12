@@ -478,6 +478,9 @@
                         <span id="totalAmount">5,319</span>
                       </div>
                     </div>
+                    <div class="btn" onclick="place()">
+                      <button>Place Order</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -564,5 +567,9 @@
       btnText.innerHTML = "Show Less";
       moreText.style.display = "inline";
     }
+  }
+
+  function place() {
+    window.location.href = "/thankyou.html";
   }
 </script>

@@ -351,3 +351,13 @@ img {
   font-size: 14px;
   padding: 10px 0;
 }
+
+.btn button {
+  margin-top: 10px;
+  width: 280px;
+  padding: 10px;
+  font-size: 17px;
+  background-color: #ff3f6c;
+  border: none;
+  cursor: pointer;
+}
