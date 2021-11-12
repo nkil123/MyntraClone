@@ -525,9 +525,12 @@ let productData = [
     count: 290,
   },
 
+<<<<<<< HEAD
 
    
 
+=======
+>>>>>>> aef71bd0b19939991076ecf01c2deab408a3a75d
  {    
   id:21,
          title: "White & Black Sheath Dress & Belt",
@@ -1947,7 +1950,10 @@ count:285,
   
 },
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> aef71bd0b19939991076ecf01c2deab408a3a75d
 
 {
   id:101,
