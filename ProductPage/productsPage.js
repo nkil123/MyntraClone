@@ -128,6 +128,8 @@ let productData = [
     images: {
       image1: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1364628/2016/8/31/11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg',
       image2: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1364628/2016/8/31/11472636737673-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-3.jpg',
+      image3: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1364628/2016/8/31/11472636737673-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-3.jpg',
+      image4: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1364628/2016/8/31/11472636737656-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-4.jpg'
     },
     rating: 3.9,
     count:29
@@ -523,13 +525,7 @@ let productData = [
     count: 290,
   },
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 
-=======
->>>>>>> 81c3ad7028c9fedd7ae7d3c682c5480a0696feb5
->>>>>>> Stashed changes
    
 
  {    
@@ -869,6 +865,8 @@ count:23,
   images:{
       image1:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11629094/2020/7/9/d9cc4f27-9deb-46ca-821e-a37410cbcbd51594288324999LakmeSetof2EyeconicKajal-DeepBlack070g1.jpg",
       image2:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/banner2021/4/14/8fa011ab-7b90-41e7-9b72-ba3229a568181618389182461-15.jpg",
+      image3:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/1364628/2016/8/31/11472636737616-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-5.jpg",
+      image4:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/1364628/2016/8/31/11472636737656-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-4.jpg"
   },
   ratings:4.6,
 
@@ -1737,7 +1735,7 @@ count:285,
   ratings:4.2,
   count:789,
 },
-<<<<<<< Updated upstream
+
 
 {
   id:101,
@@ -1949,7 +1947,7 @@ count:285,
   
 },
 
-=======
+
 
 {
   id:101,
@@ -2161,12 +2159,7 @@ count:285,
   
 },
 
-<<<<<<< HEAD
-    
 
-=======
->>>>>>> 81c3ad7028c9fedd7ae7d3c682c5480a0696feb5
->>>>>>> Stashed changes
 ];
 
 var products_cont = document.getElementById ('products_cont');
