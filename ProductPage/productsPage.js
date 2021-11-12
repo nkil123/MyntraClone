@@ -523,6 +523,13 @@ let productData = [
     count: 290,
   },
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 81c3ad7028c9fedd7ae7d3c682c5480a0696feb5
+>>>>>>> Stashed changes
    
 
  {    
@@ -1730,6 +1737,7 @@ count:285,
   ratings:4.2,
   count:789,
 },
+<<<<<<< Updated upstream
 
 {
   id:101,
@@ -1941,6 +1949,224 @@ count:285,
   
 },
 
+=======
+
+{
+  id:101,
+  title:"Men Blue Relaxed Fit Hoodie",
+  price:1499,
+  gender:"male",
+  description:"Hoodie in sweatshirt fabric made from a cotton blend. Relaxed fit with a lined, drawstring hood, long sleeves, kangaroo pocket and ribbing at the cuffs and hem. Soft brushed inside.",
+  category:"Men's Clothing",
+  brand:"H&M",
+  color:"blue",
+  discount:"10",
+  off_price:1500,
+  images:{
+      image1:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15746172/2021/10/7/a621b7fd-babb-4bb3-940e-b16afb7947d31633609833495HMMenBlueRelaxedFitHoodie1.jpg",
+      image2:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15746172/2021/10/7/b019b315-fb56-481a-9de4-97f588b636551633609832286HMMenBlueRelaxedFitHoodie2.jpg",
+      image3:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15746172/2021/10/7/daca690f-f36d-4b61-b5f3-c9e9acf7a1f61633609832145HMMenBlueRelaxedFitHoodie3.jpg",
+      image4:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15746172/2021/10/7/dbe47737-1d80-4cab-9f03-ee8cb32540cb1633609833304HMMenBlueRelaxedFitHoodie4.jpg",
+  },
+  ratings:4.5,
+      count:110
+  
+},
+{
+  id:102,
+  title:"Women Black Solid Chunky Combat Boots",
+  price:2699,
+  gender:"women",
+  description:"Combat boots with chunky, patterned soles, lacing at the front, a zip in one side and a loop at the back.",
+  category:"Women's Footwear",
+  brand:"H&M",
+  color:"black",
+  discount:"20",
+  off_price:2899,
+  images:{
+      image1:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15674090/2021/9/30/afaff65c-4bb5-4f76-a15e-fad7ac12dcf61632997313239Chunkycombatboots3.jpg",
+      image2:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15674090/2021/9/30/3027a850-cbd1-45f0-9246-7ddd20463da01632997313348Chunkycombatboots4.jpg",
+      image3:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15674090/2021/9/30/1bda9625-d20a-4105-84d7-0a50cf6ddadd1632997313456Chunkycombatboots5.jpg",
+  },
+  ratings:4.6,
+      count:135
+  
+},
+{
+  id:103,
+  title:"Women White & Black Acrylic Jumper",
+  price:799,
+  gender:"women",
+  description:"Jumper in a soft knit with low dropped shoulders, extra-long sleeves and ribbing around the neckline, cuffs and hem.",
+  category:"Women's Clothing",
+  brand:"H&M",
+  color:"white",
+  discount:35,
+  off_price:1199,
+  images:{
+      image1:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15809062/2021/10/13/4f6d1445-f481-4d06-b0b9-6d6de7da9d261634063934609Jumper1.jpg",
+      image2:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15809062/2021/10/13/cc2a731a-4289-4118-a4d2-0e068e9754261634063934421Jumper2.jpg",
+      image3:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15809062/2021/10/13/b8de7c0c-b981-444d-9cb9-b1ce649e0cd81634063934566Jumper3.jpg",
+      image4:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15809062/2021/10/13/6668306f-2dd3-4b95-867a-ce1d6b1d9f211634063934575Jumper4.jpg",
+  },
+  ratings:4.7,
+      count:246,
+  
+},
+{
+  id:104,
+  title:"Men Grey Relaxed Fit Sweatshirt",
+  price:799,
+  gender:"men",
+  description:"Grey solid sweatshirt has a round neck, long sleeves, closure, straight hem",
+  category:"Men's Clothing",
+  brand:"H&M",
+  color:"black",
+  discount:40,
+  off_price:1299,
+  images:{
+      image1:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15611412/2021/9/29/9b684f64-c8a6-4808-952e-604516fa5a001632884361405HMMenGreyRelaxedFitSweatshirt1.jpg",
+      image2:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15611412/2021/9/29/df8910b9-bf54-454d-94e4-abab395291f01632884361459HMMenGreyRelaxedFitSweatshirt2.jpg",
+      image3:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15611412/2021/9/29/b30b1a59-fcb4-4738-9829-15211df1f9601632884361471HMMenGreyRelaxedFitSweatshirt3.jpg",
+      image4:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15611412/2021/9/29/6b76621f-ad2d-41a7-ae2f-393b22e5776f1632884361483HMMenGreyRelaxedFitSweatshirt4.jpg",
+  },
+  ratings:4.5,
+      count:290,
+  
+},
+{
+  id:105,
+  title:"Men White Trainers",
+  price:1999,
+  gender:"men",
+  description:"Trainers in imitation leather with a contrasting colour heel cap. Padded top edge and a tongue and lacing at the front. Linings and insoles in piqu and rubber soles that are patterned underneath.",
+  category:"Men's Footwear",
+  brand:"H&M",
+  color:"white",
+  discount:10,
+  off_price:2199,
+  images:{
+      image1:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15630218/2021/9/29/bda9fe48-193c-4a64-8e2a-a8e60bd6e2d61632884288144Trainers1.jpg",
+      image2:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15630218/2021/9/29/e234c6a7-57cb-4f85-85c8-f3cb5b726bd81632884288312Trainers2.jpg",
+      image3:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15630218/2021/9/29/bb2c09e7-ebfa-435b-a4d5-2b412469b5a21632884288482Trainers3.jpg",
+  },
+  ratings:4.5,
+      count:40,
+  
+},
+
+{
+  id:106,
+  title:"Men Pink Regular Fit Hoodie",
+  price:2299,
+  gender:"men",
+  description:"Long-sleeved hoodie in soft sweatshirt fabric with a kangaroo pocket, double-layered drawstring hood with a wrapover front, and ribbing at the cuffs and hem.",
+  category:"Men's Clothing",
+  brand:"H&M",
+  color:"pink",
+  discount:10,
+  off_price:1399,
+  images:{
+      image1:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15193766/2021/8/19/9cb8134c-f8b1-4f5e-94b4-9e95aafd9f041629354060319RegularFitHoodie1.jpg",
+      image2:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15193766/2021/8/19/ba611bd7-cfc6-4ff5-8151-a70c5e2816cb1629354060211RegularFitHoodie2.jpg",
+      image3:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15193766/2021/8/19/448d5056-3930-491d-9381-7b1cd73e91681629354059992RegularFitHoodie3.jpg",
+      image4:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15193766/2021/8/19/6164e6d3-07c2-4d60-98f2-7edba0357e191629354060078RegularFitHoodie4.jpg",
+  },
+  ratings:4.6,
+      count:57,
+  
+},
+{
+  id:107,
+  title:"Women Off-White Solid Short Cardigan",
+  price:1299,
+  gender:"women",
+  description:"Short cardigan in a soft knit with a V-neck and buttons down the front. Gently dropped shoulders, long sleeves and ribbing around the opening, cuffs and hem.",
+  category:"Women's Clothing",
+  brand:"H&M",
+  color:"Off-White",
+  discount:30,
+  off_price:1599,
+  images:{
+      image1:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/1/15/97359bce-6e02-4744-ba62-946bc858c6de1610689986574-3.jpg",
+      image2:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/1/15/d490b66a-08b5-4c1d-aaa3-e3c039acf54e1610689986592-4.jpg",
+      image3:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/1/15/aa71abbb-d333-4e57-b0f3-48d0eaa781631610689986608-5.jpg",
+      
+  },
+  ratings:4.4,
+      count:66,
+  
+},
+{
+  id:108,
+  title:"Women Pink Solid Cropped Sweatshirt",
+  price:799,
+  gender:"women",
+  description:"Cropped top in soft sweatshirt fabric with a small embroidered detail at the top. Round neckline, dropped shoulders and long sleeves. Ribbing around the neckline, cuffs and hem.",
+  category:"Women's Clothing",
+  brand:"H&M",
+  color:"pink",
+  discount:10,
+  off_price:809,
+  images:{
+      image1:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15295806/2021/8/30/6b2b9a47-459c-4e3b-87a8-d55f6aacfd711630295993682Croppedsweatshirt1.jpg",
+      image2:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15295806/2021/8/30/3219d5fe-c7f8-4a34-b09c-dcd67875e31e1630295993445Croppedsweatshirt2.jpg",
+      image3:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15295806/2021/8/30/06d6e6e3-dae8-4be7-bdc2-b3c15ca5f2601630295993097Croppedsweatshirt3.jpg",
+      image4:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15295806/2021/8/30/c45e8396-ac4e-4171-8d83-b13f736893441630295993288Croppedsweatshirt4.jpg",
+  },
+  ratings:4.5,
+      count:110,
+  
+},
+{
+  id:109,
+  title:"Men Blue Cotton Fine-knit Jumper",
+  price:1499,
+  gender:"men",
+  description:"Jumper in a soft, fine cotton knit with a round neck, long sleeves and ribbing at the cuffs and hem.",
+  category:"Men's Clothing",
+  brand:"H&M",
+  color:"blue",
+  discount:40,
+  off_price:1799,
+  images:{
+      image1:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15545930/2021/9/27/bf790580-9d52-423a-8083-38f1ca7f47511632723350062Fine-knitjumper1.jpg",
+      image2:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15545930/2021/9/27/2cc4b764-c362-462a-a776-52102f5c9ec11632723350071Fine-knitjumper2.jpg",
+      image3:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15545930/2021/9/27/83b555e8-d9e7-4b6e-99dd-1b768d33e3c31632723350081Fine-knitjumper3.jpg",
+      image4:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15545930/2021/9/27/89440af7-6ba1-42a2-a299-af466939affd1632723350237Fine-knitjumper4.jpg",
+  },
+  ratings:4.6,
+      count:22,
+  
+},
+{
+  id:110,
+  title:"Women Blue Oversized Zip-Through Hoodie",
+  price:2299,
+  gender:"women",
+  description:"Oversized zip-through hoodie in sweatshirt fabric made from a cotton blend with a lined, drawstring hood, zip down the front and front pockets. Dropped shoulders, long sleeves and ribbing at the cuffs and hem. Soft brushed inside.",
+  category:"Women's Clothing",
+  brand:"H&M",
+  color:"blue",
+  discount:10,
+  off_price:2399,
+  images:{
+      image1:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15630064/2021/9/29/d500ab0e-bdc3-4ff6-a0ca-9dd3cf1a9db51632884597096HMWomenBlueOversizedZip-ThroughHoodie1.jpg",
+      image2:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15630064/2021/9/29/a6dca512-5899-438f-939e-f7663fca48051632884597106HMWomenBlueOversizedZip-ThroughHoodie2.jpg",
+      image3:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15630064/2021/9/29/e346968f-3b37-47c6-996e-b921e12400b51632884597117HMWomenBlueOversizedZip-ThroughHoodie3.jpg",
+      image4:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15630064/2021/9/29/d7538cfb-e00c-4a10-9edf-d0ecd3eac83f1632884597128HMWomenBlueOversizedZip-ThroughHoodie4.jpg",
+  },
+  ratings:4.8,
+      count:25,
+  
+},
+
+<<<<<<< HEAD
+    
+
+=======
+>>>>>>> 81c3ad7028c9fedd7ae7d3c682c5480a0696feb5
+>>>>>>> Stashed changes
 ];
 
 var products_cont = document.getElementById ('products_cont');
@@ -1985,6 +2211,8 @@ function show_products (products) {
     wishbtn.onclick = function () {
       wishicon.style.background = 'red';
       wishname.innerHTML = 'WISHLISTED';
+      wishname.style.color = 'white';
+      
       wishbtn.style.background = '#565759';
       wishname.style.background = '#565759';
 
