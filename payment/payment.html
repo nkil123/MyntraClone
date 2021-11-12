@@ -15,7 +15,7 @@
     <div class="main-container">
       <div class="div1">
         <div class="div1main">
-          <div class="div1a">
+          <div class="div1a" id="logo">
             <img
               class="logo"
               src="https://images.indianexpress.com/2021/01/myntra.png"
@@ -557,6 +557,11 @@
 </html>
 
 <script>
+  let logo = document.getElementById("logo");
+  logo.onclick = function () {
+    window.location.href = "/myntra/myntra.html";
+  };
+
   function myFunction() {
     let data1 = document.getElementById("data");
     let moreText = document.getElementById("offer-message");

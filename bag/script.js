@@ -1,3 +1,8 @@
+let logo = document.getElementById ('logo');
+logo.onclick = function () {
+  window.location.href = '/myntra/myntra.html';
+};
+
 function showFunction () {
   let dots = document.getElementById ('dots');
   let moreText = document.getElementById ('showDiv');

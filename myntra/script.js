@@ -115,13 +115,8 @@ logo.onclick = function () {
 let bag = document.getElementById ('bagI');
 bag.style.cursor = 'pointer';
 bag.onclick = function () {
-  window.location.href = '/bag.html';
+  window.location.href = '/bag/bag.html';
 };
-
-
-
-
-
 
 let take = document.getElementById ('take');
 
