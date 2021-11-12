@@ -157,7 +157,7 @@ let productData = [
     size: 'Sizes : 39, 40, 42, 44...',
     title: 'Men Grey & Blue Self Design Kurta with Churidar & Nehru Jacket',
     price: '2199',
-    gender: 'women',
+    gender: 'men',
     description: '',
     brand: 'Clovia',
     color: 'white',
@@ -311,6 +311,227 @@ let productData = [
     },
     rating: 4.9,
   },
+   
+
+ {    
+  id:21,
+         title: "White & Black Sheath Dress & Belt",
+         categories: 'dresses',
+         price: 903,
+         gender:'women',
+         description: 'White and black typography print sheath dress,Round neck,Sleeveless, no sleeves,Above knee length in,straight hem,Comes with a belt',
+         brand: "Clovia",
+         color: "white",
+         discount: 35,
+         off_price:1390 ,
+         images:{
+             image1: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15286934/2021/9/2/817dc96e-f893-47aa-824e-98d91f396f261630562359704EarringsURBANICWomenJacketsURBANICWomenCoatsURBANICWomenDres1.jpg",
+             image2: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15286934/2021/9/2/90a66afe-feb2-40c1-a699-c81cd7a09fbd1630562359723EarringsURBANICWomenJacketsURBANICWomenCoatsURBANICWomenDres2.jpg',
+             image3:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15286934/2021/9/2/a5bf4c69-c5c9-4d75-a2e7-e3bcc92114101630562359741EarringsURBANICWomenJacketsURBANICWomenCoatsURBANICWomenDres3.jpg',
+             image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15286934/2021/9/2/179c0b82-63bf-4388-9feb-aec125d4579b1630562359760EarringsURBANICWomenJacketsURBANICWomenCoatsURBANICWomenDres4.jpg'
+         },
+         rating:4.2,
+         
+     },
+ 
+ 
+ 
+ {
+ id:22,
+         title: "Women Pink Daisy Duck Printed Sweatshirt",
+         price: 799,
+         gender:'women',
+         categories: 'tops',
+         description: '',
+         brand: "Mast & Harbour",
+         color: "pink",
+         discount: 60,
+         off_price: 1999,
+         images:{
+             image1: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10278877/2019/11/12/352e3703-d6de-43d5-804b-370082c81f6d1573553236671-Kook-N-Keech-Disney-Women-Pink-Daisy-Duck-Printed-Sweatshirt-1.jpg",
+             image2: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10278877/2019/11/12/ebe54fda-7589-4a0b-9332-a35e6b5ee3571573553236609-Kook-N-Keech-Disney-Women-Pink-Daisy-Duck-Printed-Sweatshirt-2.jpg',
+             image3:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10278877/2019/11/12/91b2fadd-735f-486c-9bfa-bcb3ba2ea9b71573553236558-Kook-N-Keech-Disney-Women-Pink-Daisy-Duck-Printed-Sweatshirt-3.jpg',
+             image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10278877/2019/11/12/a28f02d9-e138-43e2-ab00-03060e27d03d1573553236511-Kook-N-Keech-Disney-Women-Pink-Daisy-Duck-Printed-Sweatshirt-4.jpg'
+         },
+         rating:4.5,
+         
+     },
+ {
+ id:23,
+         title: "Women Navy Blue & Beige Embroidered Pullover Sweater",
+         price: 959,
+         categories: 'tops',
+         gender:'women',
+         description: 'Navy Blue and Beige solid pullover sweater, has a round neck, long sleeves, and ribbed hem',
+         brand: "Dressberry",
+         color: "blue",
+         discount: 60,
+         off_price:2399 ,
+         images:{
+             image1: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12258968/2020/11/2/fce2dfb7-4a8b-44ea-a8fa-57d3a4161ef31604297764803-all-about-you-Women-Sweaters-6661604297763170-1.jpg",
+             image2: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12258968/2020/11/2/2e227d7f-a463-44d1-8d44-80501a19c74e1604305672635-all-about-you-Women-Sweaters-4511604305671949-3.jpg',
+             image3:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12258968/2020/11/2/1204a9f6-69ac-458e-8645-3aec5cf8ba651604305672584-all-about-you-Women-Sweaters-4511604305671949-4.jpg',
+             image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12258968/2020/11/2/d9a92fdb-91db-472c-998f-f82bb73a53291604297764597-all-about-you-Women-Sweaters-6661604297763170-5.jpg'
+         },
+         rating:4.5,
+           
+     },
+ {
+ 
+ id:24,
+         title: "Women Red Solid A-Line Dress",
+         price: 1049,
+         categories: 'dresses',
+         gender:'women',
+         description: 'Red solid woven A-line dress with lace detail, has a round neck, long sleeves, flared hem',
+         brand: "Dressberry",
+         color: "red",
+         discount: 65,
+         off_price: 2999,
+         images:{
+             image1: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8828611/2020/1/2/ea790e3a-c52f-4fa4-9aee-e1db99ae737e1577961976602-Vero-Moda-Women-Red-Solid-A-Line-Dress-1201577961974902-1.jpg",
+             image2: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8828611/2020/1/2/57597b08-078d-4bdb-b39f-3833473631101577961976531-Vero-Moda-Women-Red-Solid-A-Line-Dress-1201577961974902-3.jpg',
+             image3:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8828611/2020/1/2/1bf946b1-365b-4b41-b69d-1c504680d71f1577961976455-Vero-Moda-Women-Red-Solid-A-Line-Dress-1201577961974902-5.jpg',
+             image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8828611/2020/1/2/56d2fe6c-3a17-4104-bacb-3d1b96f5eb361577961976567-Vero-Moda-Women-Red-Solid-A-Line-Dress-1201577961974902-2.jpg'
+         },
+         rating:4,
+          
+     },
+ 
+ {
+ 
+ id:25,
+         title: "Women Blue Mile Super Skinny Fit High-Rise Light Fade Stretchable Jeans",
+         price: 2939,
+         gender:'women',
+         description: '',
+         brand: "Roadster",
+         color: "blue",
+         discount: 40,
+         off_price: 4899,
+         images:{
+             image1: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13326252/2021/7/19/125fc4ac-7be7-4a35-98cc-0ed8af5e0c581626695221843-Levis-Women-Jeans-4801626695221087-1.jpg",
+             image2: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13326252/2021/7/19/af4361b5-a6d2-48f0-ad55-05f45dd3d8a31626695221833-Levis-Women-Jeans-4801626695221087-2.jpg',
+             image3:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13326252/2021/7/19/e021dfdf-261d-47fc-a987-5e4d3b611c8b1626695221824-Levis-Women-Jeans-4801626695221087-3.jpg',
+             image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13326252/2021/7/19/d471eede-c3aa-49ea-b821-f035fc3e83431626695221812-Levis-Women-Jeans-4801626695221087-4.jpg'
+         },
+         rating:4.4,
+         
+     },
+ {
+ 
+ id:26,
+         title: "Women Mustard Yellow & Green Solid Kurta Set With Embroidery Detail",
+         categories: 'tops',
+         price: 1399,
+         gender:'women',
+         description: 'Mustard yellow and green solid kurta with trousers,Mustard yellow straight calf length kurta with embroidery detail, has a keyhole neck, three-quarter sleeves, straight hem, side slits,Green Solid trousers, has partially elasticated waistband, slip-on closure',
+         brand: "Clovia ",
+         color: "yellow",
+         discount: 60,
+         off_price:2999,
+         images:{
+             image1: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11457130/2020/2/27/c91ccc8e-0a50-4497-a6f1-0b34d3db13ed1582794835211-varanga-mustard-silk-zari-and-thread-embroidered-straight-ku-1.jpg",
+             image2: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11457130/2020/2/27/0e222ff4-142f-42b2-ad6a-83aa14e0944f1582794835163-varanga-mustard-silk-zari-and-thread-embroidered-straight-ku-2.jpg',
+             image3:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11457130/2020/2/27/4189e086-e74b-42d0-ad6a-520a26d0a0461582794835122-varanga-mustard-silk-zari-and-thread-embroidered-straight-ku-3.jpg',
+             image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11457130/2020/2/27/706db7d0-abb7-4f5e-b7ca-b370bf44cd961582794835078-varanga-mustard-silk-zari-and-thread-embroidered-straight-ku-4.jpg'
+         },
+         rating:4.1,
+          
+     },
+ {
+ id:27,
+         title: "Women Mustard Yellow & Pink Printed Pure Cotton Anarkali Tiered Maxi Dress",
+         price: 2249,
+         categories: 'dresses',
+         gender:'women',
+         description: 'Mustard yellow and Pink printed woven Anarkali tiered maxi dress with gathers, has a round neck, three-quarter sleeves, an attached lining, and flounce hem',
+         brand: "HERE&NOW",
+         color: "yellow",
+         discount: 55,
+         off_price: 4999,
+         images:{
+             image1: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13078216/2020/12/18/bc248d16-5d0c-489d-b5c1-e2c8ee5671471608291727502-W-Yellow-Printed-Tiered-Dress-1091608291724681-1.jpg",
+             image2: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13078216/2020/12/18/c1ad9dcf-ce37-44b2-b030-6f5cf4d476bb1608291727416-W-Yellow-Printed-Tiered-Dress-1091608291724681-3.jpg',
+             image3:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13078216/2020/12/18/eb96c1bc-e445-491f-a463-19e3448c8c311608291727377-W-Yellow-Printed-Tiered-Dress-1091608291724681-4.jpg',
+             image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13078216/2020/12/18/2fd07bb2-f22b-471a-ae9a-a7a6a6c6ccdd1608291727335-W-Yellow-Printed-Tiered-Dress-1091608291724681-5.jpg'
+         },
+         rating:4.4,
+       
+     },
+ {
+ id:28,
+         title: "Women Pink Solid Round Neck T-shirt",
+         price: 899,
+         categories: 'tshirt',
+         gender:'women',
+         description: 'Pink solid T-shirt, has a round neck, and short sleeves',
+         brand: "Mast & Harbour",
+         color: "pink",
+         discount: 50,
+         off_price:1799 ,
+         images:{
+             image1: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12831554/2021/3/12/573f7013-7bb5-40c5-8b04-3ec22c5d811e1615530797360-GAP-Women-Pink-Solid-Round-Neck-T-shirt-9491615530795443-1.jpg",
+             image2: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12831554/2021/3/12/66345c42-9508-4455-8431-d96f8aedd4211615530797339-GAP-Women-Pink-Solid-Round-Neck-T-shirt-9491615530795443-2.jpg',
+             image3:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12831554/2021/3/12/11f832dd-c2c0-445a-9624-0351b853e0d51615530797319-GAP-Women-Pink-Solid-Round-Neck-T-shirt-9491615530795443-3.jpg',
+             image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12831554/2021/3/12/1cf3d4e5-09e1-4dc5-aff8-4bc9eba10a4d1615530797299-GAP-Women-Pink-Solid-Round-Neck-T-shirt-9491615530795443-4.jpg'
+         },
+         rating:3.9,
+        
+     },
+ {
+ id:29,
+     title: "Red & Maroon Tie and Dye RUSH Running Tank Top",
+         price: 2999,
+         categories: 'tops',
+         gender:'women',
+         description: 'Engineered with heat gear technology',
+         brand: "Celfie Design",
+         color: "red",
+         discount: 40,
+         off_price: 4999,
+         images:{
+             image1: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10796206/2021/6/11/32141767-702d-4707-a690-8cbccf6695fb1623387738978TopsUNDERARMOURWomenTopsUNDERARMOURWomen1.jpg",
+             image2: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10796206/2021/6/11/b6be3d24-f551-4509-86d0-3178d10491c31623387739147TopsUNDERARMOURWomenTopsUNDERARMOURWomen2.jpg',
+             image3:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10796206/2021/6/11/958e31b1-9b64-4d7d-bc10-cfde876586161623387739288TopsUNDERARMOURWomenTopsUNDERARMOURWomen3.jpg',
+             image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10796206/2021/6/11/6e5cfbd2-062d-4485-9b6f-63c0d94c1ad11623387739436TopsUNDERARMOURWomenTopsUNDERARMOURWomen4.jpg'
+         },
+         rating:3.6,
+       
+ },
+ 
+ 
+ {
+ id:30,
+     title: "Black Dri-FIT Swoosh Zip-Front Medium-Support Workout Bra - Lightly Padded",
+         price: 2021,
+         gender:'women',
+         description: 'Nike Dri-FIT technology moves sweat away from your skin for quicker evaporation, helping you stay dry and comfortable.Stretch fabric and an elastic chest band provide a comfortable, compressive feel while shaping to prevent the sensation of empty space in your cups.The semi-auto lock zipper on the front helps prevent unwanted unzipping yet still makes it easy to get in and out',
+         brand: "KALINI",
+         color: "black",
+         discount:25,
+         off_price:2695 ,
+         images:{
+             image1: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14558962/2021/9/14/1896ad8d-3bb0-43d4-b10e-4718d44fb1e31631612114483-Nike-Black-Dri-FIT-Swoosh-Zip-Front-Medium-Support-Workout-B-1.jpg",
+             image2: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14558962/2021/9/14/505e35c2-533d-4f98-b84c-6c3065e3e43e1631612114463-Nike-Black-Dri-FIT-Swoosh-Zip-Front-Medium-Support-Workout-B-2.jpg',
+             image3:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14558962/2021/9/14/4991242e-a848-4db8-bb17-d18495db1ebc1631612114444-Nike-Black-Dri-FIT-Swoosh-Zip-Front-Medium-Support-Workout-B-3.jpg',
+             image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14558962/2021/9/14/32db2112-de4d-49a6-b1f0-f663206f5ca91631612114425-Nike-Black-Dri-FIT-Swoosh-Zip-Front-Medium-Support-Workout-B-4.jpg'
+         },
+         rating:4.3,
+        
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        
+ 
+ 
+    
 ];
 
 var products_cont = document.getElementById ('products_cont');
@@ -621,6 +842,7 @@ let cloviaArr = [];
 let harbourArr = [];
 let celfieArr = [];
 let kaliniArr = [];
+let herenowArr = [];
 
 productData.forEach (para => {
   let roadsterBox = document.getElementById ('roadster');
@@ -966,21 +1188,7 @@ productData.forEach (para => {
     }
   }
 });
-productData.forEach (para => {
-  let fourthBox = document.getElementById ('fourth');
-  fourthBox.addEventListener ('change', fourthCheck);
-  function fourthCheck () {
-    if (
-      fourthBox.value >= 755 &&
-      fourthBox.value <= 1000 &&
-      para.price >= 755 &&
-      para.price <= 1000
-    ) {
-      fourthArr.push (para);
-      show_products (fourthArr);
-    }
-  }
-});
+
 
 productData.forEach (para => {
   let fifthBox = document.getElementById ('fifth');
