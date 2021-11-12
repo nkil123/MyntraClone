@@ -141,13 +141,13 @@ bag.onclick = function () {
 let parent = document.getElementById ('Myn_pro');
 
 let dat = JSON.parse (localStorage.getItem ('describe'));
-let data=dat[0];
+let data = dat[0];
 
 function MyntraDecricption () {
   console.log ('data:', data);
-  
+
   let div = document.createElement ('div');
-  div.setAttribute("class","dx");
+  div.setAttribute ('class', 'dx');
   let div_1 = document.createElement ('div');
   let div_2 = document.createElement ('div');
   let div_3 = document.createElement ('div');
@@ -224,7 +224,7 @@ function MyntraDecricption () {
 
   rate_product.textContent = data.rating;
   rate_product1.innerHTML = '<ion-icon name="star"></ion-icon>';
-  rate_product1.setAttribute("class","star");
+  rate_product1.setAttribute ('class', 'star');
   // rate_product.setAttribute("id","rate_pro");
   // rate_product1.setAttribute("id","prod_1");
 
@@ -347,7 +347,7 @@ function MyntraDecricption () {
     'Easy 7 days return & exchange available';
 
   let best_offer_both = document.createElement ('div');
-  best_offer_both.style.marginTop='10px';
+  best_offer_both.style.marginTop = '10px';
   best_offer_both.style.display = 'flex';
   let best_offer_z = document.createElement ('p');
   let best_offer = document.createElement ('p');
@@ -415,24 +415,24 @@ function MyntraDecricption () {
   let size_4 = document.createElement ('div');
   size_4.setAttribute ('class', 'size_box');
   let size1 = document.createElement ('div');
-  size1.setAttribute("class","sizebox");
+  size1.setAttribute ('class', 'sizebox');
   size1.textContent = 'S';
   let size2 = document.createElement ('div');
-  size1.setAttribute("class","sizebox");
+  size1.setAttribute ('class', 'sizebox');
   size2.textContent = 'M';
   let size3 = document.createElement ('div');
-  size1.setAttribute("class","sizebox");
+  size1.setAttribute ('class', 'sizebox');
   size3.textContent = 'L';
   let size4 = document.createElement ('div');
-  size1.setAttribute("class","sizebox");
-  size2.setAttribute("class","sizebox");
-  size3.setAttribute("class","sizebox");
-  size4.setAttribute("class","sizebox");
+  size1.setAttribute ('class', 'sizebox');
+  size2.setAttribute ('class', 'sizebox');
+  size3.setAttribute ('class', 'sizebox');
+  size4.setAttribute ('class', 'sizebox');
   size4.textContent = 'XL';
-  size_1.append(size1);
-  size_2.append(size2);
-  size_3.append(size3);
-  size_4.append(size4);
+  size_1.append (size1);
+  size_2.append (size2);
+  size_3.append (size3);
+  size_4.append (size4);
   size_1.addEventListener ('click', colorchange1);
   size_2.addEventListener ('click', colorchange2);
   size_3.addEventListener ('click', colorchange3);
@@ -519,6 +519,9 @@ if (localStorage.getItem ('cart') === null) {
 }
 
 function addtoBag (data) {
+  if (localStorage.getItem ('cart') === null) {
+    localStorage.setItem ('cart', JSON.stringify ([]));
+  }
   let prodcuts_cart = JSON.parse (localStorage.getItem ('cart'));
   prodcuts_cart.push (data);
   localStorage.setItem ('cart', JSON.stringify (prodcuts_cart));
@@ -553,6 +556,6 @@ function hide_pin () {
     max_quali.style.display = 'block';
     b2_1.style.color = 'gray';
     disclaimer.style.display = 'block';
-    alert("! Please enter a valid pincode");
+    alert ('! Please enter a valid pincode');
   }
 }

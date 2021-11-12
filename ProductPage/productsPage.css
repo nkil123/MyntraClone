@@ -81,19 +81,19 @@ span {
 }
 
 #header .search input {
-   /* display: flex; */
-   height: 40px;
-   width: 95%;
-   /* color: #f5f5f6; */
-   background-color: #f5f5f6;
-   padding: 8px 10px 10px 10px;
-   border: 0;
-   border: none;
-   outline: none;
+  /* display: flex; */
+  height: 40px;
+  width: 95%;
+  /* color: #f5f5f6; */
+  background-color: #f5f5f6;
+  padding: 8px 10px 10px 10px;
+  border: 0;
+  border: none;
+  outline: none;
 }
-.search:hover{
-    border: 1px solid gray;
-    border-radius: 2px;
+.search:hover {
+  border: 1px solid gray;
+  border-radius: 2px;
 }
 #header .search a {
   background-color: #f5f5f6;
@@ -188,10 +188,9 @@ span {
 /* ========================================================== */
 
 #parent_div {
-
   justify-content: center;
   margin: auto;
- max-width: 1600px;
+  max-width: 1600px;
   justify-content: center;
   margin: auto;
 
@@ -216,23 +215,20 @@ span {
   width: 100%;
 
   /* border: 1px solid blue; */
-
 }
-.box{
+.box {
   padding: 10px 0px;
   border-bottom: 1px solid #e9e9ed;
   border-right: 1px solid #e9e9ed;
-  
 
   /* border: 1px solid blue; */
-
 }
 
 .box p {
- padding: 10px 0px;
+  padding: 10px 0px;
 }
 
-#globalDiv > div{
+#globalDiv > div {
   padding: 10px;
   font-size: 14px;
 }
@@ -260,7 +256,6 @@ span {
 
 /* products container */
 #products_cont {
-
   /* border: 0.5px solid red; */
   display: flex;
   flex-direction: row;
@@ -274,7 +269,6 @@ span {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
 
   /* padding: 15px; */
 
