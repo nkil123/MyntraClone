@@ -118,6 +118,11 @@ bag.onclick = function () {
   window.location.href = '/bag.html';
 };
 
+
+
+
+
+
 let take = document.getElementById ('take');
 
 take.onclick = function () {
