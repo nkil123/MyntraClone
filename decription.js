@@ -107,13 +107,13 @@ wishlist.onclick = function () {
 
 let logo = document.getElementById ('logo');
 logo.onclick = function () {
-  window.location.href = '/myntra.html';
+  window.location.href = '/myntra/myntra.html';
 };
 
 let bag = document.getElementById ('bagI');
 bag.style.cursor = 'pointer';
 bag.onclick = function () {
-  window.location.href = '/bag.html';
+  window.location.href = '/bag/bag.html';
 };
 
 // let data = {
@@ -536,10 +536,10 @@ function addtoWishlist (data) {
   prodcuts_wish.push (data);
   localStorage.setItem ('wishlist', JSON.stringify (prodcuts_wish));
   console.log ('products_wish:', prodcuts_wish);
-  let wishme=document.getElementById("wishlist");
+  let wishme = document.getElementById ('wishlist');
   wishme.innerHTML =
-  '<ion-icon name="heart-outline"></ion-icon>' + ' ' + 'WISHLISTED';
-  wishme.setAttribute("id","wishmelist");
+    '<ion-icon name="heart-outline"></ion-icon>' + ' ' + 'WISHLISTED';
+  wishme.setAttribute ('id', 'wishmelist');
   // wishme.style.backgroundColor="hsl(347, 100%, 66%)";
   // wishme.style.color="white";
 }

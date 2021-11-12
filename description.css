@@ -89,9 +89,9 @@ span {
   border: none;
   outline: none;
 }
-.search:hover{
-    border: 1px solid gray;
-    border-radius: 2px;
+.search:hover {
+  border: 1px solid gray;
+  border-radius: 2px;
 }
 #header .search a {
   background-color: #f5f5f6;
@@ -343,7 +343,7 @@ footer .info .keepInTouch a {
   vertical-align: middle;
   cursor: pointer;
   text-align: center;
-  
+
   /* justify-content: space-between;  */
 }
 .div_22:hover {
@@ -370,10 +370,11 @@ ion-icon {
   text-align: center;
   border-radius: 5px;
   color: white;
+  cursor: pointer;
 }
-#add_to_cart>ion-icon {
-    color: white;
-  }
+#add_to_cart > ion-icon {
+  color: white;
+}
 #wishlist {
   font-family: Whitney-apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto Helvetica, Arial, sans-serif;
@@ -394,28 +395,29 @@ ion-icon {
   border-radius: 5px;
   color: #282c3f;
 }
-#wishmelist{
+#wishmelist {
   font-family: Whitney-apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto Helvetica, Arial, sans-serif;
-font-size: 16px;
-font-weight: 500;
-letter-spacing: 0.4px;
-text-decoration: none solid rgb(40, 44, 63);
-text-align: center;
-word-spacing: 0px;
-background-color: hsl(347, 100%, 66%);
-border:none;
-outline: none;
-height: 54px;
-padding: 15px 0 15px 0;
-/* min-height: 22px; */
-min-width: auto;
-width: 167.609px;
-text-align: center;
-border-radius: 5px;
-color: white;
+    Roboto Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-decoration: none solid rgb(40, 44, 63);
+  text-align: center;
+  word-spacing: 0px;
+  background-color: hsl(347, 100%, 66%);
+  border: none;
+  outline: none;
+  height: 54px;
+  padding: 15px 0 15px 0;
+  /* min-height: 22px; */
+  min-width: auto;
+  width: 167.609px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
 }
-#wishmelist>ion-icon {
+#wishmelist > ion-icon {
   color: white;
 }
 hr {
@@ -436,15 +438,14 @@ hr {
   margin-right: 10px;
   padding: 20px;
   margin-top: 20px;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   font-weight: 600;
   position: relative;
-
 }
-.sizebox{
-    position: absolute;
-    top: 15%;
-    left: 35%;
+.sizebox {
+  position: absolute;
+  top: 15%;
+  left: 35%;
 }
 .size_box:hover {
   border: 1px solid rgb(202, 33, 33);
@@ -474,9 +475,10 @@ hr {
   border: none;
   outline: none;
   margin-left: 40px;
+  cursor: pointer;
 }
-#max_qual{
-    line-height: 30px;
+#max_qual {
+  line-height: 30px;
 }
 #pin_change {
   display: none;
@@ -484,6 +486,6 @@ hr {
   font-size: 20px;
   line-height: 30px;
 }
-.star>ion-icon {
-    color: rgba(7, 116, 7, 0.609);
-  }
+.star > ion-icon {
+  color: rgba(7, 116, 7, 0.609);
+}
