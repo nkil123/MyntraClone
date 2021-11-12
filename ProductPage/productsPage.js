@@ -233,6 +233,7 @@ let productData = [
       image4: 'https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/6/19/91bae618-50fc-4547-b2d9-a1f5387ffd2f1624115526522-2.jpg',
     },
     rating: 3.9,
+
     count:29
   },
   {
@@ -613,6 +614,9 @@ count:45,
   },
   ratings:48,
 count:75,
+
+  ratings:4,
+>>>>>>> b4bd3b42963ec943f3b61c491c9ecd57d58710db
   
 },
 {
@@ -825,6 +829,9 @@ count:295,
   },
   ratings:5.6,
 count:85,
+
+  ratings:5.6
+>>>>>>> b4bd3b42963ec943f3b61c491c9ecd57d58710db
 },
 {
   id:135,
@@ -845,6 +852,9 @@ count:85,
   },
   ratings:3.6,
 count:805,
+
+  ratings:3.6
+>>>>>>> b4bd3b42963ec943f3b61c491c9ecd57d58710db
 
 },
 {
@@ -907,6 +917,9 @@ count:205,
   },
   ratings:1.6,
 count:256,
+
+  ratings:1.6
+>>>>>>> b4bd3b42963ec943f3b61c491c9ecd57d58710db
  
 },
 {
@@ -926,6 +939,9 @@ count:256,
   },
   ratings:4.2,
 count:257,
+
+  ratings:4.2
+>>>>>>> b4bd3b42963ec943f3b61c491c9ecd57d58710db
   
 },
 {
@@ -1331,6 +1347,10 @@ count:285,
   
 },
 
+
+   
+},
+>>>>>>> b4bd3b42963ec943f3b61c491c9ecd57d58710db
  
 
     
@@ -1472,7 +1492,6 @@ sortLowtoHigh.onclick = function () {
   show_products (arr);
 };
 
-
 let costomerRating = document.getElementById ('costomerRating');
 costomerRating.onclick = function () {
   let arr = productData.sort ((a, b) => {
@@ -1485,8 +1504,7 @@ costomerRating.onclick = function () {
 
 let menArr = [];
 let womenArr = [];
-let boysArr = [];
-let girlsArr = [];
+
 
 productData.forEach (para => {
   let menBox = document.getElementById ('men');
@@ -1518,10 +1536,10 @@ productData.forEach (para => {
   boysBox.addEventListener ('change', boysCheck);
 
   function boysCheck () {
-    console.log (boysBox.value);
-    if (boysBox.value == para.gender && boysBox.value == 'boys') {
-      boysArr.push (para);
-      show_products (boysArr);
+ 
+    if (boysBox.value == para.gender && boysBox.value == 'men') {
+      menArr.push (para);
+      show_products (menArr);
     }
   }
 });
@@ -1530,10 +1548,10 @@ productData.forEach (para => {
   girlsBox.addEventListener ('change', girlsCheck);
 
   function girlsCheck () {
-    console.log (girlsBox.value);
-    if (girlsBox.value == para.gender && girlsBox.value == 'girls') {
-      girlsArr.push (para);
-      show_products (girlsArr);
+   
+    if (girlsBox.value == para.gender && girlsBox.value == 'women') {
+      womenArr.push (para);
+      show_products (womenArr);
     }
   }
 });
@@ -1543,7 +1561,7 @@ let shirtArr = [];
 let tshirtArr = [];
 let topsArr = [];
 let kurtaArr = [];
-let earringArr = [];
+let beautycareArr = [];
 let dressesArr = [];
 let shoesArr = [];
 let shortArr = [];
@@ -1582,12 +1600,12 @@ productData.forEach (para => {
 });
 
 productData.forEach (para => {
-  let earringBox = document.getElementById ('earring');
-  earringBox.addEventListener ('change', earringCheck);
-  function earringCheck () {
-    if (earringBox.value == 'earring' && earringBox.value == para.categories) {
-      earringArr.push (para);
-      show_products (earringArr);
+  let beautycareBox = document.getElementById ('beautycare');
+  beautycareBox.addEventListener ('change', beautycareCheck);
+  function beautycareCheck () {
+    if (beautycareBox.value == 'beautycare' && beautycareBox.value == para.categories) {
+      beautycareArr.push (para);
+      show_products (beautycareArr);
     }
   }
 });
@@ -1990,7 +2008,6 @@ productData.forEach (para => {
     }
   }
 });
-
 
 productData.forEach (para => {
   let fifthBox = document.getElementById ('fifth');

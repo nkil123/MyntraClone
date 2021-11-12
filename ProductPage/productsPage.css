@@ -191,26 +191,20 @@ span {
 
   justify-content: center;
   margin: auto;
-  /* border: 1px solid red; */
-
-
  max-width: 1600px;
   justify-content: center;
   margin: auto;
 
   justify-content: center;
   margin: auto;
-  /* border: 1px solid red; */
-
 }
 .topDiv {
-  position: relative;
   background-color: #ffffff;
   max-width: 1600px;
-  max-height: 38.666px;
-  padding: 10px 0px;
+  padding: -60px 0px;
   font-size: 16px;
-  margin-top: 40px;
+  margin-top: 100px;
+  margin-left: 20px;
 }
 
 #globalDiv {
