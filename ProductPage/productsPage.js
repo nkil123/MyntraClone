@@ -525,15 +525,6 @@ let productData = [
     count: 290,
   },
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 81c3ad7028c9fedd7ae7d3c682c5480a0696feb5
->>>>>>> Stashed changes
-   
-
  {    
   id:21,
          title: "White & Black Sheath Dress & Belt",
@@ -1739,7 +1730,7 @@ count:285,
   ratings:4.2,
   count:789,
 },
-<<<<<<< Updated upstream
+
 
 {
   id:101,
@@ -1951,7 +1942,6 @@ count:285,
   
 },
 
-=======
 
 {
   id:101,
@@ -2163,12 +2153,7 @@ count:285,
   
 },
 
-<<<<<<< HEAD
-    
 
-=======
->>>>>>> 81c3ad7028c9fedd7ae7d3c682c5480a0696feb5
->>>>>>> Stashed changes
 ];
 
 var products_cont = document.getElementById ('products_cont');
