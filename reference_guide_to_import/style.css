@@ -34,7 +34,7 @@ span {
 #header .logo {
   height: 80px;
   width: 53px;
-  margin: 0 10px 0 61px;
+  margin: 0 5px 0 0;
   padding: 20px;
 }
 
@@ -52,7 +52,7 @@ span {
   margin-bottom: 0;
 }
 .nav .names {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 #header .nav a {
   /* justify-content: space-between; */
@@ -110,7 +110,28 @@ span {
 #header .right > div {
   margin-left: 23px;
 }
-
+#dprofile {
+  visibility: hidden;
+  position: absolute;
+  top: 80px;
+  width: 300px;
+  height: 500px;
+  right: 150px;
+  background-color: white;
+  color: black;
+  justify-content: left;
+  text-align: left;
+  padding: 20px;
+}
+#dprofile ul {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e7e7e7;
+}
+#dprofile li {
+  text-decoration: none;
+  list-style: none;
+  padding: 4px 0 4px 0;
+}
 .talign {
   text-align: center;
   align-items: center;
