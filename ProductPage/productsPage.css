@@ -261,17 +261,6 @@ span {
   flex-direction: row;
   flex-wrap: wrap;
 
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  /* border: 0.5px solid red; */
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  /* padding: 15px; */
-
   max-width: 100%;
 }
 #products_cont > div {
@@ -282,9 +271,9 @@ span {
   margin: 20px;
 }
 
-/* #products_cont > div:hover {
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-} */
+#products_cont > div:hover {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.02);
+}
 
 #products_cont > div > div > img {
   position: relative;
@@ -302,6 +291,7 @@ span {
   left: 5px;
   text-align: center;
   align-items: center;
+  vertical-align: middle;
   justify-content: center;
   /* left: 3px; */
   /* height: 28px; */
@@ -311,6 +301,8 @@ span {
 .wishbtn span {
   text-align: center;
   align-items: center;
+  vertical-align: middle;
+
   justify-content: center;
   margin: 4px;
   padding: 3px;
