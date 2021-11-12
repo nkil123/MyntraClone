@@ -117,3 +117,9 @@ bag.style.cursor = 'pointer';
 bag.onclick = function () {
   window.location.href = '/bag.html';
 };
+
+
+
+function goToProduct(){
+  window.location.href = '/ProductPage/productPage.html'
+}
