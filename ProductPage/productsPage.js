@@ -230,6 +230,7 @@ let productData = [
       image4: 'https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/6/19/91bae618-50fc-4547-b2d9-a1f5387ffd2f1624115526522-2.jpg',
     },
     rating: 3.9,
+    count:2955
   },
   {
     id: 17,
@@ -250,6 +251,7 @@ let productData = [
       image4: 'https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13238920/2021/8/6/a07ddf2e-c77f-4c3a-8640-d2cbb78123c11628241598859-Anouk-Men-Red-Striped-Kurta-6691628241598334-2.jpg',
     },
     rating: 3.9,
+    count:825
   },
   {
     id: 18,
@@ -270,6 +272,7 @@ let productData = [
       image4: 'https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15497558/2021/9/16/77547986-1f86-4b62-9687-b6f0333609781631785442064CLYMBMenTan7.jpg',
     },
     rating: 2.9,
+    count:824
   },
   {
     id: 19,
@@ -290,6 +293,7 @@ let productData = [
       image4: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15384986/2021/10/27/99432808-e710-43b9-ab8e-718c9b1a1a001635336510023-Nike-Precision-5-Basketball-Shoes-5381635336509646-5.jpg',
     },
     rating: 3.2,
+    count:735
   },
   {
     id: 20,
@@ -310,6 +314,7 @@ let productData = [
       image4: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14590966/2021/9/29/0e145eb2-0cb6-4001-9a5f-24822cd773b31632910116725-Calvin-Klein-Jeans-Men-Tshirts-4161632910116207-5.jpg',
     },
     rating: 4.9,
+    count:420
   },
    
 
@@ -331,6 +336,7 @@ let productData = [
              image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15286934/2021/9/2/179c0b82-63bf-4388-9feb-aec125d4579b1630562359760EarringsURBANICWomenJacketsURBANICWomenCoatsURBANICWomenDres4.jpg'
          },
          rating:4.2,
+         count:925
          
      },
  
@@ -354,6 +360,7 @@ let productData = [
              image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10278877/2019/11/12/a28f02d9-e138-43e2-ab00-03060e27d03d1573553236511-Kook-N-Keech-Disney-Women-Pink-Daisy-Duck-Printed-Sweatshirt-4.jpg'
          },
          rating:4.5,
+         count:835
          
      },
  {
@@ -374,7 +381,7 @@ let productData = [
              image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12258968/2020/11/2/d9a92fdb-91db-472c-998f-f82bb73a53291604297764597-all-about-you-Women-Sweaters-6661604297763170-5.jpg'
          },
          rating:4.5,
-           
+         count:835
      },
  {
  
@@ -395,7 +402,7 @@ let productData = [
              image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8828611/2020/1/2/56d2fe6c-3a17-4104-bacb-3d1b96f5eb361577961976567-Vero-Moda-Women-Red-Solid-A-Line-Dress-1201577961974902-2.jpg'
          },
          rating:4,
-          
+         count:675
      },
  
  {
@@ -416,6 +423,7 @@ let productData = [
              image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13326252/2021/7/19/d471eede-c3aa-49ea-b821-f035fc3e83431626695221812-Levis-Women-Jeans-4801626695221087-4.jpg'
          },
          rating:4.4,
+         count:768
          
      },
  {
@@ -437,6 +445,7 @@ let productData = [
              image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11457130/2020/2/27/706db7d0-abb7-4f5e-b7ca-b370bf44cd961582794835078-varanga-mustard-silk-zari-and-thread-embroidered-straight-ku-4.jpg'
          },
          rating:4.1,
+         count:6987
           
      },
  {
@@ -457,6 +466,7 @@ let productData = [
              image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13078216/2020/12/18/2fd07bb2-f22b-471a-ae9a-a7a6a6c6ccdd1608291727335-W-Yellow-Printed-Tiered-Dress-1091608291724681-5.jpg'
          },
          rating:4.4,
+         count:567
        
      },
  {
@@ -477,6 +487,7 @@ let productData = [
              image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12831554/2021/3/12/1cf3d4e5-09e1-4dc5-aff8-4bc9eba10a4d1615530797299-GAP-Women-Pink-Solid-Round-Neck-T-shirt-9491615530795443-4.jpg'
          },
          rating:3.9,
+         count:587
         
      },
  {
@@ -497,6 +508,7 @@ let productData = [
              image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10796206/2021/6/11/6e5cfbd2-062d-4485-9b6f-63c0d94c1ad11623387739436TopsUNDERARMOURWomenTopsUNDERARMOURWomen4.jpg'
          },
          rating:3.6,
+         count:290
         
        
  },
@@ -519,6 +531,7 @@ let productData = [
              image4:'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14558962/2021/9/14/32db2112-de4d-49a6-b1f0-f663206f5ca91631612114425-Nike-Black-Dri-FIT-Swoosh-Zip-Front-Medium-Support-Workout-B-4.jpg'
          },
          rating:4.3,
+         count:290
         
  }
  
@@ -654,15 +667,7 @@ sortLowtoHigh.onclick = function () {
   show_products (arr);
 };
 
-// let sortLowtoHigh = document.getElementById ('sortLowtoHigh');
-// sortLowtoHigh.onclick = function () {
-//   let arr = productData.sort ((a, b) => {
-//     return a.price - b.price;
-//   });
 
-//   console.log (arr);
-//   show_products (arr);
-// };
 let costomerRating = document.getElementById ('costomerRating');
 costomerRating.onclick = function () {
   let arr = productData.sort ((a, b) => {

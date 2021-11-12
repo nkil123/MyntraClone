@@ -183,9 +183,20 @@ span {
 /* ========================================================== */
 
 #parent_div {
+
   justify-content: center;
   margin: auto;
   /* border: 1px solid red; */
+
+
+ max-width: 1600px;
+  justify-content: center;
+  margin: auto;
+
+  justify-content: center;
+  margin: auto;
+  /* border: 1px solid red; */
+
 }
 .topDiv {
   position: relative;
@@ -201,11 +212,31 @@ span {
   margin: auto;
   background-color: #ffffff;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 15% 85%;
+  padding: 10px;
   width: 100%;
+
   /* border: 1px solid blue; */
+
+}
+.box{
+  padding: 10px 0px;
+  border-bottom: 1px solid #e9e9ed;
+  border-right: 1px solid #e9e9ed;
+  
+
+  /* border: 1px solid blue; */
+
 }
 
+.box p {
+ padding: 10px 0px;
+}
+
+#globalDiv > div{
+  padding: 10px;
+  font-size: 14px;
+}
 /* Just above products container div */
 #top_product_cont_div {
   display: flex;
@@ -222,7 +253,7 @@ span {
   padding: 5px;
 }
 .size {
-  flex-basis: 763px;
+  flex-basis: 687px;
 }
 #dropBox {
   border: 0.5px solid #cfd8dc;
@@ -230,12 +261,24 @@ span {
 
 /* products container */
 #products_cont {
+
   /* border: 0.5px solid red; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  /* border: 0.5px solid red; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
   /* padding: 15px; */
+
   max-width: 100%;
 }
 #products_cont > div {
@@ -331,8 +374,6 @@ span {
 }
 
 #globalDiv .checkbox {
-  border-right: 1px solid #edebef;
-  border-bottom: 1px solid #e9e9ed;
   padding: 15px;
   font-size: 14px;
 }
