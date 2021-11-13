@@ -31,7 +31,6 @@
 
   import { foot } from "/comps/footer/footer.js";
 
-  
   let footer = document.getElementById("footer");
 
   footer.innerHTML = foot();
@@ -113,5 +112,32 @@
     // console.log(toshow5);
     opt5.style.borderBottom = null;
     toshow5.style.visibility = "hidden";
+  };
+  let opt6 = document.getElementById("profileI");
+  let toshow6 = document.getElementById("dprofile");
+
+  opt6.onmouseover = function () {
+    toshow6.style.visibility = "visible";
+  };
+  opt6.onmouseleave = function () {
+    opt6.style.borderBottom = null;
+    toshow6.style.visibility = "hidden";
+  };
+
+  let wishlist = document.getElementById("wishlistI");
+  wishlist.style.cursor = "pointer";
+  wishlist.onclick = function () {
+    window.location.href = "/wishlist/wishlist.html";
+  };
+
+  let logo = document.getElementById("logo");
+  logo.onclick = function () {
+    window.location.href = "myntra.html";
+  };
+
+  let bag = document.getElementById("bagI");
+  bag.style.cursor = "pointer";
+  bag.onclick = function () {
+    window.location.href = "/bag/bag.html";
   };
 </script>
