@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_2wUQXe5vSSi8p0KCh387GT3XmmKe1a03dRuvU4ezwSOQNFcJ4pxrxAcYAftYl_m4cDQ&usqp=CAU"
+    />
+    <title>Address</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <a href="https://icons8.com/icon/88000/down-button"></a>
+    <link href="/address/address.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="div1">
+        <div class="div1main">
+          <div class="div1a">
+            <img class="logo" src="Images/myntraLogo.jpg" />
+          </div>
+
+          <div class="div1b">
+            <a><p>BAG</p></a>
+            <p>&nbsp&nbsp--------&nbsp&nbsp</p>
+            <a><p class="bagGreen">ADDRESS</p></a>
+            <p>&nbsp&nbsp--------&nbsp&nbsp</p>
+            <a><p>PAYMENT</p></a>
+          </div>
+
+          <div class="div1c">
+            <img
+              class="greenTick"
+              src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png"
+            />
+            <p>100% SECURE</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div2">
+        <div class="div2a">
+          <div class="div2a1">
+            <div id="address-container">
+              <h5>CONTACT DETAILS</h5>
+              <input type="text" name="name" id="" placeholder="name*">
+              <br>
+              <br>
+              <input type="number" name="number" id="" placeholder="Mobile No*" >
+              <br>
+              <br>
+              <br>
+              <h5>ADDRESS</h5>
+              <input type="number" name="pincode" id="" placeholder="pincode*">
+              <br>
+              <br>
+              <input type="text" name="address" id="" placeholder="Address(HouseNO, Building, Street,Area)*">
+              <br>
+              <br>
+              <input type="text" name="" id="" placeholder="Locality/Town*">
+              <br>
+              <br>
+              <input type="text" name="" id="" placeholder="Landmark">
+              <br>
+              <br>
+              <input type="text" name="" id="" placeholder="City">
+              <br>
+              <br>
+              <input type="text" name="" placeholder="State" id="">
+              <br>
+              <br>
+              <br>
+              <br>
+              
+              <button onclick="proceed()">PROCEED</button>
+
+
+
+            </div>
+            
+           
+          </div>
+          
+
+          
+
+        
+          <div class="div2a3">
+            
+            <hr class="hr1" />
+            <img src="Images/visa.jpg" class="visa" />
+          </div>
+          
+        </div>
+
+        <div class="div2b">
+          
+
+        
+
+          <div class="div2b2">
+            <div class="priceDetails">PRICE DETAILS(2 Items)</div>
+            <div class="totalAmt">
+              <div class="totalMRP">
+                <div>Total MRP</div>
+                <div id="total-mrp"></div>
+              </div>
+              <div class="totalMRP">
+                <div>Discount On MRP</div>
+                <div class="green-txt" id="discount-mrp"></div>
+              </div>
+              <div class="totalMRP">
+                <div>Coupon Discount</div>
+                <div class="applyCoupon" id="coupon"></div>
+              </div>
+              <div class="totalMRP">
+                <div>
+                  Convinience Fee<span class="knowMore"
+                    >&nbsp&nbsp&nbsp Know More</span
+                  >
+                </div>
+                <div class="green-txt">FREE</div>
+              </div>
+              <hr />
+            </div>
+            <div class="finalTotal">
+              <div>Total Amount</div>
+              <div id="total-amount"></div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  let price_data=JSON.parse(localStorage.getItem("price-data"));
+  price_data.forEach((el)=>{
+    document.getElementById("total-mrp").innerHTML=el.Mrp;
+    document.getElementById("discount-mrp").innerHTML=el.Discount;
+    document.getElementById("coupon").innerHTML=el.Coupon;
+    document.getElementById("total-amount").innerHTML=el.Amount;
+  })
+
+
+
+  function proceed(){
+    window.location.href="/payment/payment.html";
+  }
+
+
+</script>

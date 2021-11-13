@@ -1,0 +1,384 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.div1 {
+  line-height: 79px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.div1main {
+  height: 78px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 80px;
+}
+
+.div1b {
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.paymentGreen {
+  color: green;
+  text-decoration: underline;
+}
+
+.greenTick {
+  height: 28px;
+  width: 26px;
+}
+
+.div1c {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.div2 {
+  border-top: 1px solid #f5f5f6;
+  width: 100%;
+}
+.conatiner {
+  clear: both;
+  min-height: 420px;
+}
+.payment-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.payment-left-col {
+  display: inline-block;
+  width: 62.5%;
+  vertical-align: top;
+  border-right: 1px solid #eaeaec;
+  padding-right: 35px;
+  margin-top: 30px;
+}
+#offer-block {
+  margin-bottom: 40px;
+}
+
+#offer-block2 {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 16px 18px 12px;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  font-size: 13px;
+  position: relative;
+}
+.discount-Icon {
+  height: 20px;
+  width: 20px;
+  color: black;
+}
+.offer-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 32px;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+#offers {
+  padding-left: 15px;
+  text-indent: -15px;
+  list-style: none;
+  white-space: normal;
+  margin-bottom: 8px;
+}
+#offers:before {
+  content: "\2022";
+  color: #363738;
+  padding-right: 8px;
+}
+/*#offer-message {
+  padding-left: 15px;
+  text-indent: -15px;
+  list-style: none;
+  white-space: normal;
+  margin-bottom: 8px;
+}
+#offer-message:before {
+  content: "\2022";
+  color: #d4d5d9;
+  padding-right: 8px;
+}*/
+.knowMore {
+  padding-left: 17px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #ff3f6c;
+  cursor: pointer;
+  display: inline-block;
+}
+.offers-base-arrowIcon {
+  vertical-align: middle;
+  width: 5px;
+  margin-left: 4px;
+  fill: #ff3f6c;
+}
+.payment-base-head {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 26px 12px;
+}
+.payment-option-block {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.payment-base {
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  background-color: #f4f4f5;
+  display: table;
+}
+.payment-options {
+  display: table-cell;
+  width: 35%;
+}
+#cod {
+  background-color: #fff;
+  border-left-color: #ff3f6c;
+  border-right: 0;
+  color: #ff3f6c;
+}
+#cod {
+  border-bottom: 1px solid #eaeaec;
+  border-top: 0;
+  font-size: 14px;
+  cursor: pointer;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  padding-left: 8px;
+}
+.box {
+  font-weight: 600;
+  display: inline-block;
+}
+.displayContainer {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  display: inline-block;
+  font-weight: 600;
+}
+#card,
+#upi,
+#wallet,
+#netbanking,
+#emi {
+  border-bottom: 1px solid #eaeaec;
+  border-right: 1px solid #eaeaec;
+  border-left: 5px solid #f4f4f5;
+  border-top: 0;
+  font-size: 14px;
+  cursor: pointer;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  padding-left: 8px;
+}
+.payment-content-block {
+  vertical-align: top;
+  display: table-cell;
+  width: 65%;
+  padding: 24px 32px;
+  background: #fff;
+  border-radius: 0 4px 4px 0;
+}
+.payment-error-block {
+  position: relative;
+  background-color: #f4f4f5;
+  padding: 15px 15px 15px 40px;
+  border-radius: 4px;
+}
+.payment-error-Icon {
+  position: absolute;
+  fill: #ff5722;
+  left: 12px;
+  top: 18px;
+}
+.payment-error-head {
+  display: inline-block;
+  color: #ff5722;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.payment-error-base {
+  font-size: 14px;
+  display: inline;
+}
+.payment-giftcard {
+  margin-bottom: 32px;
+}
+.giftcard-container {
+  padding: 22px 36px 22px 44px;
+  border: 1px solid #eaeaec;
+  font-weight: 600;
+  position: relative;
+  line-height: 16px;
+  background: #fff;
+}
+.giftcard-Icon {
+  position: absolute;
+  top: 22px;
+  left: 15px;
+  width: 18px;
+  height: 17px;
+}
+
+#giftcard-title {
+  display: inline-block;
+  font-size: 14px;
+}
+#giftcard-apply {
+  color: #ff3f6c;
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+}
+.payment-right-col {
+  display: inline-block;
+  width: 27.5%;
+  vertical-align: top;
+  padding: 35px 0 0 35px;
+}
+.price-block {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+#price-head {
+  line-height: 15px;
+  color: #535766;
+  font-size: 12px;
+  font-weight: 600;
+}
+#price-block-container {
+  padding-top: 16px;
+}
+#price-order-summary {
+  font-size: 14px;
+}
+#price-detail-row {
+  margin-bottom: 12px;
+  line-height: 16px;
+}
+#price-detail-value {
+  float: right;
+}
+.price-detail-icon {
+  height: 9px;
+}
+.price-detail-discount {
+  color: #03a685;
+  float: right;
+}
+.price-detail-icon {
+  fill: #03a685;
+}
+.price-detail-infotext-container {
+  display: inline-block;
+}
+.price-detail-infotext {
+  font-weight: 600;
+  color: #ff3f6c;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.price-detail-right {
+  padding-right: 4px;
+}
+.price-details {
+  text-decoration: line-through;
+}
+#price-detail-total {
+  font-weight: 600;
+  font-size: 15px;
+  padding-top: 16px;
+  border-top: 1px solid #eaeaec;
+  color: #3e4152;
+  line-height: 16px;
+}
+.payment-footer {
+  border-top: 1px solid #f5f5f6;
+  margin: 0 0 10px 0;
+}
+.content-box {
+  max-width: 980px;
+  padding-top: 10px;
+  margin: auto;
+}
+.footer-images {
+  display: inline-block;
+}
+img {
+  vertical-align: middle;
+}
+.contact-us {
+  color: #282c3f;
+  text-decoration: none;
+  font-weight: 600;
+}
+.contact-us > span {
+  float: right;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.btn button {
+  margin-top: 10px;
+  width: 280px;
+  padding: 10px;
+  font-size: 17px;
+  background-color: #ff3f6c;
+  border: none;
+  cursor: pointer;
+}
+#payment-div{
+  height: 70px;
+  width: 250px;
+  background-color: yellow;
+}
+#captcha{
+  margin-top: 30px;
+  height: 40px;
+  width: 250px;
+  padding-left:4% ;
+}
+#order-btn{
+  margin-top: 60px;
+  height: 40px;
+  width: 268px;
+  background-color: #ff3f6c;
+  border: none;
+
+}

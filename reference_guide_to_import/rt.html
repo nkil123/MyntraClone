@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <footer id="footer"></footer>
+  </body>
+</html>
+
+<script type="module">
+  import { navbar } from "/comps/navbar/navbar.js";
+
+  let nav = document.getElementById("navbar");
+  nav.innerHTML = navbar();
+
+  import { foot } from "/comps/footer/footer.js";
+
+  let footer = document.getElementById("footer");
+
+  footer.innerHTML = foot();
+
+  let opt1 = document.getElementById("opt1");
+  let toshow = document.getElementById("MEN");
+  let ddown = document.getElementsByClassName("ddown");
+  let name = document.getElementById("name");
+  opt1.onmouseover = function () {
+    // console.log(toshow);
+    opt1.style.borderBottom = "4px solid red";
+
+    toshow.style.visibility = "visible";
+  };
+  opt1.onmouseleave = function () {
+    // console.log(toshow);
+    opt1.style.borderBottom = null;
+    toshow.style.visibility = "hidden";
+  };
+
+  let opt2 = document.getElementById("opt2");
+  let toshow2 = document.getElementById("WOMEN");
+  // let ddown = document.getElementsByClassName("ddown");
+  // let name = document.getElementById("name");
+  opt2.onmouseover = function () {
+    // console.log(toshow2);
+    opt2.style.borderBottom = "4px solid red";
+    toshow2.style.visibility = "visible";
+  };
+  opt2.onmouseleave = function () {
+    // console.log(toshow2);
+    opt2.style.borderBottom = null;
+    toshow2.style.visibility = "hidden";
+  };
+
+  let opt3 = document.getElementById("opt3");
+  let toshow3 = document.getElementById("KIDS");
+  // let ddown = document.getElementsByClassName("ddown");
+  // let name = document.getElementById("name");
+  console.log(opt3, toshow3);
+  opt3.onmouseover = function () {
+    // console.log(toshow3);
+    opt3.style.borderBottom = "4px solid red";
+    toshow3.style.visibility = "visible";
+  };
+  opt3.onmouseleave = function () {
+    // console.log(toshow3);
+    opt3.style.borderBottom = null;
+    toshow3.style.visibility = "hidden";
+  };
+
+  let opt4 = document.getElementById("opt4");
+  let toshow4 = document.getElementById("HOMEL");
+  // let ddown = document.getElementsByClassName("ddown");
+  // let name = document.getElementById("name");
+  console.log(opt4, toshow4);
+  opt4.onmouseover = function () {
+    // console.log(toshow4);
+    opt4.style.borderBottom = "4px solid red";
+    toshow4.style.visibility = "visible";
+  };
+  opt4.onmouseleave = function () {
+    // console.log(toshow4);
+    opt4.style.borderBottom = null;
+    toshow4.style.visibility = "hidden";
+  };
+
+  let opt5 = document.getElementById("opt5");
+  let toshow5 = document.getElementById("BEAUTY");
+  // let ddown = document.getElementsByClassName("ddown");
+  // let name = document.getElementById("name");
+  // console.log(opt4, toshow4);
+  opt5.onmouseover = function () {
+    // console.log(toshow4);
+    opt5.style.borderBottom = "4px solid red";
+    toshow5.style.visibility = "visible";
+  };
+  opt5.onmouseleave = function () {
+    // console.log(toshow5);
+    opt5.style.borderBottom = null;
+    toshow5.style.visibility = "hidden";
+  };
+  let opt6 = document.getElementById("profileI");
+  let toshow6 = document.getElementById("dprofile");
+
+  opt6.onmouseover = function () {
+    toshow6.style.visibility = "visible";
+  };
+  opt6.onmouseleave = function () {
+    opt6.style.borderBottom = null;
+    toshow6.style.visibility = "hidden";
+  };
+
+  let wishlist = document.getElementById("wishlistI");
+  wishlist.style.cursor = "pointer";
+  wishlist.onclick = function () {
+    window.location.href = "/wishlist/wishlist.html";
+  };
+
+  let logo = document.getElementById("logo");
+  logo.onclick = function () {
+    window.location.href = "myntra.html";
+  };
+
+  let bag = document.getElementById("bagI");
+  bag.style.cursor = "pointer";
+  bag.onclick = function () {
+    window.location.href = "/bag/bag.html";
+  };
+</script>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <style>
+      body {
+        background-color: rgb(255, 240, 239);
+      }
+      #navbar {
+        height: 80px;
+        margin-bottom: 22px;
+      }
+      #login-container {
+        max-width: 400px;
+        margin: auto;
+        background-color: white;
+        height: 823px;
+        margin-top: 95px;
+      }
+      #login-container > div:nth-child(1) {
+        height: 230px;
+        padding: 9% 14% 0 14%;
+      }
+      #login-container > div:nth-child(2) {
+        height: 360px;
+        padding: 0 14%;
+      }
+      #login-container img {
+        width: 100%;
+        height: 196px;
+      }
+      #login-container h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .btn1 {
+        height: 48px;
+        width: 139.828px;
+        border: 1px solid #d4d5d9;
+        background-color: white;
+        box-sizing: border-box;
+        border-radius: 2px;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        margin-right: 2px;
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+      .btn2 {
+        display: block;
+        width: 288px;
+        margin-top: 10px;
+      }
+      #login-container .horizontal {
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      #login-container .horizontal > div:nth-child(1) {
+        flex-basis: 45%;
+        margin-top: 10px;
+      }
+      #login-container .horizontal > div:nth-child(2) {
+        flex-basis: 10%;
+        text-align: center;
+        font-size: 16px;
+        color: #535766;
+      }
+      #login-container .horizontal > div:nth-child(3) {
+        flex-basis: 45%;
+        margin-top: 10px;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+
+      span {
+        color: black;
+        /* background-color: white; */
+      }
+
+      #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        color: white;
+        font-size: 16px;
+        height: 89px;
+        width: 100%;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        /* display: flex; */
+        justify-content: space-between;
+        transition: all 0s ease 0s;
+        box-shadow: rgb(0, 0, 0, 0.08) 0 4px 12px;
+        /* display: block; */
+      }
+
+      #header .logo {
+        height: 80px;
+        width: 53px;
+        margin: 0 5px 0 0;
+        padding: 20px;
+      }
+
+      #header .logo img {
+        /* justify-content: center; */
+        height: 46px;
+        width: 53px;
+
+        /* width: 100%; */
+      }
+
+      #header .nav {
+        display: flex;
+
+        margin-bottom: 0;
+      }
+      .nav .names {
+        margin-left: 20px;
+      }
+      #header .nav a {
+        /* justify-content: space-between; */
+        /* margin-left: 25px; */
+        text-decoration: none;
+        color: #484849;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: 700;
+        word-spacing: 2px;
+        padding: 0 17px 0px 17px;
+        /* height: 100%; */
+      }
+
+      #header .search {
+        display: flex;
+        width: 31%;
+        text-align: center;
+        align-items: center;
+        margin-left: 10%;
+      }
+
+      #header .search input {
+        /* display: flex; */
+        height: 40px;
+        width: 95%;
+        color: #f5f5f6;
+        background-color: #f5f5f6;
+        padding: 8px 10px 10px 10px;
+        border: 0;
+      }
+
+      #header .search a {
+        background-color: #f5f5f6;
+        width: 40px;
+        height: 40px;
+        align-items: center;
+
+        padding: 8px 10px 5px 10px;
+        justify-content: center;
+        text-decoration: none;
+        color: rgb(128, 125, 125);
+        text-align: center;
+      }
+
+      #header .right {
+        height: 55px;
+        width: 18%;
+        /* justify-content: space-between;
+     */
+        display: flex;
+        margin: 20px 0px 10px 30px;
+      }
+
+      #header .right > div {
+        margin-left: 23px;
+      }
+      #dprofile {
+        visibility: hidden;
+        position: absolute;
+        top: 80px;
+        width: 300px;
+        height: 500px;
+        right: 150px;
+        background-color: white;
+        color: black;
+        justify-content: left;
+        text-align: left;
+        padding: 20px;
+      }
+      #dprofile ul {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #e7e7e7;
+      }
+      #dprofile li {
+        text-decoration: none;
+        list-style: none;
+        padding: 4px 0 4px 0;
+      }
+      .talign {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+
+      footer {
+        background-color: #fafbfc;
+        margin-top: 80px;
+        padding: 70px 2px 2px 10px;
+      }
+
+      footer .info {
+        /* justify-content: space-around; */
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
+
+      footer .info > div {
+        width: fit-content;
+        margin-left: 6%;
+      }
+
+      footer .info > div > a {
+        display: block;
+        margin: 4px;
+        text-decoration: none;
+        color: rgb(85, 83, 83);
+      }
+
+      footer .info > div > p a {
+        color: black;
+        text-decoration: none;
+      }
+
+      footer .info > div > p {
+        color: black;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      footer .info > div .stores {
+        width: 134px;
+      }
+
+      footer .info .keepInTouch {
+        padding: 5px;
+        display: flex;
+        color: black;
+        font-weight: 600;
+      }
+
+      footer .info .keepInTouch a {
+        /* text-decoration: none;
+       */
+
+        width: 20px;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .flex div {
+        color: rgb(85, 83, 83);
+        padding: 5px;
+        margin: 2px;
+      }
+
+      .ddown {
+        visibility: hidden;
+        z-index: 2;
+        position: absolute;
+        width: 1200px;
+        height: 500px;
+        padding: 20px;
+
+        background-color: white;
+        top: 80px;
+        left: 180px;
+        display: flex;
+        /* transition: cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+      }
+      .ddown li {
+        list-style: none;
+        padding: 1.5px;
+        font-weight: 400;
+      }
+      .ddown > div > ul > :nth-child(1) {
+        font-size: 16px;
+        font-weight: 700;
+        color: #f28090;
+        /* background-color: black; */
+        padding: 12px 0px 10px 0px;
+        /* margin-bottom: 15px; */
+      }
+      .ddown > div {
+        width: 200px;
+        margin-left: 20px;
+      }
+
+      .ddown .nextul {
+        border-top: solid 2px rgb(223, 235, 223);
+        margin-top: 10px;
+        /* background-color: #484849; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav"></div>
+    <div id="login-container">
+      <div>
+        <img
+          src="https://constant.myntassets.com/pwa/assets/img/al_banner.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <h2>Already have an account?</h2>
+
+        <button onclick="loginPage()" class="btn1 btn2">
+          LOGIN WITH USERNAME
+        </button>
+        <div class="horizontal">
+          <div><hr /></div>
+          <div>OR</div>
+          <div><hr /></div>
+        </div>
+        <h2>New to Myntra?</h2>
+        <button onclick="signupPage()" class="btn1 btn2">
+          CREATE NEW ACCOUNT
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script type="module">
+  import { navbar } from "/comps/navbar/navbar.js";
+
+  let nav = document.getElementById("nav");
+  nav.innerHTML = navbar();
+</script>
+
+<script>
+  function loginPage() {
+    location.href = "/loginsignup/login_validation/login_validation.html";
+  }
+
+  function signupPage() {
+    location.href = "/loginsignup/signup/signup.html";
+  }
+</script>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div id="nav"></div>
+    <div id="login-container">
+      <div>
+        <img
+          src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2021/7/9/da75002d-5bbd-4e5d-91cb-6cb4f481900c1625769349241-Banner_Hamburger_400.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <h2>Login <span>or</span> Signup</h2>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          placeholder="Mobile Number"
+        />
+        <p id="error"></p>
+        <p class="para">
+          By continuing, I agree to the
+          <span>Terms of Use & Privacy policy</span>
+        </p>
+        <button id="btn1">CONTINUE</button>
+        <p>Have trouble logging in?<span>Get help</span></p>
+      </div>
+    </div>
+    <div id="otp-container">
+      <div>
+        <img
+          src="https://constant.myntassets.com/pwa/assets/img/3a438cb4-c9bf-4316-b60c-c63e40a1a96d1548071106233-mobile-verification.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <h2>Verify with OTP</h2>
+        <input type="number" name="otp" id="otp" placeholder="OTP" />
+        <p id="error1"></p>
+        <br />
+        <br />
+        <button id="btn2">Send</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script type="module">
+  import { navbar } from "/comps/navbar/navbar.js";
+
+  let nav = document.getElementById("nav");
+  nav.innerHTML = navbar();
+</script>
+
+<script>
+  let login_container = document.getElementById("login-container");
+  let otp_container = document.getElementById("otp-container");
+
+  let btn1 = document.getElementById("btn1");
+  btn1.onclick = () => {
+    let number = document.getElementById("number").value;
+    if (number == "" || number.length < 10 || number.length > 10) {
+      document.getElementById("number").style.marginBottom = "0";
+      let error = document.getElementById("error");
+      error.style.display = "block";
+      error.textContent = "enter a valid 10 digit mobile number";
+    } else {
+      login_container.style.display = "none";
+      otp_container.style.display = "block";
+      let num = Math.floor(Math.random() * 10000);
+      if (num < 1000) {
+        num += 1000;
+      }
+      setTimeout(() => {
+        alert(num);
+      }, 1000);
+
+      let btn2 = document.getElementById("btn2");
+      btn2.onclick = () => {
+        let otp = document.getElementById("otp").value;
+        if (otp == num) {
+          // window.location.href = ".numberverified/numberverified.html";
+          window.location.href =
+            "/loginsignup/numberverified/numberverified.html";
+        } else {
+          let error1 = document.getElementById("error1");
+          error1.style.display = "block";
+          error1.textContent = "worng OTP";
+        }
+      };
+    }
+  };
+</script>
