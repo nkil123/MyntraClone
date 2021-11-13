@@ -65,8 +65,27 @@ Loading this project in your local system is just a cakewalk. All you need to do
   <li>Ritka Chauhan</li>
   <li>Vaibhav Gaikwad</li>
 </ul>
-<span>
-<img src="https://i.postimg.cc/WT4DWbdp/home.png">
+
+<h1>Screenshots:-</h1>
+
+<img src="https://i.imgur.com/1Oi2M0B.png">
+ 
+
+
   <img src="https://i.postimg.cc/VzCkpSmw/products-All.png">
-  </span>
-  
+
+
+
+
+ <img src="https://i.imgur.com/A457y9R.png">
+
+<img src="https://i.imgur.com/GQfaK5Q.png">
+<img src="https://i.imgur.com/fuQtAzY.png">
+<img src="https://i.imgur.com/lreyljg.png">
+<img src="https://i.imgur.com/ugRod60.png">
+
+ 
+ 
+
+ 
+ 
