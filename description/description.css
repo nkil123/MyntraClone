@@ -394,6 +394,7 @@ ion-icon {
   text-align: center;
   border-radius: 5px;
   color: #282c3f;
+  cursor: pointer;
 }
 #wishmelist {
   font-family: Whitney-apple-system, BlinkMacSystemFont, "Segoe UI",
