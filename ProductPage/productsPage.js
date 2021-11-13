@@ -2067,7 +2067,6 @@ let productData = [
     count: 25,
   },
 ];
-
 var products_cont = document.getElementById ('products_cont');
 
 function show_products (products) {

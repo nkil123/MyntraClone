@@ -93,9 +93,9 @@ opt5.onmouseleave = function () {
 let opt6 = document.getElementById ('profileI');
 let toshow6 = document.getElementById ('dprofile');
 
-opt6.onclick=()=>{
-  window.location.href="/login.html"
-}
+opt6.onclick = () => {
+  window.location.href = '/loginsignup/login/login.html';
+};
 
 // opt6.onmouseover = function () {
 //   toshow6.style.visibility = 'visible';

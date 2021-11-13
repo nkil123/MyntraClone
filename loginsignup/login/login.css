@@ -1,86 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/navbar_style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <style>
-        body{
-            background-color: rgb(255, 240, 239);
-        }
-        #navbar{
-            height: 80px;
-            margin-bottom:22px;
+body {
+  background-color: rgb(255, 240, 239);
+}
+#login-container {
+  max-width: 400px;
+  margin: auto;
+  background-color: white;
+  height: 823px;
+  margin-top: 120px;
+}
 
-        }
-        #login-container{
-            max-width: 400px;
-            margin: auto;
-            background-color: white;
-            height:823px ;
-            margin-top: 95px;
-        }
-        #login-container>div:nth-child(1){
-            height: 230px;
-            padding: 9% 14% 0 14%;
-        }
-        #login-container>div:nth-child(2){
-            height: 360px;
-            padding: 0 14%;
-        }
-        #login-container img{
-            width: 100%;
-            height: 196px;
-        }
-        #login-container h2{
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        .btn1{
-            
-            height: 48px;
-            width: 139.828px;
-            border: 1px solid #D4D5D9;
-            background-color: white;
-            box-sizing: border-box;
-            border-radius: 2px;
-            
-            font-family:Arial, Helvetica, sans-serif ;
-            font-weight: bolder;
-            margin-right: 2px;
-            letter-spacing: 1px;
-            cursor: pointer;
-        }
-        .btn2{
-            display: block;
-            width: 288px;
-            margin-top: 10px;
-        }
-        #login-container .horizontal{
-            display: flex;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            
-        }
-        #login-container .horizontal >div:nth-child(1){
-            flex-basis: 45%;
-            margin-top: 10px;
-        }
-        #login-container .horizontal >div:nth-child(2){
-            flex-basis: 10%;
-            text-align: center;
-            font-size: 16px;
-            color: #535766;
-        }
-        #login-container .horizontal >div:nth-child(3){
-            flex-basis: 45%;
-            margin-top: 10px;
-        }
+#login-container img {
+  width: 100%;
+  height: 184px;
+}
+#login-container > div:nth-child(2) {
+  padding-left: 9%;
+  padding-right: 8%;
+}
 
-        * {
+#login-container h2 > span {
+  font-weight: 400;
+  color: #535766;
+  font-size: 18px;
+}
+#login-container h2 {
+  color: #424553;
+  margin-top: 9px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#login-container input {
+  height: 40px;
+  width: 328px;
+  color: #282c3f;
+  margin-top: 17px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  margin-bottom: 17px;
+}
+#login-container .para {
+  color: #282c3f;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 25px;
+}
+#login-container p > span {
+  font-weight: 700;
+  color: rgb(240, 62, 151);
+}
+#login-container BUTTON {
+  background-color: #ff3f6c;
+  color: #ffffff;
+  height: 40px;
+  width: 328px;
+  border: 0;
+  margin-bottom: 15px;
+}
+#otp-container {
+  max-width: 400px;
+  margin: auto;
+  background-color: white;
+  height: 823px;
+  margin-top: 120px;
+  display: none;
+}
+#otp-container img {
+  width: 100%;
+}
+#otp-container > div:nth-child(1) {
+  padding-left: 12%;
+  padding-top: 16%;
+  width: 150px;
+  margin-bottom: 20px;
+}
+#otp-container > div:nth-child(2) {
+  padding-left: 12%;
+}
+#otp-container h2 {
+  font-weight: 500;
+}
+#otp-container input {
+  margin-top: 50px;
+  height: 40px;
+  width: 250px;
+  padding-left: 20px;
+}
+#otp-container button {
+  height: 40px;
+  width: 120px;
+  margin-left: 60px;
+}
+#error {
+  display: none;
+  margin-top: 0;
+  margin-bottom: 17px;
+  color: red;
+}
+#error1 {
+  display: none;
+  margin-top: 0;
+  margin-bottom: 17px;
+  color: red;
+}
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -184,7 +209,7 @@ span {
   height: 55px;
   width: 18%;
   /* justify-content: space-between;
-     */
+*/
   display: flex;
   margin: 20px 0px 10px 30px;
 }
@@ -269,7 +294,7 @@ footer .info .keepInTouch {
 
 footer .info .keepInTouch a {
   /* text-decoration: none;
-       */
+*/
 
   width: 20px;
 }
@@ -321,53 +346,3 @@ footer .info .keepInTouch a {
   margin-top: 10px;
   /* background-color: #484849; */
 }
-
-        
-        
-        
-        
-        
-    </style>
-</head>
-<body>
-    <div id="nav"></div>
-    <div id="login-container">
-        <div>
-            <img src="https://constant.myntassets.com/pwa/assets/img/al_banner.png" alt="">
-            
-        </div>
-        <div>
-            <h2>Already have an account?</h2>
-            
-            <button onclick="loginPage()" class="btn1 btn2">LOGIN WITH USERNAME</button>
-            <div class="horizontal">
-                <div><hr></div>
-                <div>OR</div>
-                <div><hr></div>
-                 
-            </div>
-            <h2>New to Myntra?</h2>
-            <button onclick="signupPage()" class="btn1 btn2">CREATE NEW ACCOUNT</button>
-        </div>
-    </div>
-    
-</body>
-</html>
-
-<script type="module">
-    import { navbar } from "/comps/navbar/navbar.js";
-
-    let nav = document.getElementById("nav");
-    nav.innerHTML = navbar();
-    
-</script>
-
-<script>
-    function loginPage(){
-        location.href="login_validation.html";
-    }
-
-    function signupPage(){
-        location.href="signup.html";
-    }
-</script>
