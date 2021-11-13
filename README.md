@@ -1,11 +1,11 @@
 # Myntra
 Myntra is a major E-commerce company headquartered in Bangalore, India. The focal point of their business model is mainly fashion & clothing sector and they are recently aquired by Flipkart, an Indian e-commerce Giant.
 
-## Project Overview 
+## Project Overview :-
 This project is a complete clone of this e-commerce website Myntra.com<br>
 We've added all the fuctionalities of the website in our project for a lifelike user experience. Users can browse the products, filter them according to their needs, add them to the cart, check out of the cart and make payments at the end. This replication of whole user experince makes it difficult to differentiate between the original website and our clone version of it.
 
-## Getting Started
+## Getting Started :-
 Loading this project in your local system is just a cakewalk. All you need to do is follow these simple steps :-
 <ul>
   <li>Clone the given repository into your local system.</li>
@@ -32,7 +32,7 @@ Loading this project in your local system is just a cakewalk. All you need to do
   <li>Flaticon</li>
 </ul>
 
-## Created Pages 
+## Created Pages :-
 <ul>
   <li>Landing page</li>
   <li>Products page</li>
@@ -45,7 +45,7 @@ Loading this project in your local system is just a cakewalk. All you need to do
   <li>Thank You note</li>
 </ul>
 
-## Functionalities Added
+## Functionalities Added :-
 <ul>
   <li>One Time Password (OTP) functionality for Signing Up & Signing In</li>
   <li>Filters functionality in Products page for enabling better user experience</li>
@@ -56,7 +56,7 @@ Loading this project in your local system is just a cakewalk. All you need to do
   <li>A convenient Payments page & thus successfully placing the order</li>
 </ul>
 
-## Team Members 
+## Team Members :-
 <ul>
   <li>Nilesh Kumar</li>
   <li>Roshan Jambhulkar</li>
