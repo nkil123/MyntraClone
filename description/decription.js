@@ -1,4 +1,4 @@
-import {navbar} from './comps/navbar/navbar.js';
+import {navbar} from '/comps/navbar/navbar.js';
 
 import {foot} from '/comps/footer/footer.js';
 

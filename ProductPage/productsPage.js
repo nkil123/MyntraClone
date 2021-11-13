@@ -2150,34 +2150,29 @@ function show_products (products) {
 
     img.onclick = function () {
       addtoDescription (product);
-      window.location.href = '../description.html';
+      window.location.href = '/description/description.html';
     };
     text_div.onclick = function () {
       addtoDescription (product);
-      window.location.href = '../description.html';
+      window.location.href = '/description/description.html';
     };
-    outer_div.addEventListener("mouseenter",changeimages);
-    outer_div.addEventListener("mouseleave",removeimages);
+    outer_div.addEventListener ('mouseenter', changeimages);
+    outer_div.addEventListener ('mouseleave', removeimages);
     let interval;
-    function changeimages(){
-      
-      var a=1;
-      interval=setInterval(function(){
-        if(a>4)
-        {
-          a=1;
+    function changeimages () {
+      var a = 1;
+      interval = setInterval (function () {
+        if (a > 4) {
+          a = 1;
         }
-        let x="image"+a;
+        let x = 'image' + a;
         img.src = product.images[x];
-        x="";
-        a=a+1;
-        
-      },1000);
-
-     
+        x = '';
+        a = a + 1;
+      }, 1000);
     }
-    function removeimages(){
-      clearInterval(interval);
+    function removeimages () {
+      clearInterval (interval);
       img.src = product.images.image1;
     }
     products_cont.append (outer_div);
