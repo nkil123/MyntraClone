@@ -93,13 +93,17 @@ opt5.onmouseleave = function () {
 let opt6 = document.getElementById ('profileI');
 let toshow6 = document.getElementById ('dprofile');
 
-opt6.onmouseover = function () {
-  toshow6.style.visibility = 'visible';
-};
-opt6.onmouseleave = function () {
-  opt6.style.borderBottom = null;
-  toshow6.style.visibility = 'hidden';
-};
+opt6.onclick=()=>{
+  window.location.href="/login.html"
+}
+
+// opt6.onmouseover = function () {
+//   toshow6.style.visibility = 'visible';
+// };
+// opt6.onmouseleave = function () {
+//   opt6.style.borderBottom = null;
+//   toshow6.style.visibility = 'hidden';
+// };
 
 let wishlist = document.getElementById ('wishlistI');
 wishlist.style.cursor = 'pointer';

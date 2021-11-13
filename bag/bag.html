@@ -46,18 +46,7 @@
 
       <div class="div2">
         <div class="div2a">
-          <div class="div2a1">
-            <div class="address">
-              <div class="del-to">
-                Deliver to: <span class="bold">John Doe, PIN</span>
-              </div>
-              <div class="del-add">
-                B-805, Future Towers, Amnora Park Town, Hadapsar, Pune.
-              </div>
-            </div>
-
-            <div class="chng-add">CHANGE ADDRESS</div>
-          </div>
+          
 
           <div class="div2a2">
             <div class="offersList" id="sdiv">
@@ -113,9 +102,9 @@
               >
               <div>
                 <span class="btns"
-                  ><button><strong>REMOVE</strong></button></span
+                  ><button onclick="clearData()"><strong>REMOVE</strong></button></span
                 ><span class="btns move"
-                  ><button onclick="tranWish()">
+                  ><button >
                     <strong>MOVE TO WISHLIST</strong>
                   </button></span
                 >
@@ -159,7 +148,7 @@
                     class="coupon-img"
                   />&nbsp&nbsp&nbsp&nbsp Apply Coupons</span
                 >
-                <button class="apply-btn">APPLY</button>
+                <button onclick="couponApply()" class="apply-btn">APPLY</button>
               </div>
               <hr class="hr2" />
             </div>
@@ -170,15 +159,18 @@
             <div class="totalAmt">
               <div class="totalMRP">
                 <div>Total MRP</div>
-                <div>0000</div>
+                <div id="total-price">0</div>
               </div>
               <div class="totalMRP">
                 <div>Discount On MRP</div>
-                <div class="green-txt">-0000</div>
+                <div class="green-txt" id="discount-price">-0</div>
               </div>
               <div class="totalMRP">
                 <div>Coupon Discount</div>
-                <button class="applyCoupon">Apply Coupon</button>
+                <div id="show-discount">
+                  <button onclick="couponApply()" class="applyCoupon">Apply Coupon</button>
+                </div>
+                
               </div>
               <div class="totalMRP">
                 <div>
@@ -192,7 +184,7 @@
             </div>
             <div class="finalTotal">
               <div>Total Amount</div>
-              <div>0000</div>
+              <div id="total-amount">0</div>
             </div>
           </div>
 
@@ -201,10 +193,48 @@
               <img src="/Images/noConvFee.jpg" class="noConvFee" />
             </div>
 
-            <button class="place-btn">PLACE ORDER</button>
+            <button onclick="gotoaddress()" class="place-btn">PLACE ORDER</button>
           </div>
         </div>
       </div>
+    </div>
+    <div id="coppon-change">
+      <div>
+        <h5>APPLY COUPON</h5>
+        <button onclick="closeWindow()">close</button>
+        
+
+      </div>
+      <div>
+        <hr>
+      </div>
+      
+      <div>
+        <div>
+          <input type="checkbox" name="myntra10" id="myntra10">
+          <label for="">MYNTRA10</label>
+          <p>10% discount</p>
+        </div>
+        
+        <div>
+          <input type="checkbox" name="myntra10" id="myntra20">
+          <label for="">MYNTRA20</label>
+          <p>20% discount</p>
+        </div>
+        
+        <div>
+          <input type="checkbox" name="myntra10" id="myntra30">
+          <label for="">MYNTRA30</label>
+          <p>30% discount</p>
+        </div>
+        
+        
+
+      </div>
+      <div>
+        <button onclick="getcouponDiscount()">APPLY</button>
+      </div>
+
     </div>
   </body>
 </html>

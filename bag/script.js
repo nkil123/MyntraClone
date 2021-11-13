@@ -21,51 +21,12 @@ function showFunction () {
 
 let items = document.getElementById ('items');
 
-let data = [
-  {
-    id: 21,
-    title: 'White & Black Sheath Dress & Belt',
-    price: '903',
-    gender: 'Women',
-    description: 'White and black typography print sheath dress,Round neck,Sleeveless, no sleeves,Above knee length in,straight hem,Comes with a belt',
-    brand: 'URBANIC',
-    color: 'White & Black',
-    discount: '35',
-    off_price: 1390,
-    images: {
-      image1: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15286934/2021/9/2/817dc96e-f893-47aa-824e-98d91f396f261630562359704EarringsURBANICWomenJacketsURBANICWomenCoatsURBANICWomenDres1.jpg',
-      image2: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15286934/2021/9/2/90a66afe-feb2-40c1-a699-c81cd7a09fbd1630562359723EarringsURBANICWomenJacketsURBANICWomenCoatsURBANICWomenDres2.jpg',
-      image3: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15286934/2021/9/2/a5bf4c69-c5c9-4d75-a2e7-e3bcc92114101630562359741EarringsURBANICWomenJacketsURBANICWomenCoatsURBANICWomenDres3.jpg',
-      image4: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15286934/2021/9/2/179c0b82-63bf-4388-9feb-aec125d4579b1630562359760EarringsURBANICWomenJacketsURBANICWomenCoatsURBANICWomenDres4.jpg',
-    },
-    rating: {
-      rate: 4.2,
-      count: 220,
-    },
-  },
+let data=JSON.parse(localStorage.getItem("cart"));
 
-  {
-    id: 22,
-    title: 'Women Pink Daisy Duck Printed Sweatshirt',
-    price: '799',
-    gender: 'women',
-    description: '',
-    brand: 'NEW Kook N Keech Disney',
-    color: 'Pink',
-    discount: '60',
-    off_price: 1999,
-    images: {
-      image1: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10278877/2019/11/12/352e3703-d6de-43d5-804b-370082c81f6d1573553236671-Kook-N-Keech-Disney-Women-Pink-Daisy-Duck-Printed-Sweatshirt-1.jpg',
-      image2: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10278877/2019/11/12/ebe54fda-7589-4a0b-9332-a35e6b5ee3571573553236609-Kook-N-Keech-Disney-Women-Pink-Daisy-Duck-Printed-Sweatshirt-2.jpg',
-      image3: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10278877/2019/11/12/91b2fadd-735f-486c-9bfa-bcb3ba2ea9b71573553236558-Kook-N-Keech-Disney-Women-Pink-Daisy-Duck-Printed-Sweatshirt-3.jpg',
-      image4: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10278877/2019/11/12/a28f02d9-e138-43e2-ab00-03060e27d03d1573553236511-Kook-N-Keech-Disney-Women-Pink-Daisy-Duck-Printed-Sweatshirt-4.jpg',
-    },
-    rating: {
-      rate: 4.5,
-      count: 296,
-    },
-  },
-];
+
+let totalPrice=0;
+let totalDiscount=0;
+let total_amount;
 
 function display (datas) {
   datas.forEach (element => {
@@ -124,19 +85,19 @@ function display (datas) {
 
     let select2 = document.createElement ('select');
     let opt6 = document.createElement ('option');
-    opt6.innerHTML = '1';
+    opt6.innerHTML = 1;
 
     let opt7 = document.createElement ('option');
-    opt7.innerHTML = '2';
+    opt7.innerHTML = 2;
 
     let opt8 = document.createElement ('option');
-    opt8.innerHTML = '3';
+    opt8.innerHTML = 3;
 
     let opt9 = document.createElement ('option');
-    opt9.innerHTML = '5';
+    opt9.innerHTML = 5;
 
     let opt10 = document.createElement ('option');
-    opt10.innerHTML = '7';
+    opt10.innerHTML = 7;
 
     select2.append (opt6, opt7, opt8, opt9, opt10);
 
@@ -145,16 +106,62 @@ function display (datas) {
     let spanm = document.createElement ('span');
 
     let span4 = document.createElement ('span');
+    let p_price=element.price;
+    let mrp=element.off_price;
+      
+    totalPrice=totalPrice+mrp;
+    totalDiscount+=(mrp-p_price);
+      
+    select2.onchange=()=>{
+        totalPrice=totalPrice-mrp;
+        totalDiscount=totalDiscount-(mrp-p_price);
+        p_price=element.price*select2.value;
+        mrp=element.off_price*select2.value;
+        
+        
+        totalPrice=totalPrice+mrp;
+        totalDiscount+=(mrp-p_price);
+        total_amount=totalPrice-totalDiscount;
+        console.log(totalPrice);
+        if(data.length>0){
+          total_price.innerHTML="";
+          discount_price.innerHTML="";
+          total_amount.innerHTML="";
+          total_price.innerHTML=totalPrice;
+          discount_price.innerHTML="-"+totalDiscount;
+          totalAamount.innerHTML=total_amount;
+          
+        }
+        span4.innerHTML = `${'Rs.' + p_price + '   '}`;
+        strike.innerHTML = `${'Rs.' + mrp+ '  '}`;
+        
+        
+        
+         
+         
+        
+      }
+      
+      
+  
+      
+  
+      span4.innerHTML = `${'Rs.' + p_price + '   '}`;
+  
+      let strike = document.createElement ('strike');
+  
+      strike.innerHTML = `${'Rs.' + mrp+ '  '}`;
 
-    span4.innerHTML = `${'Rs.' + element.price + '   '}`;
+    /*span4.innerHTML = `${'Rs.' + element.price + '   '}`;
 
     let strike = document.createElement ('strike');
 
-    strike.innerHTML = `${'Rs.' + element.price + '  '}`;
+    strike.innerHTML = `${'Rs.' + element.price + '  '}`;*/
 
     let span5 = document.createElement ('span');
+    let off=element.discount;
 
-    span5.innerHTML = '(20% OFF )';
+    span5.innerHTML = `${off+' % OFF'}`;
     span5.style.color = 'red';
 
     spanm.append (span4, strike, span5);
@@ -177,3 +184,97 @@ function display (datas) {
 }
 
 display (data);
+total_amount=totalPrice-totalDiscount;
+  let total_price=document.getElementById("total-price");
+  let discount_price=document.getElementById("discount-price");
+  let totalAamount=document.getElementById("total-amount");
+  console.log(totalPrice);
+  if(data.length>0){
+    total_price.innerHTML="";
+    discount_price.innerHTML="";
+    total_amount.innerHTML="";
+    total_price.innerHTML=totalPrice;
+    discount_price.innerHTML="-"+totalDiscount;
+    totalAamount.innerHTML=total_amount;
+  }
+
+
+  function gotoaddress(){
+    if(localStorage.getItem("price-data")===null){
+      localStorage.setItem("price-data",JSON.stringify([]));
+    }
+  
+    let price_data=JSON.parse(localStorage.getItem("price-data"));
+    let all_price_data={
+      Mrp:totalPrice,
+      Discount:totalDiscount,
+      Coupon:coupon_discount,
+      Amount:total_amount,
+  
+    }
+  
+    price_data.push(all_price_data);
+    
+    localStorage.setItem("price-data",JSON.stringify(price_data));
+    location.href="/address/address.html"
+
+  }
+  let close_div=document.getElementById("coppon-change");
+  function closeWindow(){
+    
+     close_div.style.display="none";
+  }
+
+  let coupon_discount=0;
+
+  function couponApply(){
+    close_div.style.display="block";
+    
+  }
+  function getcouponDiscount(){
+    let myntra10=document.getElementById("myntra10");
+    let myntra20=document.getElementById("myntra20");
+    let myntra30=document.getElementById("myntra30");
+
+    if(myntra10.checked){
+      coupon_discount=Math.floor(total_amount*10/100);
+      console.log(coupon_discount);
+
+    }
+    if(myntra20.checked){
+      coupon_discount=Math.floor(total_amount*20/100);
+      console.log(coupon_discount);
+
+    }
+     if(myntra30.checked){
+      coupon_discount=Math.floor(total_amount*30/100);
+      console.log(coupon_discount);
+
+    }
+    total_amount=total_amount-coupon_discount;
+    console.log(total_amount);
+    totalAamount.innerHTML=total_amount;
+    close_div.style.display="none";
+    let show_discount=document.getElementById("show-discount");
+    show_discount.innerHTML="";
+    show_discount.innerHTML="-"+coupon_discount;
+  }
+
+
+  function clearData(){
+    console.log("aaa");
+    data=[];
+    display(data);
+     /*let ndata=[];
+     display(ndata);
+    localStorage.setItem("cart",JSON.stringify([]));
+    //let newd= JSON.parse(localStorage.getItem("cart"))*/
+    
+    
+  }
+
+  
+
+ 
+
+  

@@ -8,6 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .div1main {
@@ -17,6 +18,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -98,12 +100,12 @@ body {
   white-space: normal;
   margin-bottom: 8px;
 }
-#offer:before {
+#offers:before {
   content: "\2022";
-  color: #d4d5d9;
+  color: #363738;
   padding-right: 8px;
 }
-#offer-message {
+/*#offer-message {
   padding-left: 15px;
   text-indent: -15px;
   list-style: none;
@@ -114,7 +116,7 @@ body {
   content: "\2022";
   color: #d4d5d9;
   padding-right: 8px;
-}
+}*/
 .knowMore {
   padding-left: 17px;
   font-size: 14px;
@@ -360,4 +362,23 @@ img {
   background-color: #ff3f6c;
   border: none;
   cursor: pointer;
+}
+#payment-div{
+  height: 70px;
+  width: 250px;
+  background-color: yellow;
+}
+#captcha{
+  margin-top: 30px;
+  height: 40px;
+  width: 250px;
+  padding-left:4% ;
+}
+#order-btn{
+  margin-top: 60px;
+  height: 40px;
+  width: 268px;
+  background-color: #ff3f6c;
+  border: none;
+
 }

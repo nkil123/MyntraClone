@@ -46,75 +46,77 @@
       <div class="div2">
         <div class="div2a">
           <div class="div2a1">
-            <div class="sel-add">Select Delivery Address</div>
-            <div class="chng-add">ADD NEW ADDRESS</div>
-          </div>
-          <div class="default-add">DEFAULT ADDRESS</div>
+            <div id="address-container">
+              <h5>CONTACT DETAILS</h5>
+              <input type="text" name="name" id="" placeholder="name*">
+              <br>
+              <br>
+              <input type="number" name="number" id="" placeholder="Mobile No*" >
+              <br>
+              <br>
+              <br>
+              <h5>ADDRESS</h5>
+              <input type="number" name="pincode" id="" placeholder="pincode*">
+              <br>
+              <br>
+              <input type="text" name="address" id="" placeholder="Address(HouseNO, Building, Street,Area)*">
+              <br>
+              <br>
+              <input type="text" name="" id="" placeholder="Locality/Town*">
+              <br>
+              <br>
+              <input type="text" name="" id="" placeholder="Landmark">
+              <br>
+              <br>
+              <input type="text" name="" id="" placeholder="City">
+              <br>
+              <br>
+              <input type="text" name="" placeholder="State" id="">
+              <br>
+              <br>
+              <br>
+              <br>
+              
+              <button onclick="proceed()">PROCEED</button>
 
-          <div class="div2a2">
-            <div class="default">
-              <div class="name">
-                Mr.Christopher Nolan <span class="home-btn">HOME</span>
-              </div>
-              <div class="address">
-                B-805, Future Towers, Amanora Park Town, Hadapsar, Pune. <br />
-                Pune, Maharashtra, India - 411028.
-              </div>
-              <div class="mob-num">
-                <span class="address"
-                  >Mobile: &nbsp<span class="num">9898121257</span></span
-                >
-              </div>
-            </div>
-            <div class="pay-on-del">• Pay on Delivery Available</div>
-            <div class="rem-edit">
-              <div class="chng-add2">REMOVE</div>
-              <div class="chng-add2">EDIT</div>
-            </div>
-          </div>
 
+
+            </div>
+            
+           
+          </div>
+          
+
+          
+
+        
           <div class="div2a3">
-            <div class="add-new">+ Add New Address</div>
+            
             <hr class="hr1" />
             <img src="Images/visa.jpg" class="visa" />
           </div>
+          
         </div>
 
         <div class="div2b">
-          <div class="div2b1">
-            <div class="del-est">DELIVERY ESTIMATES</div>
-            <div class="prod1">
-              <div class="prod1-img">
-                <img
-                  src="https://assets.myntassets.com/h_64,q_100,w_48/v1/assets/images/11744404/2020/6/16/ba3e2c78-6f96-4e32-a693-2cc39182d2781592297707439-Urbano-Fashion-Mens-Black-Yellow-Grey-Round-Neck-Full-Sleeve-1.jpg"
-                />
-              </div>
-              <div>Estimated Delivery by <strong>20 Nov 2021</strong></div>
-            </div>
-            <div class="prod1">
-              <div class="prod1-img">
-                <img
-                  src="https://assets.myntassets.com/h_64,q_100,w_48/v1/assets/images/15225854/2021/8/23/264a29d8-74af-4707-864d-515d4d28fffc1629716066899ManiacMenOliveGreenTypographyPrintedPocketsT-shirt1.jpg"
-                />
-              </div>
-              <div>Estimated Delivery by <strong>20 Nov 2021</strong></div>
-            </div>
-          </div>
+          
+
+        
 
           <div class="div2b2">
             <div class="priceDetails">PRICE DETAILS(2 Items)</div>
             <div class="totalAmt">
               <div class="totalMRP">
                 <div>Total MRP</div>
-                <div>0000</div>
+                <div id="total-mrp"></div>
               </div>
               <div class="totalMRP">
                 <div>Discount On MRP</div>
-                <div class="green-txt">-0000</div>
+                <div class="green-txt" id="discount-mrp"></div>
               </div>
               <div class="totalMRP">
                 <div>Coupon Discount</div>
-                <div class="applyCoupon">Apply Coupon</div>
+                <div class="applyCoupon" id="coupon"></div>
               </div>
               <div class="totalMRP">
                 <div>
@@ -128,9 +130,9 @@
             </div>
             <div class="finalTotal">
               <div>Total Amount</div>
-              <div>0000</div>
+              <div id="total-amount"></div>
             </div>
-            <div class="place-btn">PLACE ORDER</div>
+            
           </div>
         </div>
       </div>
@@ -138,4 +140,20 @@
   </body>
 </html>
 
-<script></script>
+<script>
+  let price_data=JSON.parse(localStorage.getItem("price-data"));
+  price_data.forEach((el)=>{
+    document.getElementById("total-mrp").innerHTML=el.Mrp;
+    document.getElementById("discount-mrp").innerHTML=el.Discount;
+    document.getElementById("coupon").innerHTML=el.Coupon;
+    document.getElementById("total-amount").innerHTML=el.Amount;
+  })
+
+
+
+  function proceed(){
+    window.location.href="/payment/payment.html";
+  }
+
+
+</script>

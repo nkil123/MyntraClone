@@ -467,3 +467,51 @@ button {
   border: none;
   cursor: pointer;
 }
+#coppon-change{
+  width:441px;
+  max-width: 441px;
+  position: fixed;
+  display: block;
+  
+  height:480px;
+  border: 1px solid #D4D5D9;
+  margin-left:40%;
+ 
+  margin-top: -880px;
+  background-color: white;
+  display: none;
+  
+}
+#coppon-change >div:nth-child(1){
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+#coppon-change >div:nth-child(1) button{
+  height: 40px;
+  display: block;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+#coppon-change >div:nth-child(3){
+  background-color: rgb(190, 189, 189);
+
+}
+#coppon-change >div:nth-child(3) > div{
+  margin-bottom: 10px;
+  
+  padding: 10px;
+  background-color: white;
+  
+}
+#coppon-change >div:nth-child(4) button{
+  width: 100%;
+  height: 40px;
+  margin-top: 40px;
+  background-color: #ff3f6c;
+  border: none;
+  
+}
+
