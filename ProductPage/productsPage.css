@@ -272,7 +272,7 @@ span {
 }
 
 #products_cont > div:hover {
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.02);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 #products_cont > div > div > img {
