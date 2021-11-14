@@ -1,3 +1,5 @@
+// import {aObjs} from '../data/data';
+
 function navbar () {
   return `<div id="header">
     <!-- <header> -->
@@ -135,7 +137,7 @@ function navbar () {
 
         <div class="names" id="opt2">
         <a href="">
-        <p>WOMEN</p>
+        <p class="name">WOMEN</p>
         <div class="ddown" id="WOMEN">
         <div>
           <ul>
@@ -252,7 +254,7 @@ function navbar () {
         </div>
         <div id="opt3" class="names">  
         <a href="">
-        <p>KIDS</p>
+        <p class="name">KIDS</p>
         <div class="ddown" id="KIDS">
         <div >
   <ul>
@@ -364,7 +366,7 @@ function navbar () {
 </div>
 <div class="names" id="opt4">
         <a href="">
-        <p>HOME & LIVING</p>
+        <p class="name">HOME & LIVING</p>
         <div class="ddown" id="HOMEL">
   <div>
     <ul>
@@ -480,7 +482,7 @@ function navbar () {
         </div>
         <div id="opt5" class="names">
         <a href="">
-        <p>BEAUTY</p>
+        <p class="name">BEAUTY</p>
         
 <div class="ddown" id="BEAUTY">
 <div>
