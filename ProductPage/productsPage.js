@@ -843,3 +843,21 @@ function addtoWishlist (data) {
 }
 
 show_products (productData);
+
+fetch ('https://trains.p.rapidapi.com/', {
+  method: 'POST',
+  headers: {
+    'content-type': 'application/json',
+    'x-rapidapi-host': 'trains.p.rapidapi.com',
+    'x-rapidapi-key': '0dc126c5cdmshda409be8933df6bp182feejsn357cad091d29',
+  },
+  body: {
+    search: 'Rajdhani',
+  },
+})
+  .then (response => {
+    console.log (response);
+  })
+  .catch (err => {
+    console.error (err);
+  });
