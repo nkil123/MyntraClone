@@ -110,10 +110,10 @@ wishlist.onclick = function () {
   window.location.href = '/wishlist/wishlist.html';
 };
 
-let logo = document.getElementById ('logo');
-logo.onclick = function () {
-  window.location.href = '/myntra/myntra.html';
-};
+// let logo = document.getElementById ('logo');
+// logo.onclick = function () {
+//   window.location.href = '/myntra/myntra.html';
+// };
 
 let bag = document.getElementById ('bagI');
 bag.style.cursor = 'pointer';

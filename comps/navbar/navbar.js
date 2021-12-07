@@ -3,13 +3,17 @@
 function navbar () {
   return `<div id="header">
     <!-- <header> -->
-
+<div class = "menu" id="hamburger" >
+<span class="material-icons" >
+menu
+</span>
+</div>
     <div class="logo" id="logo">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS357fHYAnvyZIqrnolaRs3MlCQO7PyKngEag&usqp=CAU"
             alt="" />
     </div>
 
-    <div class="nav">
+    <div class="nav" id="navigation">
     <div id="opt1" class="names"> 
         <a href=""  >
         <p id="name">MEN</p>
@@ -612,7 +616,7 @@ function navbar () {
     <div class="right">
         <div class="talign" id="profileI">
             <span class="material-icons">person</span><br />
-            <span>Profile</span>
+            <span class="rname">Profile</span>
             <div id="dprofile">
                 <ul>
                   <li><strong>User</strong></li>
@@ -640,11 +644,11 @@ function navbar () {
         </div>
         <div class="talign" id="wishlistI">
             <span class="material-icons">favorite_border</span><br />
-            <span>Wishlist</span>
+            <span class="rname">Wishlist</span>
         </div>
         <div class="talign" id="bagI">
             <span class="material-icons">shopping_bag</span><br />
-            <span>Bag</span>
+            <span class="rname">Bag</span>
         </div>
     </div>
 

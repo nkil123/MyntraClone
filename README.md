@@ -1,12 +1,16 @@
 # Myntra
+
 Myntra is a major E-commerce company headquartered in Bangalore, India. The focal point of their business model is mainly fashion & clothing sector and they are recently aquired by Flipkart, an Indian e-commerce Giant.
 
 ## Project Overview :-
+
 This project is a complete clone of this e-commerce website Myntra.com<br>
 We've added all the fuctionalities of the website in our project for a lifelike user experience. Users can browse the products, filter them according to their needs, add them to the cart, check out of the cart and make payments at the end. This replication of whole user experince makes it difficult to differentiate between the original website and our clone version of it.
 
 ## Getting Started :-
+
 Loading this project in your local system is just a cakewalk. All you need to do is follow these simple steps :-
+
 <ul>
   <li>Clone the given repository into your local system.</li>
   <li>Open that repository in your preferred IDE</li>
@@ -15,6 +19,7 @@ Loading this project in your local system is just a cakewalk. All you need to do
 </ul>
 
 ## Tech-stack Used :-
+
 <ul>
   <li>HTML</li>
   <li>CSS</li>
@@ -25,6 +30,7 @@ Loading this project in your local system is just a cakewalk. All you need to do
 </ul>
 
 ## Libraries Used :-
+
 <ul>
   <li>Font awesome</li>
   <li>Google fonts</li>
@@ -33,6 +39,7 @@ Loading this project in your local system is just a cakewalk. All you need to do
 </ul>
 
 ## Created Pages :-
+
 <ul>
   <li>Landing page</li>
   <li>Products page</li>
@@ -46,7 +53,9 @@ Loading this project in your local system is just a cakewalk. All you need to do
 </ul>
 
 ## Functionalities Added :-
+
 <ul>
+<li>Responsive HomePage</li>
   <li>One Time Password (OTP) functionality for Signing Up & Signing In</li>
   <li>Filters functionality in Products page for enabling better user experience</li>
   <li>Sorting the products based on Price, User ratings, etc.</li>
@@ -57,6 +66,7 @@ Loading this project in your local system is just a cakewalk. All you need to do
 </ul>
 
 ## Team Members :-
+
 <ul>
   <li>Nilesh Kumar</li>
   <li>Roshan Jambhulkar</li>
@@ -69,13 +79,9 @@ Loading this project in your local system is just a cakewalk. All you need to do
 <h1>Screenshots:-</h1>
 
 <img src="https://i.imgur.com/1Oi2M0B.png">
- 
 
 
   <img src="https://i.postimg.cc/VzCkpSmw/products-All.png">
-
-
-
 
  <img src="https://i.imgur.com/A457y9R.png">
 
@@ -83,9 +89,3 @@ Loading this project in your local system is just a cakewalk. All you need to do
 <img src="https://i.imgur.com/fuQtAzY.png">
 <img src="https://i.imgur.com/lreyljg.png">
 <img src="https://i.imgur.com/ugRod60.png">
-
- 
- 
-
- 
- 

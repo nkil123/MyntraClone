@@ -30,7 +30,12 @@ span {
   box-shadow: rgb(0, 0, 0, 0.08) 0 4px 12px;
   /* display: block; */
 }
-
+#header .menu {
+  visibility: hidden;
+  position: absolute;
+  /* top: 0; */
+  left: 20px;
+}
 #header .logo {
   height: 80px;
   width: 63px;
@@ -45,8 +50,11 @@ span {
 
   /* width: 100%; */
 }
-
+#navigation {
+  visibility: visible;
+}
 #header .nav {
+  visibility: visible;
   display: flex;
 
   margin-bottom: 0;
@@ -72,7 +80,7 @@ span {
   width: 31%;
   text-align: center;
   align-items: center;
-  margin-left: 8%;
+  margin-right: 0%;
 }
 
 #header .search input {
@@ -108,7 +116,7 @@ span {
 }
 
 #header .right > div {
-  margin-left: 23px;
+  margin-left: 8%;
 }
 
 .talign {
@@ -183,7 +191,7 @@ footer .info .keepInTouch a {
 
 .ddown {
   visibility: hidden;
-  z-index: 2;
+  z-index: 200;
   position: absolute;
   width: 1200px;
   height: 500px;
@@ -289,4 +297,351 @@ footer .info .keepInTouch a {
   text-decoration: none;
   list-style: none;
   padding: 4px 0 4px 0;
+}
+
+/* mobile version */
+
+@media only screen and (max-width: 800px) {
+  #header {
+    width: 100%;
+    justify-content: none;
+  }
+  #header .menu {
+    cursor: pointer;
+    top: 33px;
+    visibility: visible;
+  }
+  #header .menu span {
+    height: 20px;
+  }
+
+  .nav {
+    z-index: 2;
+    visibility: hidden;
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    /* flex-direction: row; */
+    background-color: white;
+  }
+  #navigation {
+    visibility: hidden;
+  }
+  .nav > div {
+    width: 20px;
+  }
+
+  #header .search {
+    display: flex;
+    width: 10px;
+    text-align: center;
+    align-items: center;
+    margin-right: -43.5%;
+    /* margin-left: %; */
+  }
+
+  #header .search input {
+    /* display: flex; */
+    height: 60px;
+    width: 0;
+    color: #f5f5f6;
+    /* background-color: #f5f5f6; */
+    padding: 0;
+    border: 0;
+  }
+  #header .search a {
+    background-color: white;
+    width: 20px;
+    height: 34px;
+    align-items: center;
+
+    padding: 8px 0px 5px 0;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(128, 125, 125);
+    text-align: center;
+  }
+  #header .right {
+    height: 30px;
+    width: 25%;
+    /* justify-content: none; */
+
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  #header .right > div {
+    margin-left: 4px;
+  }
+
+  .talign {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .talign .rname {
+    z-index: 100;
+    visibility: hidden;
+    background-color: red;
+    color: red;
+  }
+
+  #main {
+    position: relative;
+    margin-top: 90px;
+    /* top: 100px; */
+    width: 100%;
+
+    text-align: center;
+  }
+
+  #main img {
+    margin: auto;
+    width: 100%;
+  }
+
+  .cimages {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cimages img {
+    width: 94%;
+  }
+
+  #crackDeals .dflex {
+    overflow-x: scroll;
+
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* margin-left: 20px; */
+    width: 100%;
+  }
+  #creackDeals .dflex::-webkit-scrollbar {
+    overflow: hidden;
+  }
+  #crackDeals .dflex > div:nth-child(1) {
+    margin-left: 630px;
+  }
+  #crackDeals .dflex > div {
+    width: 1100px;
+    /* padding-left: 10px; */
+    margin-left: 20px;
+  }
+
+  #crackDeals .dflex > div img {
+    width: 250px;
+  }
+
+  .dimages {
+    text-align: center;
+    width: 100%;
+  }
+
+  .dimages img {
+    width: 100%;
+  }
+
+  #dprofile {
+    visibility: hidden;
+    position: absolute;
+    top: 79px;
+    width: 300px;
+    height: 500px;
+    right: 150px;
+    background-color: white;
+    color: black;
+    justify-content: left;
+    text-align: left;
+    padding: 5px 30px 5px 30px;
+  }
+  #dprofile ul {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #cecccc;
+  }
+  #dprofile li {
+    text-decoration: none;
+    list-style: none;
+    padding: 4px 0 4px 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #header {
+    width: 100%;
+    justify-content: none;
+  }
+  #header .menu {
+    cursor: pointer;
+    top: 33px;
+    visibility: visible;
+  }
+  #header .menu span {
+    height: 20px;
+  }
+
+  .nav {
+    z-index: 2;
+    visibility: visible;
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    /* flex-direction: row; */
+    background-color: white;
+  }
+  #navigation {
+    /* visibility: hidden; */
+  }
+  .nav > div {
+    width: 20px;
+  }
+
+  #header .search {
+    display: flex;
+    width: 10px;
+    text-align: center;
+    align-items: center;
+    margin-right: -35.5%;
+    /* margin-left: %; */
+  }
+
+  #header .search input {
+    /* display: flex; */
+    height: 60px;
+    width: 0;
+    color: #f5f5f6;
+    /* background-color: #f5f5f6; */
+    padding: 0;
+    border: 0;
+  }
+  #header .search a {
+    background-color: white;
+    width: 20px;
+    height: 34px;
+    align-items: center;
+
+    padding: 8px 0px 5px 0;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(128, 125, 125);
+    text-align: center;
+  }
+  #header .right {
+    height: 30px;
+    width: 25%;
+    /* justify-content: none; */
+
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  #header .right > div {
+    margin-left: 4px;
+  }
+
+  .talign {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .talign .rname {
+    z-index: 100;
+    visibility: hidden;
+    background-color: red;
+    color: red;
+  }
+
+  #main {
+    position: relative;
+    margin-top: 90px;
+    /* top: 100px; */
+    width: 100%;
+
+    text-align: center;
+  }
+
+  #main img {
+    margin: auto;
+    width: 100%;
+  }
+
+  .cimages {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cimages img {
+    width: 94%;
+  }
+
+  #crackDeals .dflex {
+    overflow-x: scroll;
+
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* margin-left: 20px; */
+    width: 100%;
+  }
+  #creackDeals .dflex::-webkit-scrollbar {
+    overflow: hidden;
+  }
+  #crackDeals .dflex > div:nth-child(1) {
+    margin-left: 800px;
+  }
+  #crackDeals .dflex > div {
+    width: 1200px;
+    /* padding-left: 10px; */
+    margin-left: 20px;
+  }
+
+  #crackDeals .dflex > div img {
+    width: 250px;
+  }
+
+  .dimages {
+    text-align: center;
+    width: 100%;
+  }
+
+  .dimages img {
+    width: 100%;
+  }
+
+  #dprofile {
+    visibility: hidden;
+    position: absolute;
+    top: 79px;
+    width: 300px;
+    height: 500px;
+    right: 150px;
+    background-color: white;
+    color: black;
+    justify-content: left;
+    text-align: left;
+    padding: 5px 30px 5px 30px;
+  }
+  #dprofile ul {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #cecccc;
+  }
+  #dprofile li {
+    text-decoration: none;
+    list-style: none;
+    padding: 4px 0 4px 0;
+  }
 }

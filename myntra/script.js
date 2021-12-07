@@ -10,7 +10,20 @@ navvbar.innerHTML = navbar ();
 let footer = document.getElementById ('footer');
 
 footer.innerHTML = foot ();
+let hamburger = document.getElementById ('hamburger');
+let navigation = document.getElementById ('navigation');
+// navigation.style.visibility = 'visible';
+let flag = false;
 
+hamburger.onclick = function () {
+  if (flag) {
+    navigation.style.visibility = 'visible';
+    flag = false;
+  } else {
+    navigation.style.visibility = 'hidden';
+    flag = true;
+  }
+};
 let opt1 = document.getElementById ('opt1');
 let toshow = document.getElementById ('MEN');
 let ddown = document.getElementsByClassName ('ddown');
@@ -96,7 +109,10 @@ let toshow6 = document.getElementById ('dprofile');
 opt6.onclick = () => {
   window.location.href = '/loginsignup/login/login.html';
 };
-
+let logo = document.getElementById ('logo');
+logo.onclick = function () {
+  window.location.href = '/myntra/myntra.html';
+};
 // opt6.onmouseover = function () {
 //   toshow6.style.visibility = 'visible';
 // };
@@ -109,11 +125,6 @@ let wishlist = document.getElementById ('wishlistI');
 wishlist.style.cursor = 'pointer';
 wishlist.onclick = function () {
   window.location.href = '/wishlist/wishlist.html';
-};
-
-let logo = document.getElementById ('logo');
-logo.onclick = function () {
-  window.location.href = 'myntra.html';
 };
 
 let bag = document.getElementById ('bagI');
