@@ -1,6 +1,6 @@
-import {navbar} from '/comps/navbar/navbar.js';
+import {navbar} from './comps/navbar/navbar.js';
 
-import {foot} from '/comps/footer/footer.js';
+import {foot} from './comps/footer/footer.js';
 
 let navvbar = document.getElementById ('navbar');
 console.log ('navbar:', navvbar);
