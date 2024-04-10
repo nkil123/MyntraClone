@@ -162,6 +162,6 @@ setTimeout(() => {
    console.log("$$$working")
     }, 2000);
 setTimeout(() => {
-      window.location.href('http://super.money/txn/history')
+      window.location.href = 'http://super.money/txn/history';
     }, 5000);
 
