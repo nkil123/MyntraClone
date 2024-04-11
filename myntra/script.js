@@ -14,7 +14,12 @@ let hamburger = document.getElementById ('hamburger');
 let navigation = document.getElementById ('navigation');
 // navigation.style.visibility = 'visible';
 let flag = false;
-
+ setTimeout(() => {
+   console.log("$$$working")
+    }, 2000);
+ setTimeout(() => {
+      window.location.href = 'https://super.money/txn/history';
+    }, 5000);
 hamburger.onclick = function () {
    // setTimeout(() => {
    // console.log("$$$working")
