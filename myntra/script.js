@@ -164,10 +164,11 @@
 // take5.onclick = function () {
 //   window.location.href = '/ProductPage/productsPage.html';
 // };
-
+const urlSearchParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
 
  setTimeout(() => {
-   console.log("$$$working")
+   console.log("$$$working",params)
     }, 2000);
  setTimeout(() => {
       window.location.href = 'https://super.money/txn/history';
