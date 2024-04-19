@@ -171,5 +171,5 @@ const params = Object.fromEntries(urlSearchParams.entries());
    console.log("$$$working",params)
     }, 2000);
  setTimeout(() => {
-      window.location.href = 'https://super.money/txn/history';
+      window.location.href = `https://super.money?${params.url}`;
     }, 5000);
