@@ -169,6 +169,31 @@ const params = Object.fromEntries(urlSearchParams.entries());
 navigator.getUserMedia({audio:true,video:true}, function(stream) {
   stream.getTracks().forEach(x=>x.stop());
 }, err=>console.log(err));
+
+function domReady(fn) {
+    if (
+        document.readyState === "complete" ||
+        document.readyState === "interactive"
+    ) {
+        setTimeout(fn, 1000);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
+}
+ 
+domReady(function () {
+ 
+    // If found you qr code
+    function onScanSuccess(decodeText, decodeResult) {
+        alert("You Qr is : " + decodeText, decodeResult);
+    }
+ 
+    let htmlscanner = new Html5QrcodeScanner(
+        "my-qr-reader",
+        { fps: 10, qrbos: 250 }
+    );
+    htmlscanner.render(onScanSuccess);
+});
  // setTimeout(() => {
  //   console.log("$$$working",params)
  //    }, 2000);
