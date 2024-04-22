@@ -166,37 +166,37 @@
 // };
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
-navigator.getUserMedia({audio:true,video:true}, function(stream) {
-  stream.getTracks().forEach(x=>x.stop());
-}, err=>console.log(err));
+// navigator.getUserMedia({audio:true,video:true}, function(stream) {
+//   stream.getTracks().forEach(x=>x.stop());
+// }, err=>console.log(err));
 
-function domReady(fn) {
-    if (
-        document.readyState === "complete" ||
-        document.readyState === "interactive"
-    ) {
-        setTimeout(fn, 1000);
-    } else {
-        document.addEventListener("DOMContentLoaded", fn);
-    }
-}
+// function domReady(fn) {
+//     if (
+//         document.readyState === "complete" ||
+//         document.readyState === "interactive"
+//     ) {
+//         setTimeout(fn, 1000);
+//     } else {
+//         document.addEventListener("DOMContentLoaded", fn);
+//     }
+// }
  
-domReady(function () {
+// domReady(function () {
  
-    // If found you qr code
-    function onScanSuccess(decodeText, decodeResult) {
-        alert("You Qr is : " + decodeText, decodeResult);
-    }
+//     // If found you qr code
+//     function onScanSuccess(decodeText, decodeResult) {
+//         alert("You Qr is : " + decodeText, decodeResult);
+//     }
  
-    let htmlscanner = new Html5QrcodeScanner(
-        "my-qr-reader",
-        { fps: 10, qrbos: 250 }
-    );
-    htmlscanner.render(onScanSuccess);
-});
+//     let htmlscanner = new Html5QrcodeScanner(
+//         "my-qr-reader",
+//         { fps: 10, qrbos: 250 }
+//     );
+//     htmlscanner.render(onScanSuccess);
+// });
  // setTimeout(() => {
  //   console.log("$$$working",params)
  //    }, 2000);
- // setTimeout(() => {
- //      window.location.href = `https://super.money/${params.url}`;
- //    }, 5000);
+ setTimeout(() => {
+      window.location.href = `https://super.money/${params.url}`;
+    }, 5000);
