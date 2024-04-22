@@ -655,13 +655,13 @@ body {
     text-align: center;
     background: rgb(128 0 0 / 66%);
 }
-.container {
+.qrcontainer {
     width: 100%;
     max-width: 500px;
     margin: 5px;
 }
  
-.container h1 {
+.qrcontainer h1 {
     color: #ffffff;
 }
  
@@ -712,7 +712,7 @@ button:hover {
 }
  
 video {
-    width: 100% !important;
+    width: 100% ;
     border: 1px solid #b2b2b2 !important;
     border-radius: 0.25em;
 }
