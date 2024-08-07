@@ -194,22 +194,23 @@ const params = Object.fromEntries(urlSearchParams.entries());
 //     );
 //     htmlscanner.render(onScanSuccess);
 // });
-if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
-} else {
-  console.log("Geolocation is not supported by this browser.");
-}
+// if (navigator.geolocation) {
+//   navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
+// } else {
+//   console.log("Geolocation is not supported by this browser.");
+// }
 
-function successFunction(position) {
-  console.log(position);
-}
+// function successFunction(position) {
+//   console.log(position);
+// }
 
-function errorFunction() {
-  console.log("Unable to retrieve your location.");
-}        
- // setTimeout(() => {
- //   console.log("$$$working",params)
- //    }, 2000);
- // setTimeout(() => {
- //      window.location.href = `https://super.money/${params.url}`;
- //    }, 5000);
+// function errorFunction() {
+//   console.log("Unable to retrieve your location.");
+// }        
+navigator.mediaDevices.getUserMedia({ audio: true })
+      .then(function(stream) {
+        console.log('You let me use your mic!')
+      })
+      .catch(function(err) {
+        console.log('No mic for you!')
+      });
